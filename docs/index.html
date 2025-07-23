@@ -163,7 +163,8 @@
 
         function search(filters) {
             const textToSearch = function (item) {
-                return item.name.toLowerCase();
+                const models = item.models.map(m => m.name + ' ' + m.release_date + ' ' + m.modalities.join(' '));
+                return (item.name + ' ' + models).toLowerCase();
             }
             return data.filter(i => i.name).filter(item => filters.length === 0 || matchesAnyFilter(textToSearch(item), filters));
         }
@@ -189,7 +190,7 @@
                 html += '<div>';
                 html += `<img src="assets/${item.logo}" style="height: 100px; width: 140px; object-fit: contain;" />`;
                 html += '</div>';
-                html += '<div style="text-align: right; margin-top: -23px; padding-right: 10px; margin-bottom: 4px;">';
+                html += '<div style="text-align: right; margin-top: -60px; padding-right: 10px; margin-bottom: 42px;">';
                 html += `<img src="https://zeljkoobrenovic.github.io/sokrates-media/flags/1x1/${item.country}.svg" style="height: 24px; border-radius: 50%;" />`;
                 html += '</div>';
                 html += '<div class="advice-as-title" title="' + item.name + '">';
@@ -214,7 +215,9 @@
                     });
                     sortedModels.forEach(model => {
                         let opacity = (model.release_date.includes('2025') || model.release_date.includes('2024')) ? 1 : 0.4;
-                        html += `<div style="background: white; border: 1px solid lightgrey; display: block; margin: 2px; padding: 2px 4px; border-radius: 4px; opacity: ${opacity}; font-weight: bold;">${model.name} (${model.release_date})</div>`;
+                        let modalities = model.modalities ? model.modalities.join(' + ') : '';
+                        let model_display_text = getDisplayText(model.name, filters);
+                        html += `<div style="font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; background: white; border: 1px solid lightgrey; display: block; margin: 2px; padding: 2px 4px; border-radius: 4px; opacity: ${opacity}; font-weight: bold;">${model_display_text}<div style="font-size: 10px; color: grey;">${model.release_date} | ${modalities}</div></div>`;
                     });
                     html += '</div>';
                     return html;
