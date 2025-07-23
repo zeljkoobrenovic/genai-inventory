@@ -1,0 +1,1534 @@
+{
+    "frontier_labs": [
+        {
+            "name": "OpenAI",
+            "url": "https://openai.com",
+            "description": "",
+            "logo": "openai.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "gpt-4o",
+                    "name": "GPT-4o",
+                    "release_date": "2024-05-13",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "chatgpt_free": true,
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gpt-4o-mini",
+                    "name": "GPT-4o Mini",
+                    "release_date": "2024-07-18",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "chatgpt_free": false,
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gpt-4.1",
+                    "name": "GPT-4.1",
+                    "release_date": "2025-04-14",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 32768,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gpt-4.1-mini",
+                    "name": "GPT-4.1 Mini",
+                    "release_date": "2025-04-14",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "chatgpt_free": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gpt-4.1-nano",
+                    "name": "GPT-4.1 Nano",
+                    "release_date": "2025-04-14",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 4096,
+                    "access": {
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gpt-4.5",
+                    "name": "GPT-4.5",
+                    "release_date": "2025-02-27",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o1-preview",
+                    "name": "o1 Preview",
+                    "release_date": "2024-09-12",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o1-pro",
+                    "name": "o1 Pro",
+                    "release_date": "2025-03-01",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o3",
+                    "name": "o3",
+                    "release_date": "2025-04-16",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o3-mini",
+                    "name": "o3 Mini",
+                    "release_date": "2025-01-31",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 16000,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o3-pro",
+                    "name": "o3 Pro",
+                    "release_date": "2025-06-10",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o4-mini",
+                    "name": "o4 Mini",
+                    "release_date": "2025-04-16",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 16000,
+                    "access": {
+                        "chatgpt_free": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "o4-mini-high",
+                    "name": "o4 Mini High",
+                    "release_date": "2025-04-16",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 16000,
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "sora",
+                    "name": "Sora",
+                    "release_date": "2024-12-09",
+                    "modalities": [
+                        "text-to-video"
+                    ],
+                    "access": {
+                        "chatgpt_pro": true,
+                        "api": false
+                    }
+                },
+                {
+                    "id": "gpt-image-1",
+                    "name": "GPT Image 1",
+                    "release_date": "2025-03-25",
+                    "modalities": [
+                        "text-to-image"
+                    ],
+                    "access": {
+                        "chatgpt_plus": true,
+                        "api": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Anthropic",
+            "url": "https://anthropic.com",
+            "description": "",
+            "logo": "anthropic.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "claude-opus-4",
+                    "name": "Claude Opus 4",
+                    "release_date": "2025-05-22",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "api": true,
+                        "google_cloud_vertex_ai": true,
+                        "amazon_bedrock": true,
+                        "claude_pro_max_team_enterprise": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 15,
+                        "output_per_million_tokens": 75
+                    }
+                },
+                {
+                    "id": "claude-sonnet-4",
+                    "name": "Claude Sonnet 4",
+                    "release_date": "2025-05-22",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "api": true,
+                        "google_cloud_vertex_ai": true,
+                        "amazon_bedrock": true,
+                        "free_and_paid_users": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 3,
+                        "output_per_million_tokens": 15
+                    }
+                },
+                {
+                    "id": "claude-sonnet-3.5",
+                    "name": "Claude 3.5 Sonnet",
+                    "release_date": "2024-06-20",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "api": true,
+                        "google_cloud_vertex_ai": true,
+                        "amazon_bedrock": true,
+                        "free_web_ios": true,
+                        "paid_subscribers": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 3,
+                        "output_per_million_tokens": 15
+                    }
+                },
+                {
+                    "id": "claude-sonnet-3.7",
+                    "name": "Claude 3.7 Sonnet",
+                    "release_date": "2025-02-24",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "api": true,
+                        "claude_paid_users": true
+                    }
+                },
+                {
+                    "id": "claude-3.5-haiku",
+                    "name": "Claude 3.5 Haiku",
+                    "release_date": "2024-12-12",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "web_mobile_all_users": true
+                    }
+                },
+                {
+                    "id": "claude-2.1",
+                    "name": "Claude 2.1",
+                    "release_date": "2023-11-21",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "legacy": true
+                    }
+                },
+                {
+                    "id": "claude-instant-1.2",
+                    "name": "Claude Instant 1.2",
+                    "release_date": "2023-08-11",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 100000,
+                    "access": {
+                        "legacy": true,
+                        "faster_cheaper": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Google",
+            "url": "https://google.com",
+            "description": "",
+            "logo": "google-gemini.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "gemini-2.5-pro",
+                    "name": "Gemini 2.5 Pro",
+                    "release_date": "2025-03-25",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "google_ai_pro": true
+                    }
+                },
+                {
+                    "id": "gemini-2.5-flash",
+                    "name": "Gemini 2.5 Flash",
+                    "release_date": "2025-05-20",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true
+                    }
+                },
+                {
+                    "id": "gemini-2.5-flash-lite",
+                    "name": "Gemini 2.5 Flash-Lite",
+                    "release_date": "2025-06-17",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "public_preview": true
+                    }
+                },
+                {
+                    "id": "gemini-2.0-flash",
+                    "name": "Gemini 2.0 Flash",
+                    "release_date": "2024-12-11",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "experiment": true
+                    }
+                },
+                {
+                    "id": "gemini-2.0-pro-experimental",
+                    "name": "Gemini 2.0 Pro Experimental",
+                    "release_date": "2024-12-11",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video"
+                    ],
+                    "context_window_tokens": 2000000,
+                    "access": {
+                        "api": false,
+                        "experimental": true
+                    }
+                },
+                {
+                    "id": "gemini-1.5-pro",
+                    "name": "Gemini 1.5 Pro",
+                    "release_date": "2024-02-15",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": "legacy",
+                        "google_ai_studio": true
+                    }
+                },
+                {
+                    "id": "gemini-1.5-flash",
+                    "name": "Gemini 1.5 Flash",
+                    "release_date": "2024-05-14",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": "legacy",
+                        "public": true
+                    }
+                },
+                {
+                    "id": "gemini-nano",
+                    "name": "Gemini Nano",
+                    "release_date": "2023-12-06",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 32768,
+                    "access": {
+                        "edge_sdk": true
+                    }
+                },
+                {
+                    "id": "gemma-3",
+                    "name": "Gemma 3",
+                    "release_date": "2025-03-12",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "open_source": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "gemma-3n",
+                    "name": "Gemma 3n",
+                    "release_date": "2025-03-12",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "open_source": true,
+                        "edge_sdk": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Meta",
+            "url": "https://meta.com",
+            "description": "",
+            "logo": "meta.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "llama-3-8b",
+                    "name": "Llama 3 8B",
+                    "release_date": "2024-04-18",
+                    "parameters": "8_000_000_000",
+                    "context_window_tokens": 8192,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "llama-3-70b",
+                    "name": "Llama 3 70B",
+                    "release_date": "2024-04-18",
+                    "parameters": "70_600_000_000",
+                    "context_window_tokens": 8192,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "llama-3-1-405b",
+                    "name": "Llama 3.1 405B",
+                    "release_date": "2024-07-23",
+                    "parameters": "405_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true,
+                        "ibm_watsonx": true
+                    }
+                },
+                {
+                    "id": "llama-3-1-70b",
+                    "name": "Llama 3.1 70B",
+                    "release_date": "2024-07-23",
+                    "parameters": "70_600_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "llama-3-1-8b",
+                    "name": "Llama 3.1 8B",
+                    "release_date": "2024-07-23",
+                    "parameters": "8_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "llama-3-2-90b-vision",
+                    "name": "Llama 3.2 90B Vision",
+                    "release_date": "2024-09-25",
+                    "parameters": "90_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "amazon_bedrock": true,
+                        "open_source": false
+                    }
+                },
+                {
+                    "id": "llama-3-2-11b-vision",
+                    "name": "Llama 3.2 11B Vision",
+                    "release_date": "2024-09-25",
+                    "parameters": "11_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "amazon_bedrock": true,
+                        "open_source": false
+                    }
+                },
+                {
+                    "id": "llama-3-2-3b",
+                    "name": "Llama 3.2 3B",
+                    "release_date": "2024-09-25",
+                    "parameters": "3_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "amazon_bedrock": true,
+                        "open_source": false
+                    }
+                },
+                {
+                    "id": "llama-3-2-1b",
+                    "name": "Llama 3.2 1B",
+                    "release_date": "2024-09-25",
+                    "parameters": "1_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "amazon_bedrock": true,
+                        "open_source": false
+                    }
+                },
+                {
+                    "id": "llama-3-3-70b",
+                    "name": "Llama 3.3 70B",
+                    "release_date": "2024-12-01",
+                    "parameters": "70_000_000_000",
+                    "context_window_tokens": 128000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true
+                    }
+                },
+                {
+                    "id": "llama-4-scout-109b",
+                    "name": "Llama 4 Scout",
+                    "release_date": "2025-04-05",
+                    "parameters": "109_000_000_000",
+                    "context_window_tokens": 10000000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "research_preview": true
+                    }
+                },
+                {
+                    "id": "llama-4-maverick-400b",
+                    "name": "Llama 4 Maverick",
+                    "release_date": "2025-04-05",
+                    "parameters": "400_000_000_000",
+                    "context_window_tokens": 1000000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "research_preview": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Microsoft",
+            "url": "https://microsoft.com",
+            "description": "",
+            "logo": "microsoft.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "phi-4-mini-flash-reasoning",
+                    "name": "Phi‑4 Mini Flash Reasoning",
+                    "release_date": "2025-07-15",
+                    "parameters": 3800000000,
+                    "context_window_tokens": 64000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "azure_ai_foundry": true,
+                        "open_source": true,
+                        "huggingface": true
+                    },
+                    "features": [
+                        "hybrid SambaY architecture",
+                        "low latency (2–3× faster)"
+                    ]
+                },
+                {
+                    "id": "orca-2-7b",
+                    "name": "Orca 2 7B",
+                    "release_date": "2023-11",
+                    "parameters": 7000000000,
+                    "context_window_tokens": 32000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    },
+                    "features": [
+                        "small-model reasoning via synthetic data"
+                    ]
+                },
+                {
+                    "id": "orca-2-13b",
+                    "name": "Orca 2 13B",
+                    "release_date": "2023-11",
+                    "parameters": 13000000000,
+                    "context_window_tokens": 32000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    },
+                    "features": [
+                        "small-model reasoning via synthetic data"
+                    ]
+                },
+                {
+                    "id": "megatron-turing-nlg-380b",
+                    "name": "Megatron‑Turing NLG 380B",
+                    "release_date": "2022-10",
+                    "parameters": 380000000000,
+                    "context_window_tokens": 4096,
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "proprietary": true,
+                        "azure": true
+                    },
+                    "features": [
+                        "large general English text generation"
+                    ]
+                },
+                {
+                    "id": "copilot (gpt-4o based)",
+                    "name": "Microsoft Copilot",
+                    "release_date": "2023-02-07",
+                    "based_on": "GPT‑4 series",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "windows": true,
+                        "microsoft_365": true,
+                        "edge": true,
+                        "bing": true
+                    },
+                    "features": [
+                        "conversational assistant",
+                        "IDE/code support"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Alibaba Cloud",
+            "url": "https://alibabacloud.com",
+            "description": "",
+            "logo": "alibaba.png",
+            "country": "cn",
+            "models": [
+                {
+                    "id": "qwen-max",
+                    "name": "Qwen-Max",
+                    "release_date": "2025-07-16",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32768,
+                    "access": {
+                        "api": true,
+                        "model_studio": true
+                    },
+                    "pricing_per_million_input": 1.6,
+                    "pricing_per_million_output": 6.4
+                },
+                {
+                    "id": "qwen-plus",
+                    "name": "Qwen-Plus",
+                    "release_date": "2025-07-16",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "api": true,
+                        "model_studio": true
+                    },
+                    "pricing_per_million_input": 0.4,
+                    "pricing_per_million_output": 1.2
+                },
+                {
+                    "id": "qwen-turbo",
+                    "name": "Qwen-Turbo",
+                    "release_date": "2025-07-16",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 1008192,
+                    "access": {
+                        "api": true,
+                        "model_studio": true
+                    },
+                    "pricing_per_million_input": 0.05,
+                    "pricing_per_million_output": 0.2
+                },
+                {
+                    "id": "qwen-omni-7b",
+                    "name": "Qwen2.5-Omni-7B",
+                    "release_date": "2025-03-26",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video"
+                    ],
+                    "context_window_tokens": 32768,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "qwen2.5-vl-32b-instruct",
+                    "name": "Qwen2.5-VL-32B-Instruct",
+                    "release_date": "2025-03-24",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 32768,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "qwq-32b",
+                    "name": "QwQ-32B-Preview",
+                    "release_date": "2024-11",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "qwen3-235b",
+                    "name": "Qwen3-235B",
+                    "release_date": "2025-04-28",
+                    "parameters": 235000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "qwen3-30b",
+                    "name": "Qwen3-30B-MoE",
+                    "release_date": "2025-04-28",
+                    "parameters": 30000000000,
+                    "activated_parameters": 3000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "DeepSeek",
+            "url": "https://deepseek.com",
+            "description": "",
+            "logo": "deepseek.png",
+            "country": "cn",
+            "models": [
+                {
+                    "id": "deepseek-v3",
+                    "name": "DeepSeek V3",
+                    "release_date": "2024-12-26",
+                    "parameters": 671000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "deepseek-reasoner-r1",
+                    "name": "DeepSeek R1 (Reasoner)",
+                    "release_date": "2025-01-21",
+                    "based_on": "DeepSeek V3",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 64000,
+                    "access": {
+                        "open_source": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "deepseek-reasoner-r1-zero",
+                    "name": "DeepSeek R1-Zero",
+                    "release_date": "2025-01-21",
+                    "based_on": "DeepSeek V3",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 64000,
+                    "access": {
+                        "open_source": true,
+                        "api": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Amazon",
+            "url": "https://amazon.com",
+            "description": "",
+            "logo": "amazon.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "amazon.titan-text-premier-v1:0",
+                    "name": "Amazon Titan Text Premier",
+                    "release_date": "2024-05-07",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.titan-text-express-v1",
+                    "name": "Amazon Titan Text Express",
+                    "release_date": "2024-05-07",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 8000,
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.titan-text-lite-v1",
+                    "name": "Amazon Titan Text Lite",
+                    "release_date": "2024-05-07",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 4000,
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.titan-text-embeddings-v2",
+                    "name": "Amazon Titan Text Embeddings V2",
+                    "release_date": "2024-11-??",
+                    "modalities": [
+                        "text-embeddings"
+                    ],
+                    "context_window_tokens": 8000,
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.titan-multimodal-embeddings-g1",
+                    "name": "Amazon Titan Multimodal Embeddings G1",
+                    "release_date": "2024-05-07",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "embeddings"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.titan-image-generator-g1-v1",
+                    "name": "Amazon Titan Image Generator G1",
+                    "release_date": "2023-??-??",
+                    "modalities": [
+                        "image-generation"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.nova-micro",
+                    "name": "Amazon Nova Micro",
+                    "release_date": "2024-12-03",
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.nova-lite",
+                    "name": "Amazon Nova Lite",
+                    "release_date": "2024-12-03",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.nova-pro",
+                    "name": "Amazon Nova Pro",
+                    "release_date": "2024-12-03",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.nova-canvas",
+                    "name": "Amazon Nova Canvas",
+                    "release_date": "2024-12-03",
+                    "modalities": [
+                        "image-generation"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.nova-reel",
+                    "name": "Amazon Nova Reel",
+                    "release_date": "2024-12-03",
+                    "modalities": [
+                        "video-generation"
+                    ],
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
+                    "id": "amazon.q",
+                    "name": "Amazon Q (Assistant)",
+                    "release_date": "2023-11-28",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "data"
+                    ],
+                    "access": {
+                        "aws_q": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Apple",
+            "url": "https://apple.com",
+            "description": "",
+            "logo": "apple.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "openelm",
+                    "name": "OpenELM",
+                    "release_date": "2024-04-22",
+                    "parameters": 1000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 4096,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true,
+                        "on_device": true
+                    }
+                },
+                {
+                    "id": "apple-foundation-on-device-3b",
+                    "name": "Apple Foundation On‑Device 3B",
+                    "release_date": "2025-06-10",
+                    "parameters": 3000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "on_device": true,
+                        "foundation_models_api": true
+                    }
+                },
+                {
+                    "id": "apple-foundation-cloud",
+                    "name": "Apple Foundation Cloud Model",
+                    "release_date": "2025-06-10",
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "private_cloud_compute": true,
+                        "on_server": true
+                    }
+                },
+                {
+                    "id": "diffucoder-7b-cpgrpo",
+                    "name": "DiffuCoder 7B cpGRPO",
+                    "release_date": "2025-07-04",
+                    "parameters": 7000000000,
+                    "modalities": [
+                        "text",
+                        "code"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "open_source": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "mm1",
+                    "name": "MM1",
+                    "release_date": "2025-03-14",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "research_preview": true,
+                        "multimodal": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Mistral",
+            "url": "https://mistral.ai",
+            "description": "",
+            "logo": "mistral.png",
+            "country": "eu",
+            "models": [
+                {
+                    "id": "mistral-medium-2505",
+                    "name": "Mistral Medium 3",
+                    "release_date": "2025-05-07",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "commercial_license": true
+                    },
+                    "pricing_per_million_input": 0.4,
+                    "pricing_per_million_output": 2.0
+                },
+                {
+                    "id": "magistral-medium-2506",
+                    "name": "Magistral Medium",
+                    "release_date": "2025-06-10",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 40000,
+                    "access": {
+                        "api": true,
+                        "commercial_license": true
+                    },
+                    "features": [
+                        "reasoning model"
+                    ]
+                },
+                {
+                    "id": "codestral-2501",
+                    "name": "Codestral 2",
+                    "release_date": "2025-01-25",
+                    "modalities": [
+                        "text",
+                        "code"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "api": true,
+                        "commercial_license": true
+                    },
+                    "features": [
+                        "coding specialized"
+                    ]
+                },
+                {
+                    "id": "voxtral-mini-2507",
+                    "name": "Voxtral Mini",
+                    "release_date": "2025-07-25",
+                    "modalities": [
+                        "audio"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "api": true,
+                        "open_source": true
+                    },
+                    "features": [
+                        "transcription"
+                    ]
+                },
+                {
+                    "id": "devstral-medium-2507",
+                    "name": "Devstral Medium",
+                    "release_date": "2025-07-25",
+                    "modalities": [
+                        "text",
+                        "code"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "commercial_license": true
+                    },
+                    "features": [
+                        "software-engineering agent"
+                    ]
+                },
+                {
+                    "id": "mistral-ocr-2505",
+                    "name": "Mistral OCR 2",
+                    "release_date": "2025-05-25",
+                    "modalities": [
+                        "image",
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "commercial_license": true
+                    },
+                    "features": [
+                        "OCR"
+                    ]
+                },
+                {
+                    "id": "ministral-3b-2410",
+                    "name": "Ministral 3B",
+                    "release_date": "2024-10-01",
+                    "parameters": 3000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "research_license": true
+                    }
+                },
+                {
+                    "id": "ministral-8b-2410",
+                    "name": "Ministral 8B",
+                    "release_date": "2024-10-01",
+                    "parameters": 8000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "research_license": true
+                    }
+                },
+                {
+                    "id": "mistral-large-2411",
+                    "name": "Mistral Large 2",
+                    "release_date": "2024-11-19",
+                    "parameters": 123000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "research_license": true
+                    }
+                },
+                {
+                    "id": "pixtral-large-2411",
+                    "name": "Pixtral Large",
+                    "release_date": "2024-11-19",
+                    "parameters": 124000000000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "research_license": true
+                    }
+                },
+                {
+                    "id": "mistral-small-2506",
+                    "name": "Mistral Small 3.2",
+                    "release_date": "2025-06-01",
+                    "parameters": 24000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true
+                    }
+                },
+                {
+                    "id": "magistral-small-2506",
+                    "name": "Magistral Small",
+                    "release_date": "2025-06-10",
+                    "parameters": 24000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 40000,
+                    "access": {
+                        "open_source": true
+                    },
+                    "features": [
+                        "reasoning"
+                    ]
+                },
+                {
+                    "id": "devstral-small-2507",
+                    "name": "Devstral Small 1.1",
+                    "release_date": "2025-07-25",
+                    "parameters": 24000000000,
+                    "modalities": [
+                        "text",
+                        "code"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true
+                    }
+                },
+                {
+                    "id": "mistral-small-2503",
+                    "name": "Mistral Small 3.1",
+                    "release_date": "2025-03-17",
+                    "parameters": 24000000000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "XAI",
+            "url": "https://xai.com",
+            "description": "",
+            "logo": "xai.png",
+            "country": "us",
+            "models": [
+                {
+                    "id": "grok-1",
+                    "name": "Grok 1",
+                    "release_date": "2023-11-03",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_source": true,
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-1.5",
+                    "name": "Grok 1.5",
+                    "release_date": "2024-03-29",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-2",
+                    "name": "Grok 2",
+                    "release_date": "2024-08-20",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-2-mini",
+                    "name": "Grok 2 Mini",
+                    "release_date": "2024-08-20",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-3",
+                    "name": "Grok 3",
+                    "release_date": "2025-02-17",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "supergrok_subscribers": true,
+                        "api": true,
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-3-mini",
+                    "name": "Grok 3 Mini",
+                    "release_date": "2025-02-17",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "supergrok_subscribers": true,
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-4",
+                    "name": "Grok 4",
+                    "release_date": "2025-07-09",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "search",
+                        "tool-use",
+                        "voice"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "supergrok_heavy": true,
+                        "x_premium": true
+                    }
+                },
+                {
+                    "id": "grok-4-heavy",
+                    "name": "Grok 4 Heavy",
+                    "release_date": "2025-07-09",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "search",
+                        "tool-use",
+                        "voice"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "supergrok_heavy": true
+                    }
+                },
+                {
+                    "id": "baby-grok",
+                    "name": "Baby Grok",
+                    "release_date": "2025-07-21",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 64000,
+                    "access": {
+                        "x_premium": false,
+                        "kids_mode": true
+                    }
+                }
+            ]
+        }
+    ]
+}
