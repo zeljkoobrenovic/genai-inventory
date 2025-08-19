@@ -185,6 +185,7 @@
                 html += '<div class="group" style="text-align: center;">';
                 html += '<a target="_blank" href="' + item.url + '">';
                 html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkgreen">';
+                html += '<div style="font-size: 12px; color: black;">open-weight models</div>';
                 html += renderModels(item, true);
                 html += '</div>';
                 html += '<div>';
@@ -197,11 +198,12 @@
                 html += getDisplayText(item.name, filters);
                 html += '</div>';
                 html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkred">';
+                html += '<div style="font-size: 12px; color: black;">proprietary models</div>';
                 html += renderModels(item, false);
 
                 function renderModels(item, open_source) {
                     if (!item.models) return '';
-                    let models = item.models.filter(m => (!open_source && (!m.access || !m.access.open_source)) || (open_source && m.access && m.access.open_source));
+                    let models = item.models.filter(m => (!open_source && (!m.access || !m.access.open_source)) || (open_source && m.access && m.access.open_source) || (open_source && m.access && m.access.open_weights));
 
                     if (models.length === 0) return '';
 
