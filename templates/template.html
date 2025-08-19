@@ -183,30 +183,34 @@
 
             filteredData.forEach(item => {
                 html += '<div class="group" style="text-align: center;">';
-                html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkgreen">';
-                html += '<div style="font-size: 12px; color: black;">open-weight models</div>';
-                html += renderModels(item, true);
+                html += '<div class="advice-as-title" title="' + item.name + '">';
+                const openModels = renderModels(item, true, 'darkgreen');
+                html += '<div style="font-size: 12px; color: darkgreen;">open-weight models (' + openModels.count + ')</div>';
+                html += openModels.html;
                 html += '</div>';
+
                 html += '<a target="_blank" href="https://google.com/search?q=' + item.name + ' LLMs">';
-                    html += '<div>';
+                html += '<div>';
                 html += `<img src="assets/${item.logo}" style="height: 100px; width: 140px; object-fit: contain;" />`;
                 html += '</div>';
                 html += '<div style="text-align: right; margin-top: -60px; padding-right: 10px; margin-bottom: 42px;">';
                 html += `<img src="https://zeljkoobrenovic.github.io/sokrates-media/flags/1x1/${item.country}.svg" style="height: 24px; border-radius: 50%;" />`;
                 html += '</div>';
-                html += '<div class="advice-as-title" title="' + item.name + '">';
-                html += getDisplayText(item.name, filters);
-                html += '</div>';
-                html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkred">';
-                html += '<div style="font-size: 12px; color: black;">proprietary models</div>';
-                html += '</a>';
-                html += renderModels(item, false);
 
-                function renderModels(item, open_source) {
-                    if (!item.models) return '';
+                html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkred">';
+                html += '</a>';
+
+                const closedModels = renderModels(item, false, 'black');
+                html += '<div style="font-size: 12px; color: black;">proprietary models (' + closedModels.count + ')</div>';
+                html += closedModels.html;
+                html += '</div>';
+
+
+                function renderModels(item, open_source, color) {
+                    if (!item.models) return { count: 0, html: '' };
                     let models = item.models.filter(m => (!open_source && (!m.access || !m.access.open_source)) || (open_source && m.access && m.access.open_source) || (open_source && m.access && m.access.open_weights));
 
-                    if (models.length === 0) return '';
+                    if (models.length === 0) return { count: 0, html: '' };
 
                     let html = '<div style="font-size: 11px;">';
                     // Sort models by release_date (null/undefined at the end)
@@ -221,13 +225,13 @@
                         let modalities = model.modalities ? model.modalities.join(' + ') : '';
                         let model_display_text = getDisplayText(model.name, filters);
                         html += '<a target="_blank" href="https://google.com/search?q=' + item.name + ' ' + model.name + ' LLM">';
-                        html += `<div style="font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; background: white; border: 1px solid lightgrey; display: block; margin: 2px; padding: 2px 4px; border-radius: 4px; opacity: ${opacity}; font-weight: bold;">
+                        html += `<div style="color: ${color}; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; background: white; border: 1px solid lightgrey; display: block; margin: 2px; padding: 2px 4px; border-radius: 4px; opacity: ${opacity}; font-weight: bold;">
                             ${model_display_text}
                             <div style="font-size: 10px; color: grey;">${model.release_date} | ${modalities}</div></div>`;
                         html += '</a>';
                     });
                     html += '</div>';
-                    return html;
+                    return { count: models.length, html: html };
                 }
                 html += '</div>';
                 html += '</div>';
