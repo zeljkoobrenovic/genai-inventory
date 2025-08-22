@@ -83,9 +83,56 @@
             padding: 5px 1px 5px;
             color: black;
         }
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
     </style>
     <link rel="stylesheet" target="_blank" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" target="_blank" href="https://fonts.googleapis.com/css?family=Lato">
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </head>
 
 <body>
@@ -101,23 +148,33 @@
             </tr>
         </table>
 
-        <div style="text-align: left; margin-top: 10px;">
+        <div style="text-align: left; margin-top: 10px; margin-bottom: 20px;">
             A curated inventory of generative AI resources
         </div>
+    </div>
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'llms')">LLMs</button>
+        <button class="tablinks" onclick="openTab(event, 'running')">Hosting Options</button>
+    </div>
 
-        <div style="margin-left: 4px; margin-top: 20px; margin-bottom: 20px; color: grey; text-align: left;">
+    <div id="llms" class="tabcontent" style="display: block">
+        <div style="margin-left: 14px; padding-top: 20px; padding-bottom: 20px; color: grey; text-align: left;">
             <div>
                 <input id="filter" type="text" placeholder="search..."
                     style="font-size: 16px; height: 32px; width: 320px; margin-bottom: 10px" onkeyup="update()">
                 <div id="search-summary" style="display: inline-block"></div>
             </div>
         </div>
+        <div id="content" style="text-align: left;"></div>
     </div>
 
-    <div id="content" style="text-align: left;"></div>
+    <div id="running" class="tabcontent" style="">
+        <div id="content_running" style="text-align: left;"></div>
+    </div>
 
     <script>
         const data = "${data}".frontier_labs;
+        const running = "${running}";
 
         function getDisplayText(str, filters) {
             if (str && str.length > 0) {
@@ -240,7 +297,58 @@
             document.getElementById('content').innerHTML = html;
         }
 
+        function updateRunning() {
+            let html = '';
+
+            html += '<div style="padding: 20px">';
+            html += '<table>';
+            html += '<tr style="font-size: 80%; text-align: center">';
+                html += '<td style="border-bottom: 3px solid grey" colspan="1">propriatery</td>';
+                html += '<td style="border-bottom: 3px solid blue; color: blue" colspan="4">public cloud and services</td>';
+                html += '<td style="border-bottom: 3px solid green; color: green" colspan="4">on-prem / device /SDKs</td>';
+                html += '</tr>';
+            html += '<tr style="font-size: 60%; text-align: center">';
+            running.categories.forEach(category => {
+                html += '<td style="width: 140px; min-width: 140px; max-width: 140px">';
+                const displayName = category.category.replace(/_/g, ' ');
+                html += '<a target="_blank" href="https://google.com/search?q=LLM ' + displayName + '">'
+                html += '<img style="height: 70px; margin: 4px;" src="assets/' + category.category + '.png" title="' + category.description + '">';
+                html += '</a>';
+                html += '</td>';
+            });
+            html += '</tr>';
+            html += '<tr style="font-size: 60%; text-align: center; color: blue">';
+            running.categories.forEach(category => {
+                html += '<td style="width: 140px; min-width: 140px; max-width: 140px">';
+                const displayName = category.category.replace(/_/g, ' ');
+                html += '<a target="_blank" href="https://google.com/search?q=describe:LLM ' + displayName + '">'
+                html += '<div title="' + category.description + '">' + displayName + '</div>';
+                html += '</a>';
+                html += '</td>';
+            });
+            html += '</tr>';
+            html += '<tr>';
+            running.categories.forEach(category => {
+                html += '<td style="vertical-align: top">';
+                running.options.filter(o => o.category === category.category).forEach(option => {
+                    html += '<a target="_blank" href="https://google.com/search?q=' + option.provider + ' ' + option.name + '">'
+                    html += '<div style="padding: 4px; margin: 8px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
+                    html += '<div style="font-size: 70%; color: grey">' + option.provider + '</div>';
+                    html += '<div style="font-size: 80%">' + option.name + '</div>';
+                    html += '</a>';
+                    html += '</div>';
+                });
+                html += '</td>';
+            });
+            html += '</tr>';
+            html += '</table>';
+            html += '</div>';
+
+            document.getElementById('content_running').innerHTML = html;
+        }
+
         update();
+        updateRunning();
     </script>
 </body>
 

@@ -1,0 +1,823 @@
+{
+    "updated_at": "2025-08-19",
+    "categories": [
+        {
+            "category": "managed_api_llm",
+            "description": "Fully managed, vendor-hosted LLMs exposed as simple APIs. You send prompts; the provider handles hosting, scaling, safety features, and updates. Fastest path to production with minimal infrastructure control."
+        },
+        {
+            "category": "cloud_model_platform",
+            "description": "Hyperscaler platforms that host multiple foundation models (first-party and third-party) with managed endpoints inside your cloud account. Provide governance, tuning, evals, monitoring, and integrations with other cloud services."
+        },
+        {
+            "category": "inference_cloud",
+            "description": "Specialized providers focused on high-performance model serving (often open-weight or custom) via serverless or dedicated endpoints. Emphasize low latency, high throughput, easy scaling, and cost efficiency without full cloud lock-in."
+        },
+        {
+            "category": "gpu_cloud_infrastructure",
+            "description": "Raw GPU compute (IaaS) or serverless GPU pods you control to run your own inference stack. Maximum flexibility and performance tuning, but you manage runtimes, scaling, security hardening, and reliability."
+        },
+        {
+            "category": "model_router_gateway",
+            "description": "Abstraction layers that route a single API across many models/providers. Add features like fallback, load balancing, caching, observability, guardrails, and policy—sometimes available as SaaS or self-hosted gateways."
+        },
+        {
+            "category": "on_prem_platform",
+            "description": "Turnkey software/hardware stacks to run LLMs in private data centers (including air-gapped). Provide orchestration, security, model catalogs, and enterprise controls; often built around Kubernetes and NVIDIA/NPU accelerators."
+        },
+        {
+            "category": "open_source_inference_engine",
+            "description": "Self-hostable runtimes/servers (OSS) for deploying LLMs anywhere (cloud, on-prem). Common features include continuous batching, paged KV caches, tensor optimizations, and quantization support. You operate the stack."
+        },
+        {
+            "category": "local_runtime_app",
+            "description": "Desktop apps/CLIs that download and run models on a laptop or workstation (often quantized). Provide simple UIs and lightweight HTTP APIs for local development and privacy-preserving use."
+        },
+        {
+            "category": "edge_on_device",
+            "description": "SDKs/runtimes to run compact or optimized models directly on phones, PCs with NPUs, or embedded/edge devices. Prioritize privacy, offline use, and real-time latency; requires model conversion and hardware-specific optimizations."
+        }
+    ],
+    "options": [
+        {
+            "name": "OpenAI API",
+            "provider": "OpenAI",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "GPT-5 series, o3/o4 reasoning, image/audio, embeddings, tools/agents.",
+            "sources": [
+                "S1",
+                "S11",
+                "S12"
+            ]
+        },
+        {
+            "name": "Claude API",
+            "provider": "Anthropic",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Claude 4 family; long-context options.",
+            "sources": [
+                "S2",
+                "S3",
+                "S19"
+            ]
+        },
+        {
+            "name": "Gemini API",
+            "provider": "Google",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Gemini family via Google AI for Developers.",
+            "sources": [
+                "S5",
+                "S18"
+            ]
+        },
+        {
+            "name": "Azure OpenAI Service",
+            "provider": "Microsoft",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API (Azure)"
+            ],
+            "notes": "OpenAI models on Azure with enterprise controls.",
+            "sources": [
+                "S6",
+                "S9",
+                "S13"
+            ]
+        },
+        {
+            "name": "Cohere API",
+            "provider": "Cohere",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Command family, embeddings, rerank.",
+            "sources": [
+                "S7"
+            ]
+        },
+        {
+            "name": "Mistral La Plateforme (API)",
+            "provider": "Mistral AI",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Mistral/Mixtral models, function calling, streaming.",
+            "sources": [
+                "S8"
+            ]
+        },
+        {
+            "name": "AI21 Studio / AI21 API",
+            "provider": "AI21 Labs",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Jamba/J2 models, text & embeddings.",
+            "sources": [
+                "S9a"
+            ]
+        },
+        {
+            "name": "Aleph Alpha API",
+            "provider": "Aleph Alpha",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API",
+                "EU hosting"
+            ],
+            "notes": "Luminous/Alpha family with multimodal & explainability.",
+            "sources": [
+                "S10"
+            ]
+        },
+        {
+            "name": "Grok API",
+            "provider": "xAI",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Grok-4 with OpenAI-compatible API.",
+            "sources": [
+                "S16",
+                "S1xai",
+                "S2xai",
+                "S3xai"
+            ]
+        },
+        {
+            "name": "Amazon Bedrock",
+            "provider": "AWS",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "AWS managed endpoints"
+            ],
+            "notes": "Multi-provider foundation model hub with regional availability.",
+            "sources": [
+                "S12",
+                "S13",
+                "S14b",
+                "S14c",
+                "S14d"
+            ]
+        },
+        {
+            "name": "Amazon SageMaker JumpStart",
+            "provider": "AWS",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "Managed endpoints (SageMaker)"
+            ],
+            "notes": "Deploy 400+ open-weights FMs incl. DeepSeek, Llama, Mistral.",
+            "sources": [
+                "S65",
+                "S65b",
+                "S65c"
+            ]
+        },
+        {
+            "name": "Vertex AI (Generative AI)",
+            "provider": "Google Cloud",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "GCP managed endpoints"
+            ],
+            "notes": "Gemini & partner models with lifecycle/versions.",
+            "sources": [
+                "S4",
+                "S6g"
+            ]
+        },
+        {
+            "name": "Azure AI Foundry — Model Catalog",
+            "provider": "Microsoft Azure",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "Azure managed endpoints"
+            ],
+            "notes": "Catalog includes Microsoft, OpenAI, DeepSeek, Mistral, xAI, Cohere, Meta.",
+            "sources": [
+                "S13",
+                "S9",
+                "S12a"
+            ]
+        },
+        {
+            "name": "IBM watsonx.ai",
+            "provider": "IBM",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "IBM Cloud",
+                "Software (self-managed)"
+            ],
+            "notes": "Granite + third-party/open models; Model Gateway.",
+            "sources": [
+                "S36",
+                "S37",
+                "S22news",
+                "S22a"
+            ]
+        },
+        {
+            "name": "Snowflake Cortex",
+            "provider": "Snowflake",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "Managed in-account"
+            ],
+            "notes": "Built-in LLM functions and model access inside Snowflake.",
+            "sources": [
+                "S59"
+            ]
+        },
+        {
+            "name": "Databricks Mosaic AI Model Serving",
+            "provider": "Databricks",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "Managed endpoints / serverless"
+            ],
+            "notes": "Serve OSS & custom models; tools for RAG/agents.",
+            "sources": [
+                "S60"
+            ]
+        },
+        {
+            "name": "Oracle OCI Generative AI",
+            "provider": "Oracle Cloud",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "OCI managed endpoints"
+            ],
+            "notes": "Managed generative AI (models & tuning).",
+            "sources": [
+                "S61"
+            ]
+        },
+        {
+            "name": "Hugging Face Inference Endpoints",
+            "provider": "Hugging Face",
+            "category": "cloud_model_platform",
+            "deployment_modes": [
+                "Managed per-model endpoints"
+            ],
+            "notes": "Hosted endpoints with autoscaling & TGI/vLLM engines.",
+            "sources": [
+                "S16"
+            ]
+        },
+        {
+            "name": "Together AI",
+            "provider": "Together",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API",
+                "serverless"
+            ],
+            "notes": "High-throughput OSS model inference & fine-tuning.",
+            "sources": [
+                "S17"
+            ]
+        },
+        {
+            "name": "Fireworks AI",
+            "provider": "Fireworks",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API",
+                "serverless"
+            ],
+            "notes": "Fast inference for OSS models, tool use, agents.",
+            "sources": [
+                "S18"
+            ]
+        },
+        {
+            "name": "Replicate",
+            "provider": "Replicate",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Run models as APIs; deploy your own containers.",
+            "sources": [
+                "S19"
+            ]
+        },
+        {
+            "name": "OctoAI",
+            "provider": "OctoAI",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Endpoints for OSS/custom models; LangChain integrations.",
+            "sources": [
+                "S20"
+            ]
+        },
+        {
+            "name": "Baseten",
+            "provider": "Baseten",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API",
+                "VPC/VNet options"
+            ],
+            "notes": "Production LLM inference; dedicated deployments.",
+            "sources": [
+                "S21",
+                "S21b"
+            ]
+        },
+        {
+            "name": "Modal",
+            "provider": "Modal Labs",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "Serverless GPUs"
+            ],
+            "notes": "Bring-your-code serverless GPU compute for inference.",
+            "sources": [
+                "S22",
+                "S22b"
+            ]
+        },
+        {
+            "name": "GroqCloud",
+            "provider": "Groq",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "Groq LPU cloud"
+            ],
+            "notes": "Ultra-low-latency inference for supported open models.",
+            "sources": [
+                "S14",
+                "S15"
+            ]
+        },
+        {
+            "name": "OpenRouter",
+            "provider": "OpenRouter",
+            "category": "model_router_gateway",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Meta-API routing across 100s of models/providers.",
+            "sources": [
+                "S23",
+                "S63"
+            ]
+        },
+        {
+            "name": "Portkey",
+            "provider": "Portkey",
+            "category": "model_router_gateway",
+            "deployment_modes": [
+                "Gateway (SaaS/self-host)"
+            ],
+            "notes": "Model catalog, routing, guardrails, observability.",
+            "sources": [
+                "S24"
+            ]
+        },
+        {
+            "name": "Helicone Gateway",
+            "provider": "Helicone",
+            "category": "model_router_gateway",
+            "deployment_modes": [
+                "Gateway (open-source/SaaS)"
+            ],
+            "notes": "Routing, caching, telemetry for LLM APIs.",
+            "sources": [
+                "S25"
+            ]
+        },
+        {
+            "name": "CoreWeave",
+            "provider": "CoreWeave",
+            "category": "gpu_cloud_infrastructure",
+            "deployment_modes": [
+                "GPU cloud IaaS"
+            ],
+            "notes": "GPU VMs & inference stacks for self-hosting.",
+            "sources": [
+                "S26"
+            ]
+        },
+        {
+            "name": "Lambda Cloud",
+            "provider": "Lambda Labs",
+            "category": "gpu_cloud_infrastructure",
+            "deployment_modes": [
+                "GPU cloud IaaS"
+            ],
+            "notes": "On-demand GPUs & clusters for training/inference.",
+            "sources": [
+                "S27"
+            ]
+        },
+        {
+            "name": "Crusoe Cloud",
+            "provider": "Crusoe",
+            "category": "gpu_cloud_infrastructure",
+            "deployment_modes": [
+                "GPU cloud IaaS"
+            ],
+            "notes": "Sustainable GPU cloud for AI workloads.",
+            "sources": [
+                "S30"
+            ]
+        },
+        {
+            "name": "RunPod",
+            "provider": "RunPod",
+            "category": "gpu_cloud_infrastructure",
+            "deployment_modes": [
+                "GPU serverless/Pods"
+            ],
+            "notes": "Pods & serverless GPUs; templates for TGI/vLLM/SGLang.",
+            "sources": [
+                "S28",
+                "S20r"
+            ]
+        },
+        {
+            "name": "Vast.ai",
+            "provider": "Vast.ai",
+            "category": "gpu_cloud_infrastructure",
+            "deployment_modes": [
+                "GPU marketplace"
+            ],
+            "notes": "Spot rental GPUs; TGI serverless templates.",
+            "sources": [
+                "S29",
+                "S21v"
+            ]
+        },
+        {
+            "name": "VMware Private AI Foundation with NVIDIA",
+            "provider": "VMware/Broadcom + NVIDIA",
+            "category": "on_prem_platform",
+            "deployment_modes": [
+                "Private datacenter",
+                "Air-gapped"
+            ],
+            "notes": "NVIDIA NIM microservices, Model Store, secure on-prem AI.",
+            "sources": [
+                "S32",
+                "S33",
+                "S32pdf"
+            ]
+        },
+        {
+            "name": "Red Hat OpenShift AI",
+            "provider": "Red Hat",
+            "category": "on_prem_platform",
+            "deployment_modes": [
+                "Kubernetes (hybrid/on-prem)"
+            ],
+            "notes": "Lifecycle mgmt & serving for predictive/gen-AI at scale.",
+            "sources": [
+                "S34",
+                "S35",
+                "S38r"
+            ]
+        },
+        {
+            "name": "HPE Private Cloud AI",
+            "provider": "HPE + NVIDIA",
+            "category": "on_prem_platform",
+            "deployment_modes": [
+                "Private cloud (on-prem)"
+            ],
+            "notes": "Turnkey AI factory systems with NVIDIA GPUs.",
+            "sources": [
+                "S17h",
+                "S17h2",
+                "S17h3"
+            ]
+        },
+        {
+            "name": "Dell AI Factory / Platforms",
+            "provider": "Dell Technologies",
+            "category": "on_prem_platform",
+            "deployment_modes": [
+                "On-prem/private cloud"
+            ],
+            "notes": "Validated designs & turnkey ‘AI factory’ systems.",
+            "sources": [
+                "S17d",
+                "S17d2",
+                "S17d3",
+                "S17d4"
+            ]
+        },
+        {
+            "name": "NVIDIA NIM",
+            "provider": "NVIDIA",
+            "category": "on_prem_platform",
+            "deployment_modes": [
+                "Containers (on-prem/cloud/edge)"
+            ],
+            "notes": "Inference microservices for LLMs (NGC, Triton, TensorRT-LLM).",
+            "sources": [
+                "S31"
+            ]
+        },
+        {
+            "name": "NVIDIA Triton Inference Server",
+            "provider": "NVIDIA",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud/edge"
+            ],
+            "notes": "Multi-framework inference server; LLM backends incl. TensorRT-LLM.",
+            "sources": [
+                "S38",
+                "S41n"
+            ]
+        },
+        {
+            "name": "NVIDIA TensorRT-LLM",
+            "provider": "NVIDIA",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "High-performance LLM runtime & kernels; Triton backend.",
+            "sources": [
+                "S39",
+                "S41n2",
+                "S41n3"
+            ]
+        },
+        {
+            "name": "KServe",
+            "provider": "CNCF",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "Kubernetes"
+            ],
+            "notes": "CRDs for serving predictive & generative models; LLM features.",
+            "sources": [
+                "S40",
+                "S40g"
+            ]
+        },
+        {
+            "name": "Seldon Core",
+            "provider": "Seldon",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "Kubernetes"
+            ],
+            "notes": "K8s-native model serving & monitoring.",
+            "sources": [
+                "S41"
+            ]
+        },
+        {
+            "name": "Ray Serve (LLM APIs)",
+            "provider": "Anyscale/Ray",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "Distributed LLM serving with OpenAI-compatible APIs.",
+            "sources": [
+                "S42",
+                "S42f"
+            ]
+        },
+        {
+            "name": "BentoML (LLM serving)",
+            "provider": "BentoML",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "Packaging & scaling LLM services; speculative decoding optimizations.",
+            "sources": [
+                "S43",
+                "S43b"
+            ]
+        },
+        {
+            "name": "vLLM",
+            "provider": "vLLM Project",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "High-throughput LLM server with paged KV cache.",
+            "sources": [
+                "S44",
+                "S44g"
+            ]
+        },
+        {
+            "name": "Text Generation Inference (TGI)",
+            "provider": "Hugging Face",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "Production LLM server (Rust/Python), continuous batching, LoRA, AMD ROCm support.",
+            "sources": [
+                "S45",
+                "S45g",
+                "S45r"
+            ]
+        },
+        {
+            "name": "SGLang",
+            "provider": "SGLang Project",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "Fast serving engine for LLM/VLM; EP & KV-reuse features.",
+            "sources": [
+                "S46s",
+                "S46s2",
+                "S46s3"
+            ]
+        },
+        {
+            "name": "LMDeploy (TurboMind/PyTorch engines)",
+            "provider": "OpenMMLab/InternLM",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/cloud"
+            ],
+            "notes": "Inference/serving toolkit; supports popular OSS models.",
+            "sources": [
+                "S46",
+                "S46d",
+                "S46i"
+            ]
+        },
+        {
+            "name": "llama.cpp",
+            "provider": "Community (ggerganov)",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "Local/edge/on-prem"
+            ],
+            "notes": "CPU/GPU-portable LLM inference in C/C++; quantization support.",
+            "sources": [
+                "S47"
+            ]
+        },
+        {
+            "name": "Ollama",
+            "provider": "Ollama",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Laptop/desktop/server"
+            ],
+            "notes": "One-line local model runner & registry; simple HTTP API.",
+            "sources": [
+                "S48"
+            ]
+        },
+        {
+            "name": "LM Studio",
+            "provider": "LM Studio",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Laptop/desktop"
+            ],
+            "notes": "GUI to run/chat with local models; uses local backends.",
+            "sources": [
+                "S49"
+            ]
+        },
+        {
+            "name": "GPT4All (Desktop)",
+            "provider": "Nomic",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Laptop/desktop"
+            ],
+            "notes": "Fully local chatbot app; optional local API server.",
+            "sources": [
+                "S50",
+                "S50b",
+                "S50c"
+            ]
+        },
+        {
+            "name": "Koboldcpp",
+            "provider": "KoboldCPP",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Laptop/desktop"
+            ],
+            "notes": "Lightweight UI/server for local LLMs; roleplay/story use cases.",
+            "sources": [
+                "S52"
+            ]
+        },
+        {
+            "name": "MLC LLM",
+            "provider": "MLC/TVM",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Laptop/desktop/web"
+            ],
+            "notes": "WebGPU & native runtimes for local OSS models.",
+            "sources": [
+                "S51"
+            ]
+        },
+        {
+            "name": "Apple MLX / mlx-lm",
+            "provider": "Apple MLX team",
+            "category": "local_runtime_app",
+            "deployment_modes": [
+                "Mac (Apple Silicon)"
+            ],
+            "notes": "Apple-optimized local LLM library on MLX.",
+            "sources": [
+                "S53"
+            ]
+        },
+        {
+            "name": "Intel OpenVINO GenAI",
+            "provider": "Intel",
+            "category": "open_source_inference_engine",
+            "deployment_modes": [
+                "On-prem/edge/laptop"
+            ],
+            "notes": "Optimized CPU/iGPU inference for LLMs with quantization.",
+            "sources": [
+                "S54"
+            ]
+        },
+        {
+            "name": "ONNX Runtime GenAI",
+            "provider": "Microsoft",
+            "category": "edge_on_device",
+            "deployment_modes": [
+                "On-device/edge/cloud"
+            ],
+            "notes": "Run SLMs/LLMs on CPU/GPU/NPU; Windows ML & DirectML support.",
+            "sources": [
+                "S57",
+                "S58",
+                "S57p"
+            ]
+        },
+        {
+            "name": "NVIDIA Jetson (Generative AI/NIM on Jetson)",
+            "provider": "NVIDIA",
+            "category": "edge_on_device",
+            "deployment_modes": [
+                "Edge devices"
+            ],
+            "notes": "Embedded LLM/VLM deployment on Jetson platforms.",
+            "sources": [
+                "S55"
+            ]
+        },
+        {
+            "name": "Qualcomm AI Hub (on-device)",
+            "provider": "Qualcomm",
+            "category": "edge_on_device",
+            "deployment_modes": [
+                "Mobile/PC (NPU)"
+            ],
+            "notes": "On-device LLM workflows for Snapdragon platforms.",
+            "sources": [
+                "S56"
+            ]
+        },
+        {
+            "name": "Argonne ALCF Inference Endpoints",
+            "provider": "ALCF",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "Hosted endpoints (research)"
+            ],
+            "notes": "API access to OSS models on HPC hardware.",
+            "sources": [
+                "S62"
+            ]
+        }
+    ]
+}
