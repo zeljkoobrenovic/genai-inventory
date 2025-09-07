@@ -166,7 +166,8 @@
     </div>
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'llms')">LLMs</button>
-        <button class="tablinks" onclick="openTab(event, 'running')">Hosting Options</button>
+        <button class="tablinks" onclick="openTab(event, 'running')">LLM Hosting</button>
+        <button class="tablinks" onclick="openTab(event, 'agents')">Agent Frameworks</button>
     </div>
 
     <div id="llms" class="tabcontent" style="display: block">
@@ -184,9 +185,14 @@
         <div id="content_running" style="text-align: left;"></div>
     </div>
 
+    <div id="agents" class="tabcontent" style="">
+        <div id="content_agents" style="text-align: left;"></div>
+    </div>
+
     <script>
         const data = "${data}".frontier_labs;
         const running = "${running}";
+        const agents = "${agents}";
 
         function getDisplayText(str, filters) {
             if (str && str.length > 0) {
@@ -309,18 +315,18 @@
             document.getElementById('content').innerHTML = html;
         }
 
-        function updateRunning() {
+        function updateRunning(groups, list, name) {
             let html = '';
 
             html += '<div style="padding: 20px">';
             html += '<table>';
             html += '<tr style="font-size: 80%; text-align: center">';
-                html += '<td style="border-bottom: 3px solid grey" colspan="1">propriatery</td>';
-                html += '<td style="border-bottom: 3px solid blue; color: blue" colspan="4">public cloud and services</td>';
-                html += '<td style="border-bottom: 3px solid green; color: green" colspan="4">on-prem / device /SDKs</td>';
-                html += '</tr>';
+            groups.forEach(group => {
+                html += '<td style="border-bottom: 3px solid grey" colspan="' + group.size + '">' + group.name + '</td>';
+            });
+            html += '</tr>';
             html += '<tr style="font-size: 60%; text-align: center">';
-            running.categories.forEach(category => {
+            list.categories.forEach(category => {
                 html += '<td style="width: 140px; min-width: 140px; max-width: 140px">';
                 const displayName = category.category.replace(/_/g, ' ');
                 html += '<a target="_blank" href="https://google.com/search?q=LLM ' + displayName + '">'
@@ -330,7 +336,7 @@
             });
             html += '</tr>';
             html += '<tr style="font-size: 60%; text-align: center; color: blue">';
-            running.categories.forEach(category => {
+            list.categories.forEach(category => {
                 html += '<td style="width: 140px; min-width: 140px; max-width: 140px">';
                 const displayName = category.category.replace(/_/g, ' ');
                 html += '<a target="_blank" href="https://google.com/search?q=describe:LLM ' + displayName + '">'
@@ -340,9 +346,9 @@
             });
             html += '</tr>';
             html += '<tr>';
-            running.categories.forEach(category => {
+            list.categories.forEach(category => {
                 html += '<td style="vertical-align: top">';
-                running.options.filter(o => o.category === category.category).forEach(option => {
+                list.options.filter(o => o.category === category.category).forEach(option => {
                     html += '<a target="_blank" href="https://google.com/search?q=' + option.provider + ' ' + option.name + '">'
                     html += '<div style="padding: 4px; margin: 8px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
                     html += '<div style="font-size: 70%; color: grey">' + option.provider + '</div>';
@@ -356,11 +362,12 @@
             html += '</table>';
             html += '</div>';
 
-            document.getElementById('content_running').innerHTML = html;
+            document.getElementById('content_' + name).innerHTML = html;
         }
 
         update();
-        updateRunning();
+        updateRunning([{ size: 1, name: 'proprietary' }, { size: 4, name: 'public cloud and services' }, { size: 4, name: 'on-prem / device /SDKs' }], running, 'running');
+        updateRunning([{ size: 2, name: 'managed platforms' }, { size: 2, name: 'frameworks & sdks' }, { size: 2, name: 'safety & guardrails' }, { size: 1, name: 'verticalized products' }], agents, 'agents');
     </script>
 </body>
 
