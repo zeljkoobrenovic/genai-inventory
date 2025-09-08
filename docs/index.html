@@ -145,6 +145,45 @@
             evt.currentTarget.className += " active";
         }
     </script>
+    <script>
+        function imageOf(text) {
+            const label = text.toLowerCase().trim();
+
+            if (label.includes('vmware')) return 'vmware.png';
+            if (label.includes('hpe')) return 'hpe.png';
+            if (label.includes('aws')) return 'amazon.png';
+            if (label.includes('amazon')) return 'amazon.png';
+            if (label.includes('microsoft')) return 'microsoft.png';
+            if (label.includes('openai')) return 'openai.png';
+            if (label.includes('anthropic')) return 'anthropic.png';
+            if (label.includes('gemini')) return 'google-gemini.png';
+            if (label.includes('google cloud')) return 'gcp.png';
+            if (label.includes('google')) return 'google.png';
+            if (label.includes('deepseek')) return 'deepseek.png';
+            if (label.includes('databricks')) return 'databricks.png';
+            if (label.includes('nvidia')) return 'nvidia.png';
+            if (label.includes('intel')) return 'intel.png';
+            if (label.includes('red hat')) return 'redhat.png';
+            if (label.includes('dell')) return 'dell.png';
+            if (label.includes('apple')) return 'apple.png';
+            if (label.includes('groq')) return 'groq.webp';
+            if (label.includes('xai')) return 'xai.png';
+            if (label.includes('mistral')) return 'mistral.png';
+            if (label.includes('qualcomm')) return 'qualcomm.png';
+            if (label.includes('ibm')) return 'ibm.png';
+            if (label.includes('snowflake')) return 'snowflake.png';
+            if (label.includes('snowflake')) return 'snowflake.png';
+            if (label.includes('ai21')) return 'ai21-labs.jpeg';   
+            if (label.includes('zapier')) return 'zapier.png';
+            if (label.includes('n8n')) return 'n8n.png';
+            if (label.includes('oracle')) return 'oracle.png';
+            if (label.includes('hugging')) return 'huggingface.png';
+            if (label.includes('ollama')) return 'ollama.png';
+            if (label.includes('aleph')) return 'aleph-alpha.png';
+
+            return 'logo.png';
+        }
+    </script>
 </head>
 
 <body>
@@ -350,9 +389,12 @@
                 html += '<td style="vertical-align: top">';
                 list.options.filter(o => o.category === category.category).forEach(option => {
                     html += '<a target="_blank" href="https://google.com/search?q=' + option.provider + ' ' + option.name + '">'
-                    html += '<div style="padding: 4px; margin: 8px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
-                    html += '<div style="font-size: 70%; color: grey">' + option.provider + '</div>';
-                    html += '<div style="font-size: 80%">' + option.name + '</div>';
+                    html += '<div style="padding: 0px; margin: 8px; margin-bottom: 18px; border: 1px solid lightgrey; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
+                        html += '<div style="margin-bottom: 3px; background-color: #f8f8f8;padding: 2px">';
+                        html += '<div style="lightgrey; vertical-align: middle; display: inline-block"><img src="assets/' + imageOf(option.provider) + '"" style="vertical-align: middle; height: 26px; width: 26px; vertical-align: top; object-fit: contain;"></div>';
+                        html += '<div style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; padding-left: 4px; display: inline-block; width: 80px; font-size: 60%; color: grey">' + option.provider + '</div>';
+                        html += '</div>';
+                        html += '<div style="padding: 4px; font-size: 80%">' + option.name + '</div>';
                     html += '</a>';
                     html += '</div>';
                 });
