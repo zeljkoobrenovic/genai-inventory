@@ -1,5 +1,5 @@
 {
-    "updated_at": "2025-08-19",
+    "updated_at": "2026-05-13",
     "categories": [
         {
             "category": "managed_api_llm",
@@ -46,7 +46,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "GPT-5 series, o3/o4 reasoning, image/audio, embeddings, tools/agents.",
+            "notes": "GPT-5.5/GPT-5.4 frontier models, GPT-5 series, image/audio/realtime, embeddings, tools, agents, and computer-use APIs.",
             "sources": [
                 "S1",
                 "S11",
@@ -60,7 +60,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Claude 4 family; long-context options.",
+            "notes": "Claude Opus 4.7, Sonnet 4.6, Haiku/Opus/Sonnet 4.5, tool use, computer use, and gated Mythos Preview access for defensive security programs.",
             "sources": [
                 "S2",
                 "S3",
@@ -74,7 +74,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Gemini family via Google AI for Developers.",
+            "notes": "Gemini 3.1/3 models, Gemini Live, image generation, long context, tool use, and Google AI Studio access.",
             "sources": [
                 "S5",
                 "S18"
@@ -113,7 +113,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Mistral/Mixtral models, function calling, streaming.",
+            "notes": "Mistral Medium 3.5, Mistral Large 3, Mistral Small 4, Devstral, Voxtral, OCR, function calling, agents, and streaming.",
             "sources": [
                 "S8"
             ]
@@ -150,7 +150,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Grok-4 with OpenAI-compatible API.",
+            "notes": "Grok 4.3, Grok 4.20, voice, image, tool-use, and OpenAI-compatible API.",
             "sources": [
                 "S16",
                 "S1xai",
@@ -324,7 +324,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Endpoints for OSS/custom models; LangChain integrations.",
+            "notes": "Historical provider for OSS/custom model endpoints. Acquired by NVIDIA in 2024 and no longer an independent active hosting option.",
             "sources": [
                 "S20"
             ]
@@ -367,6 +367,44 @@
             "sources": [
                 "S14",
                 "S15"
+            ]
+        },
+        {
+            "name": "Cerebras Inference",
+            "provider": "Cerebras",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API",
+                "Dedicated endpoints"
+            ],
+            "notes": "High-throughput LLM inference on Cerebras wafer-scale hardware; supports OpenAI-compatible chat completions and dedicated endpoint deployments.",
+            "sources": [
+                "S66"
+            ]
+        },
+        {
+            "name": "Cloudflare Workers AI",
+            "provider": "Cloudflare",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "Serverless edge inference"
+            ],
+            "notes": "Serverless GPU inference on Cloudflare's global network with 50+ open-source models, OpenAI SDK compatibility, AI Gateway, Vectorize, and agent-building primitives.",
+            "sources": [
+                "S67"
+            ]
+        },
+        {
+            "name": "Nebius AI Studio",
+            "provider": "Nebius",
+            "category": "inference_cloud",
+            "deployment_modes": [
+                "SaaS/API",
+                "GPU-backed endpoints"
+            ],
+            "notes": "Managed open-source model inference for text, embeddings, image, guardrails, and vision workloads with configurable GPU-backed endpoint flavors.",
+            "sources": [
+                "S68"
             ]
         },
         {

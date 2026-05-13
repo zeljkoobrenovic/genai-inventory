@@ -1,4 +1,5 @@
 {
+  "updated_at": "2026-05-13",
   "frontier_labs": [
     {
       "name": "OpenAI",
@@ -8,11 +9,45 @@
       "country": "us",
       "models": [
         {
+          "id": "gpt-5.5",
+          "name": "GPT-5.5",
+          "release_date": "2026-04-23",
+          "modalities": ["text", "image", "computer-use"],
+          "context_window_tokens": 1050000,
+          "access": { "chatgpt_plus": true, "chatgpt_pro": true, "chatgpt_business": true, "chatgpt_enterprise": true, "codex": true, "api": true },
+          "pricing": { "input_per_million_tokens": 5, "output_per_million_tokens": 30 }
+        },
+        {
+          "id": "gpt-5.5-pro",
+          "name": "GPT-5.5 Pro",
+          "release_date": "2026-04-24",
+          "modalities": ["text", "image", "computer-use"],
+          "context_window_tokens": 1050000,
+          "access": { "chatgpt_pro": true, "chatgpt_business": true, "chatgpt_enterprise": true, "api": true },
+          "pricing": { "input_per_million_tokens": 30, "output_per_million_tokens": 180 }
+        },
+        {
+          "id": "gpt-5.4",
+          "name": "GPT-5.4",
+          "release_date": "2026-03-05",
+          "modalities": ["text", "image", "computer-use"],
+          "context_window_tokens": 1000000,
+          "access": { "chatgpt_plus": true, "chatgpt_team": true, "chatgpt_pro": true, "codex": true, "api": true }
+        },
+        {
+          "id": "gpt-5.4-pro",
+          "name": "GPT-5.4 Pro",
+          "release_date": "2026-03-05",
+          "modalities": ["text", "image", "computer-use"],
+          "context_window_tokens": 1000000,
+          "access": { "chatgpt_pro": true, "chatgpt_enterprise": true, "api": true }
+        },
+        {
           "id": "gpt-5",
           "name": "GPT-5",
           "release_date": "2025-08-07",
-          "modalities": ["text", "image", "audio", "video"],
-          "context_window_tokens": null,
+          "modalities": ["text", "image"],
+          "context_window_tokens": 400000,
           "access": { "chatgpt_free": true, "chatgpt_plus": true, "chatgpt_pro": true, "api": true }
         },
         {
@@ -155,6 +190,67 @@
       "country": "us",
       "models": [
         {
+          "id": "claude-mythos-preview",
+          "name": "Claude Mythos Preview",
+          "release_date": "2026-04-07",
+          "modalities": ["text", "image", "code"],
+          "context_window_tokens": null,
+          "access": { "gated_research_preview": true, "project_glasswing": true, "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "microsoft_foundry": true },
+          "pricing": { "input_per_million_tokens": 25, "output_per_million_tokens": 125 }
+        },
+        {
+          "id": "claude-opus-4.7",
+          "name": "Claude Opus 4.7",
+          "release_date": "2026-04-16",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 1000000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "microsoft_foundry": true, "claude_pro_max_team_enterprise": true },
+          "pricing": { "input_per_million_tokens": 5, "output_per_million_tokens": 25 }
+        },
+        {
+          "id": "claude-sonnet-4.6",
+          "name": "Claude Sonnet 4.6",
+          "release_date": "2026-02-17",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 1000000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "microsoft_foundry": true, "claude_free_pro_team_enterprise": true },
+          "pricing": { "input_per_million_tokens": 3, "output_per_million_tokens": 15 }
+        },
+        {
+          "id": "claude-opus-4.6",
+          "name": "Claude Opus 4.6",
+          "release_date": "2026-02-05",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 1000000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "microsoft_foundry": true, "claude_pro_max_team_enterprise": true }
+        },
+        {
+          "id": "claude-opus-4.5",
+          "name": "Claude Opus 4.5",
+          "release_date": "2025-11-24",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 200000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "microsoft_foundry": true, "claude_pro_max_team_enterprise": true },
+          "pricing": { "input_per_million_tokens": 5, "output_per_million_tokens": 25 }
+        },
+        {
+          "id": "claude-sonnet-4.5",
+          "name": "Claude Sonnet 4.5",
+          "release_date": "2025-09-29",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 200000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "claude_free_pro_team_enterprise": true },
+          "pricing": { "input_per_million_tokens": 3, "output_per_million_tokens": 15 }
+        },
+        {
+          "id": "claude-haiku-4.5",
+          "name": "Claude Haiku 4.5",
+          "release_date": "2025-10-15",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 200000,
+          "access": { "api": true, "amazon_bedrock": true, "google_cloud_vertex_ai": true, "claude_all_users": true }
+        },
+        {
           "id": "claude-opus-4.1",
           "name": "Claude Opus 4.1",
           "release_date": "2025-08-05",
@@ -230,6 +326,64 @@
       "logo": "google-gemini.png",
       "country": "us",
       "models": [
+        {
+          "id": "gemini-3.1-pro",
+          "name": "Gemini 3.1 Pro",
+          "release_date": "2026-02-19",
+          "modalities": ["text", "image", "audio", "video", "pdf"],
+          "context_window_tokens": 1048576,
+          "access": { "api": true, "google_ai_studio": true, "vertex_ai": true, "gemini_app": true, "preview": true }
+        },
+        {
+          "id": "gemini-3.1-flash-lite",
+          "name": "Gemini 3.1 Flash-Lite",
+          "release_date": "2026-03-03",
+          "modalities": ["text", "image", "audio", "video", "pdf"],
+          "context_window_tokens": 1048576,
+          "access": { "api": true, "google_ai_studio": true, "vertex_ai": true, "preview": true },
+          "pricing": { "input_per_million_tokens": 0.25, "output_per_million_tokens": 1.5 }
+        },
+        {
+          "id": "gemini-3.1-flash-live",
+          "name": "Gemini 3.1 Flash Live",
+          "release_date": "2026-03-26",
+          "modalities": ["audio", "text"],
+          "context_window_tokens": null,
+          "access": { "gemini_live_api": true, "google_ai_studio": true, "gemini_enterprise": true, "search_live": true }
+        },
+        {
+          "id": "gemini-3-pro-preview",
+          "name": "Gemini 3 Pro Preview",
+          "release_date": "2025-11-18",
+          "modalities": ["text", "image", "audio", "video", "pdf"],
+          "context_window_tokens": 1048576,
+          "access": { "api": true, "google_ai_studio": true, "vertex_ai": true, "gemini_app": true, "preview": true }
+        },
+        {
+          "id": "gemini-3-flash-preview",
+          "name": "Gemini 3 Flash Preview",
+          "release_date": "2025-12",
+          "modalities": ["text", "image", "audio", "video", "pdf"],
+          "context_window_tokens": 1048576,
+          "access": { "api": true, "google_ai_studio": true, "preview": true },
+          "pricing": { "input_per_million_tokens": 0.5, "output_per_million_tokens": 3 }
+        },
+        {
+          "id": "gemini-3-pro-image-preview",
+          "name": "Gemini 3 Pro Image Preview / Nano Banana Pro",
+          "release_date": "2025-11",
+          "modalities": ["text-to-image", "image", "text"],
+          "context_window_tokens": 65536,
+          "access": { "api": true, "google_ai_studio": true, "preview": true }
+        },
+        {
+          "id": "gemini-3.1-flash-image",
+          "name": "Gemini 3.1 Flash Image / Nano Banana 2",
+          "release_date": "2026-02-26",
+          "modalities": ["text-to-image", "image", "text"],
+          "context_window_tokens": null,
+          "access": { "api": true, "google_ai_studio": true, "gemini_app": true }
+        },
         {
           "id": "gemini-2.5-pro",
           "name": "Gemini 2.5 Pro",
@@ -319,6 +473,24 @@
       "logo": "meta.png",
       "country": "us",
       "models": [
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "release_date": "2025-04-05",
+          "parameters": "400_000_000_000_total_17_000_000_000_active",
+          "context_window_tokens": 1000000,
+          "modalities": ["text", "image"],
+          "access": { "open_weights": true, "llama_community_license": true, "huggingface": true, "meta_ai": true }
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "release_date": "2025-04-05",
+          "parameters": "109_000_000_000_total_17_000_000_000_active",
+          "context_window_tokens": 10000000,
+          "modalities": ["text", "image"],
+          "access": { "open_weights": true, "llama_community_license": true, "huggingface": true, "meta_ai": true }
+        },
         {
           "id": "llama-3-8b",
           "name": "Llama 3 8B",
@@ -477,6 +649,34 @@
       "country": "cn",
       "models": [
         {
+          "id": "qwen3.6-plus",
+          "name": "Qwen 3.6 Plus",
+          "release_date": "2026-04-08",
+          "modalities": ["text", "image"],
+          "context_window_tokens": null,
+          "access": { "qwen_code": true, "model_studio": true, "api": true }
+        },
+        {
+          "id": "qwen3.6-35b-a3b",
+          "name": "Qwen3.6-35B-A3B",
+          "release_date": "2026-04",
+          "parameters": 35000000000,
+          "activated_parameters": 3000000000,
+          "modalities": ["text", "image"],
+          "context_window_tokens": null,
+          "access": { "open_weights": true, "huggingface": true }
+        },
+        {
+          "id": "qwen3.5-235b-a22b",
+          "name": "Qwen3.5-235B-A22B",
+          "release_date": "2026-02",
+          "parameters": 235000000000,
+          "activated_parameters": 22000000000,
+          "modalities": ["text"],
+          "context_window_tokens": 512000,
+          "access": { "open_weights": true, "huggingface": true }
+        },
+        {
           "id": "qwen-max",
           "name": "Qwen-Max",
           "release_date": "2025-07-16",
@@ -558,6 +758,26 @@
       "logo": "deepseek.png",
       "country": "cn",
       "models": [
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek V4 Pro",
+          "release_date": "2026-04-24",
+          "parameters": 1600000000000,
+          "activated_parameters": 49000000000,
+          "modalities": ["text", "code"],
+          "context_window_tokens": 1000000,
+          "access": { "open_weights": true, "api": true, "huggingface": true, "modelscope": true }
+        },
+        {
+          "id": "deepseek-v4-flash",
+          "name": "DeepSeek V4 Flash",
+          "release_date": "2026-04-24",
+          "parameters": 284000000000,
+          "activated_parameters": 13000000000,
+          "modalities": ["text", "code"],
+          "context_window_tokens": 1000000,
+          "access": { "open_weights": true, "api": true, "huggingface": true, "modelscope": true }
+        },
         {
           "id": "deepseek-v3",
           "name": "DeepSeek V3",
@@ -743,6 +963,65 @@
       "country": "eu",
       "models": [
         {
+          "id": "mistral-medium-3.5",
+          "name": "Mistral Medium 3.5",
+          "release_date": "2026-04",
+          "modalities": ["text", "image", "code"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "open_weights": true, "modified_mit_license": true },
+          "pricing_per_million_input": 1.5,
+          "pricing_per_million_output": 7.5
+        },
+        {
+          "id": "mistral-small-2603",
+          "name": "Mistral Small 4",
+          "release_date": "2026-03-16",
+          "parameters": "119_000_000_000_total_6_500_000_000_active",
+          "modalities": ["text", "image", "code"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "open_weights": true },
+          "pricing_per_million_input": 0.15,
+          "pricing_per_million_output": 0.6
+        },
+        {
+          "id": "mistral-large-2512",
+          "name": "Mistral Large 3",
+          "release_date": "2025-12-02",
+          "parameters": "675_000_000_000_total_41_000_000_000_active",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "open_weights": true, "apache_2": true },
+          "pricing_per_million_input": 0.5,
+          "pricing_per_million_output": 1.5
+        },
+        {
+          "id": "devstral-2-2512",
+          "name": "Devstral 2",
+          "release_date": "2025-12",
+          "modalities": ["text", "code"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "open_weights": true },
+          "features": ["software-engineering agent"]
+        },
+        {
+          "id": "voxtral-mini-tts-2603",
+          "name": "Voxtral TTS",
+          "release_date": "2026-03-23",
+          "modalities": ["text-to-speech", "audio"],
+          "access": { "api": true, "open_weights": true },
+          "features": ["zero-shot voice cloning", "streaming"]
+        },
+        {
+          "id": "labs-leanstral-2603",
+          "name": "Leanstral",
+          "release_date": "2026-03-16",
+          "parameters": "119_000_000_000_total_6_500_000_000_active",
+          "modalities": ["text", "code"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "open_weights": true, "labs": true },
+          "features": ["Lean 4 formal proof engineering"]
+        },
+        {
           "id": "mistral-medium-2505",
           "name": "Mistral Medium 3",
           "release_date": "2025-05-07",
@@ -880,6 +1159,44 @@
       "country": "us",
       "models": [
         {
+          "id": "grok-4.3",
+          "name": "Grok 4.3",
+          "release_date": "2026-05",
+          "modalities": ["text", "image", "tool-use"],
+          "context_window_tokens": 1000000,
+          "access": { "api": true, "xai_api": true },
+          "pricing_per_million_input": 1.25,
+          "pricing_per_million_output": 2.5
+        },
+        {
+          "id": "grok-4.20-reasoning",
+          "name": "Grok 4.20 Reasoning",
+          "release_date": "2026-03",
+          "modalities": ["text", "tool-use"],
+          "context_window_tokens": 2000000,
+          "access": { "api": true, "xai_api": true },
+          "pricing_per_million_input": 1.25,
+          "pricing_per_million_output": 2.5
+        },
+        {
+          "id": "grok-4.20-non-reasoning",
+          "name": "Grok 4.20 Non-Reasoning",
+          "release_date": "2026-03",
+          "modalities": ["text", "tool-use"],
+          "context_window_tokens": 2000000,
+          "access": { "api": true, "xai_api": true },
+          "pricing_per_million_input": 1.25,
+          "pricing_per_million_output": 2.5
+        },
+        {
+          "id": "grok-voice-think-fast-1.0",
+          "name": "Grok Voice Think Fast 1.0",
+          "release_date": "2026-04-23",
+          "modalities": ["audio", "text", "tool-use"],
+          "context_window_tokens": null,
+          "access": { "api": true, "voice_api": true }
+        },
+        {
           "id": "grok-1",
           "name": "Grok 1",
           "release_date": "2023-11-03",
@@ -932,8 +1249,8 @@
           "name": "Grok 4",
           "release_date": "2025-07-09",
           "modalities": ["text", "image", "search", "tool-use", "voice"],
-          "context_window_tokens": null,
-          "access": { "supergrok_heavy": true, "x_premium": true }
+          "context_window_tokens": 256000,
+          "access": { "supergrok_heavy": true, "x_premium": true, "api": "retiring_2026-05-15" }
         },
         {
           "id": "grok-4-heavy",
@@ -960,6 +1277,32 @@
       "logo": "cohere.png",
       "country": "ca",
       "models": [
+        {
+          "id": "command-a-03-2025",
+          "name": "Command A",
+          "release_date": "2025-03-13",
+          "parameters": 111000000000,
+          "modalities": ["text"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "huggingface": true, "oracle_oci": true }
+        },
+        {
+          "id": "command-a-reasoning-08-2025",
+          "name": "Command A Reasoning",
+          "release_date": "2025-08-21",
+          "parameters": 111000000000,
+          "modalities": ["text"],
+          "context_window_tokens": 256000,
+          "access": { "api": true, "model_vault": true }
+        },
+        {
+          "id": "command-a-vision-07-2025",
+          "name": "Command A Vision",
+          "release_date": "2025-07",
+          "modalities": ["text", "image"],
+          "context_window_tokens": 128000,
+          "access": { "api": true }
+        },
         {
           "id": "command-r-plus",
           "name": "Command R+",

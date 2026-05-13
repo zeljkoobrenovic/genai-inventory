@@ -1,5 +1,5 @@
 {
-    "updated_at": "2025-09-06",
+    "updated_at": "2026-05-13",
     "categories": [
         {
             "category": "agent_platform_managed",
@@ -50,6 +50,15 @@
             "notes": "Lightweight primitives for building single- and multi-agent systems (agents, handoffs, sessions, tracing, guardrails). Provider-agnostic; integrates with Temporal and supports MCP."
         },
         {
+            "name": "Google Agent Development Kit (ADK)",
+            "provider": "Google",
+            "category": "agent_framework",
+            "deployment_modes": [
+                "Library (Python/TypeScript/Go/Java)"
+            ],
+            "notes": "Open-source framework for production agents with tools, multi-agent orchestration, visual debugging, evaluation, and deployment paths to Google Cloud."
+        },
+        {
             "name": "Responses API",
             "provider": "OpenAI",
             "category": "agent_platform_managed",
@@ -95,6 +104,15 @@
             "notes": "Agentic orchestration with state, tools, connectors, and Azure governance."
         },
         {
+            "name": "Amazon Bedrock AgentCore",
+            "provider": "AWS",
+            "category": "agent_platform_managed",
+            "deployment_modes": [
+                "AWS"
+            ],
+            "notes": "Managed runtime and services for agents, including browser, code interpreter, memory, identity, observability, evaluations, policies, and registry support."
+        },
+        {
             "name": "OpenRouter Actions",
             "provider": "OpenRouter",
             "category": "agent_platform_managed",
@@ -119,9 +137,22 @@
             "deployment_modes": [
                 "SaaS/API",
                 "CLI",
+                "Desktop app",
                 "IDE plugins"
             ],
-            "notes": "Expanded developer agent (2025) integrated with GitHub, terminals, IDEs. Provides coding assistance, debugging, PR suggestions, and context retention."
+            "notes": "Developer agent for cloud, CLI, IDE, and desktop workflows. Supports parallel long-running coding tasks, code edits, debugging, PR suggestions, and terminal-local approval modes."
+        },
+        {
+            "name": "Claude Code",
+            "provider": "Anthropic",
+            "category": "domain_agent_product",
+            "deployment_modes": [
+                "CLI",
+                "IDE integrations",
+                "Desktop app",
+                "Slack"
+            ],
+            "notes": "Coding agent for terminal, IDE, desktop, browser/mobile handoff, and Slack workflows. Supports parallel tasks, routines, auto mode, and Claude model integration."
         },
         {
             "name": "GitHub Copilot",

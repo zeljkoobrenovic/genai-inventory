@@ -335,7 +335,7 @@
                         return b.release_date.localeCompare(a.release_date);
                     });
                     sortedModels.forEach(model => {
-                        let opacity = (model.release_date.includes('2025') || model.release_date.includes('2024')) ? 1 : 0.4;
+                        let opacity = (model.release_date.includes('2026') || model.release_date.includes('2025')) ? 1 : 0.4;
                         let modalities = model.modalities ? model.modalities.join(' + ') : '';
                         let model_display_text = getDisplayText(model.name, filters);
                         html += '<a target="_blank" href="https://google.com/search?q=' + item.name + ' ' + model.name + ' LLM">';
