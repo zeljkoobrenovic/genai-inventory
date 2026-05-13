@@ -3,31 +3,38 @@
     "categories": [
         {
             "category": "agent_platform_managed",
-            "description": "Managed/SaaS agent platforms with hosted state, tool execution, files, retrieval, and governance."
+            "group": "managed platforms",
+            "description": "Managed/SaaS agent platforms and runtimes with hosted state, tool execution, browser/code environments, sessions, retrieval, and governance."
         },
         {
             "category": "workflow_lowcode",
+            "group": "managed platforms",
             "description": "No/low-code canvases and automation platforms for composing agents and tools as flows."
         },
         {
             "category": "agent_framework",
-            "description": "Code-first libraries and runtimes for building tool-using, stateful agents (routing, memory, planning, orchestration, tool calling)."
+            "group": "frameworks and protocols",
+            "description": "Code-first single- and multi-agent libraries for tool use, state, memory, planning, orchestration, routing, and handoffs."
         },
         {
-            "category": "multi_agent_framework",
-            "description": "Libraries focused on coordinating multiple agents (roles, teams, negotiation, supervisor patterns)."
+            "category": "tool_context_protocol",
+            "group": "frameworks and protocols",
+            "description": "Protocols, tool registries, and connector layers that expose data, tools, prompts, and actions to agents."
         },
         {
             "category": "eval_observability",
-            "description": "Evals, tracing, debugging, A/B testing, and analytics for agent systems in prod."
+            "group": "safety and operations",
+            "description": "Evals, tracing, debugging, A/B testing, analytics, and quality monitoring for agent systems in production."
         },
         {
             "category": "guardrails_safety",
-            "description": "Safety, validation, and policy enforcement layers to constrain agent behavior."
+            "group": "safety and operations",
+            "description": "Safety, validation, policy enforcement, prompt-injection defense, and agent security testing."
         },
         {
             "category": "domain_agent_product",
-            "description": "Verticalized, end-user agent products (e.g., developer IDE agents, design assistants, productivity copilots) delivered as SaaS/desktop apps rather than build frameworks."
+            "group": "verticalized products",
+            "description": "Verticalized, end-user agent products delivered as SaaS/desktop apps rather than build frameworks."
         }
     ],
     "options": [
@@ -115,7 +122,7 @@
         {
             "name": "OpenRouter Actions",
             "provider": "OpenRouter",
-            "category": "agent_platform_managed",
+            "category": "tool_context_protocol",
             "deployment_modes": [
                 "SaaS/API"
             ],
@@ -124,7 +131,7 @@
         {
             "name": "Continue (IDE Agent)",
             "provider": "Continue",
-            "category": "agent_platform_managed",
+            "category": "domain_agent_product",
             "deployment_modes": [
                 "VS Code/JetBrains"
             ],
@@ -259,7 +266,7 @@
         {
             "name": "Temporal.io",
             "provider": "Temporal",
-            "category": "agent_framework",
+            "category": "agent_platform_managed",
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
@@ -268,7 +275,7 @@
         {
             "name": "Model Context Protocol (MCP)",
             "provider": "Anthropic (adopted widely)",
-            "category": "agent_framework",
+            "category": "tool_context_protocol",
             "deployment_modes": [
                 "Library/SDK (Python, TypeScript, C#, Java)"
             ],
@@ -277,7 +284,7 @@
         {
             "name": "AutoGen",
             "provider": "Microsoft Research",
-            "category": "multi_agent_framework",
+            "category": "agent_framework",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -286,7 +293,7 @@
         {
             "name": "crewAI",
             "provider": "crewAI",
-            "category": "multi_agent_framework",
+            "category": "agent_framework",
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
@@ -313,7 +320,7 @@
         {
             "name": "Zapier AI Actions",
             "provider": "Zapier",
-            "category": "workflow_lowcode",
+            "category": "tool_context_protocol",
             "deployment_modes": [
                 "SaaS"
             ],

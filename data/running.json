@@ -3,39 +3,48 @@
     "categories": [
         {
             "category": "managed_api_llm",
-            "description": "Fully managed, vendor-hosted LLMs exposed as simple APIs. You send prompts; the provider handles hosting, scaling, safety features, and updates. Fastest path to production with minimal infrastructure control."
+            "group": "managed APIs",
+            "description": "Fully managed, vendor-hosted LLMs exposed as simple APIs. You send prompts; the provider handles hosting, scaling, safety features, and updates."
         },
         {
             "category": "cloud_model_platform",
-            "description": "Hyperscaler platforms that host multiple foundation models (first-party and third-party) with managed endpoints inside your cloud account. Provide governance, tuning, evals, monitoring, and integrations with other cloud services."
+            "group": "public cloud and services",
+            "description": "Hyperscaler and data-cloud platforms that host foundation models with governance, tuning, evals, monitoring, RAG, and cloud integrations."
         },
         {
             "category": "inference_cloud",
-            "description": "Specialized providers focused on high-performance model serving (often open-weight or custom) via serverless or dedicated endpoints. Emphasize low latency, high throughput, easy scaling, and cost efficiency without full cloud lock-in."
-        },
-        {
-            "category": "gpu_cloud_infrastructure",
-            "description": "Raw GPU compute (IaaS) or serverless GPU pods you control to run your own inference stack. Maximum flexibility and performance tuning, but you manage runtimes, scaling, security hardening, and reliability."
+            "group": "public cloud and services",
+            "description": "Specialized providers focused on high-performance model serving, fine-tuning, batch jobs, and dedicated or serverless endpoints."
         },
         {
             "category": "model_router_gateway",
-            "description": "Abstraction layers that route a single API across many models/providers. Add features like fallback, load balancing, caching, observability, guardrails, and policy—sometimes available as SaaS or self-hosted gateways."
+            "group": "public cloud and services",
+            "description": "Abstraction layers for routing, fallback, caching, observability, cost controls, guardrails, and policy across many model providers."
+        },
+        {
+            "category": "gpu_cloud_infrastructure",
+            "group": "infrastructure",
+            "description": "Raw GPU compute, GPU clusters, or serverless GPU pods you control to run your own inference stack."
         },
         {
             "category": "on_prem_platform",
-            "description": "Turnkey software/hardware stacks to run LLMs in private data centers (including air-gapped). Provide orchestration, security, model catalogs, and enterprise controls; often built around Kubernetes and NVIDIA/NPU accelerators."
+            "group": "on-prem / device / SDKs",
+            "description": "Turnkey software/hardware stacks to run LLMs in private data centers, including regulated and air-gapped environments."
         },
         {
             "category": "open_source_inference_engine",
-            "description": "Self-hostable runtimes/servers (OSS) for deploying LLMs anywhere (cloud, on-prem). Common features include continuous batching, paged KV caches, tensor optimizations, and quantization support. You operate the stack."
+            "group": "on-prem / device / SDKs",
+            "description": "Self-hostable runtimes/servers for deploying LLMs anywhere, including cloud, on-prem, and private clusters."
         },
         {
             "category": "local_runtime_app",
-            "description": "Desktop apps/CLIs that download and run models on a laptop or workstation (often quantized). Provide simple UIs and lightweight HTTP APIs for local development and privacy-preserving use."
+            "group": "on-prem / device / SDKs",
+            "description": "Desktop apps/CLIs that download and run models on a laptop, workstation, or local server."
         },
         {
             "category": "edge_on_device",
-            "description": "SDKs/runtimes to run compact or optimized models directly on phones, PCs with NPUs, or embedded/edge devices. Prioritize privacy, offline use, and real-time latency; requires model conversion and hardware-specific optimizations."
+            "group": "on-prem / device / SDKs",
+            "description": "SDKs/runtimes to run compact or optimized models directly on phones, PCs with NPUs, or embedded/edge devices."
         }
     ],
     "options": [
