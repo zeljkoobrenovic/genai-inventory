@@ -1,47 +1,42 @@
 {
-    "updated_at": "2026-05-13",
+    "updated_at": "2026-07-23",
     "categories": [
         {
-            "category": "agent_platform_managed",
-            "group": "managed platforms",
-            "description": "Managed/SaaS agent platforms and runtimes with hosted state, tool execution, browser/code environments, sessions, retrieval, and governance."
+            "category": "app_agent_platform",
+            "group": "managed app platforms",
+            "description": "Managed APIs and platforms for building AI-powered applications with hosted state, tools, files, retrieval, execution, memory, identity, and governance."
         },
         {
             "category": "workflow_lowcode",
-            "group": "managed platforms",
-            "description": "No/low-code canvases and automation platforms for composing agents and tools as flows."
+            "group": "managed app platforms",
+            "description": "No/low-code canvases and automation platforms for composing AI application workflows, agents, and tool integrations."
         },
         {
-            "category": "agent_framework",
-            "group": "frameworks and protocols",
-            "description": "Code-first single- and multi-agent libraries for tool use, state, memory, planning, orchestration, routing, and handoffs."
+            "category": "app_agent_framework",
+            "group": "code-first app frameworks",
+            "description": "Code-first frameworks and runtimes for building tool-using, stateful AI applications with routing, memory, planning, orchestration, handoffs, and human-in-the-loop flows."
         },
         {
             "category": "tool_context_protocol",
-            "group": "frameworks and protocols",
-            "description": "Protocols, tool registries, and connector layers that expose data, tools, prompts, and actions to agents."
+            "group": "integration protocols",
+            "description": "Protocols, action layers, and connector systems that expose data, tools, prompts, and business actions to AI applications."
         },
         {
-            "category": "eval_observability",
-            "group": "safety and operations",
-            "description": "Evals, tracing, debugging, A/B testing, analytics, and quality monitoring for agent systems in production."
+            "category": "app_eval_observability",
+            "group": "production quality",
+            "description": "Evaluation, tracing, debugging, A/B testing, prompt/version management, analytics, and production monitoring for AI applications."
         },
         {
-            "category": "guardrails_safety",
-            "group": "safety and operations",
-            "description": "Safety, validation, policy enforcement, prompt-injection defense, and agent security testing."
-        },
-        {
-            "category": "domain_agent_product",
-            "group": "verticalized products",
-            "description": "Verticalized, end-user agent products delivered as SaaS/desktop apps rather than build frameworks."
+            "category": "app_guardrails_safety",
+            "group": "production quality",
+            "description": "Safety, validation, policy enforcement, prompt-injection defense, moderation, and output constraints for AI applications."
         }
     ],
     "options": [
         {
             "name": "PydanticAI",
             "provider": "Pydantic",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -50,70 +45,97 @@
         {
             "name": "OpenAI Agents SDK",
             "provider": "OpenAI",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/TypeScript)"
             ],
             "notes": "Lightweight primitives for building single- and multi-agent systems (agents, handoffs, sessions, tracing, guardrails). Provider-agnostic; integrates with Temporal and supports MCP."
         },
         {
+            "name": "Claude Agent SDK",
+            "provider": "Anthropic",
+            "category": "app_agent_framework",
+            "deployment_modes": [
+                "Library (Python/TypeScript)",
+                "Self-hosted runtime"
+            ],
+            "notes": "Production agent SDK built on the Claude Code runtime, with file and shell tools, sessions, permissions, hooks, checkpointing, subagents, skills, plugins, MCP, and OpenTelemetry support.",
+            "url": "https://code.claude.com/docs/en/agent-sdk/overview"
+        },
+        {
+            "name": "Microsoft Agent Framework",
+            "provider": "Microsoft",
+            "category": "app_agent_framework",
+            "deployment_modes": [
+                "Library (.NET/Python/Go)",
+                "Open source"
+            ],
+            "notes": "Direct successor to AutoGen and Semantic Kernel. Combines provider-neutral agents, an agent harness, graph workflows, durable state, middleware, human-in-the-loop execution, MCP, A2A, AG-UI, and Microsoft Foundry integration.",
+            "url": "https://learn.microsoft.com/en-us/agent-framework/overview/"
+        },
+        {
             "name": "Google Agent Development Kit (ADK)",
             "provider": "Google",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/TypeScript/Go/Java)"
             ],
-            "notes": "Open-source framework for production agents with tools, multi-agent orchestration, visual debugging, evaluation, and deployment paths to Google Cloud."
+            "notes": "Open-source framework for production agents with tools, graph workflows, multi-agent orchestration, human-in-the-loop controls, visual debugging, evaluation, and deployment to Google Cloud. Go 2.0 is now supported alongside Python, TypeScript, and Java.",
+            "url": "https://google.github.io/adk-docs/"
         },
         {
             "name": "Responses API",
             "provider": "OpenAI",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Successor to Assistants API (2025). Unified API for agents with streaming, built-in tools (web search, file search, computer use), and SDK integration."
+            "notes": "Primary OpenAI API for agentic applications, with streaming, persistent conversations, built-in web/file search, code interpreter, computer use, remote MCP, programmatic tool calling, and multi-agent orchestration.",
+            "url": "https://platform.openai.com/docs/api-reference/responses"
         },
         {
             "name": "OpenAI Assistants API",
             "provider": "OpenAI",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Hosted threads, tools/function calling, file search/vector stores, workflows & tool execution. Being phased out in favor of Responses API."
+            "notes": "Deprecated hosted threads and assistant runs. It shuts down on August 26, 2026; existing integrations should migrate to the Responses API.",
+            "url": "https://platform.openai.com/docs/assistants/deep-dive"
         },
         {
             "name": "Anthropic Messages (Tool Use & Computer Use)",
             "provider": "Anthropic",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "SaaS/API"
             ],
             "notes": "Structured tool use, input/output text+image, and managed ‘computer use’ for software control."
         },
         {
-            "name": "Google Vertex AI Agent Builder",
+            "name": "Gemini Enterprise Agent Platform",
             "provider": "Google Cloud",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "GCP"
             ],
-            "notes": "Dialogflow CX + search grounding + tools; integrates with Gemini and enterprise data."
+            "notes": "Google Cloud's managed agent platform, including config-driven Managed Agents, Agent Engine, enterprise search and grounding, tools, A2A interoperability, sandboxed execution, and persistent state.",
+            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents"
         },
         {
-            "name": "Azure AI Agent Service",
+            "name": "Microsoft Foundry Agent Service",
             "provider": "Microsoft Azure",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "Azure"
             ],
-            "notes": "Agentic orchestration with state, tools, connectors, and Azure governance."
+            "notes": "Managed platform for prompt agents and hosted code agents, with Responses-compatible endpoints, model choice, tools, identity, scaling, observability, private networking, evaluations, and A2A support.",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview"
         },
         {
             "name": "Amazon Bedrock AgentCore",
             "provider": "AWS",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "AWS"
             ],
@@ -129,81 +151,9 @@
             "notes": "Model routing + tool/action execution as a hosted layer for agents."
         },
         {
-            "name": "Continue (IDE Agent)",
-            "provider": "Continue",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "VS Code/JetBrains"
-            ],
-            "notes": "Local-first IDE agent; model-agnostic; supports tools and context streaming."
-        },
-        {
-            "name": "OpenAI Codex Agent",
-            "provider": "OpenAI",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "SaaS/API",
-                "CLI",
-                "Desktop app",
-                "IDE plugins"
-            ],
-            "notes": "Developer agent for cloud, CLI, IDE, and desktop workflows. Supports parallel long-running coding tasks, code edits, debugging, PR suggestions, and terminal-local approval modes."
-        },
-        {
-            "name": "Claude Code",
-            "provider": "Anthropic",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "CLI",
-                "IDE integrations",
-                "Desktop app",
-                "Slack"
-            ],
-            "notes": "Coding agent for terminal, IDE, desktop, browser/mobile handoff, and Slack workflows. Supports parallel tasks, routines, auto mode, and Claude model integration."
-        },
-        {
-            "name": "GitHub Copilot",
-            "provider": "GitHub (Microsoft)",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "SaaS",
-                "IDE extensions (VS Code/JetBrains)",
-                "CLI"
-            ],
-            "notes": "Developer-focused agent for code completion, refactoring, and chat. Integrated with GitHub repos, issues, and pull requests."
-        },
-        {
-            "name": "Cursor",
-            "provider": "Cursor",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "Desktop app",
-                "SaaS backend"
-            ],
-            "notes": "Agentic IDE with coding, refactoring, debugging, and multi-agent personas. Treats the development environment as an interactive workspace."
-        },
-        {
-            "name": "Figma AI",
-            "provider": "Figma",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "SaaS/Web app"
-            ],
-            "notes": "Design assistant integrated into Figma. Offers natural-language design generation, layout adjustments, asset search, and collaboration tools."
-        },
-        {
-            "name": "Notion AI",
-            "provider": "Notion",
-            "category": "domain_agent_product",
-            "deployment_modes": [
-                "SaaS/Web app/Desktop app"
-            ],
-            "notes": "Productivity copilot embedded in Notion. Handles summarization, drafting, Q&A over workspace content, and project management assistance."
-        },
-        {
             "name": "LangChain",
             "provider": "LangChain",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
@@ -212,7 +162,7 @@
         {
             "name": "LangGraph",
             "provider": "LangChain",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
@@ -221,7 +171,7 @@
         {
             "name": "LlamaIndex",
             "provider": "LlamaIndex",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
@@ -230,16 +180,16 @@
         {
             "name": "Semantic Kernel",
             "provider": "Microsoft",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (.NET/Python/JS)"
             ],
-            "notes": "Pluggable planners, connectors, memory, and orchestration for agent skills."
+            "notes": "Established Microsoft SDK for plugins, connectors, memory, and agent orchestration. Microsoft Agent Framework is its direct next-generation successor; migration guidance is available for active projects."
         },
         {
             "name": "DSPy",
             "provider": "Stanford",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -248,25 +198,16 @@
         {
             "name": "Haystack Agents",
             "provider": "deepset",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python)"
             ],
             "notes": "Pipelines + agents with strong RAG and tool integration."
         },
         {
-            "name": "Aider",
-            "provider": "aider.chat",
-            "category": "agent_framework",
-            "deployment_modes": [
-                "CLI"
-            ],
-            "notes": "Codebase-aware coding agent using Git diffs; resilient refactoring workflows."
-        },
-        {
             "name": "Temporal.io",
             "provider": "Temporal",
-            "category": "agent_platform_managed",
+            "category": "app_agent_platform",
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
@@ -282,18 +223,40 @@
             "notes": "Open interoperability standard (2024). Enables tool/data integrations across frameworks. Adopted in OpenAI Agents SDK, Responses API, Microsoft Copilot Studio, and more."
         },
         {
+            "name": "Agent2Agent Protocol (A2A)",
+            "provider": "Linux Foundation",
+            "category": "tool_context_protocol",
+            "deployment_modes": [
+                "Open protocol",
+                "SDKs"
+            ],
+            "notes": "Open agent-to-agent interoperability protocol for discovery through Agent Cards, task delegation, streaming, and long-running collaboration across frameworks and vendors. Complements MCP's tool and context integration role.",
+            "url": "https://a2a-protocol.org/latest/"
+        },
+        {
+            "name": "Agent User Interaction Protocol (AG-UI)",
+            "provider": "AG-UI / CopilotKit",
+            "category": "tool_context_protocol",
+            "deployment_modes": [
+                "Open protocol",
+                "SDKs"
+            ],
+            "notes": "Event-based protocol connecting agent backends to interactive frontends, covering streaming messages, tool calls, shared state, generative UI, and human-in-the-loop interaction.",
+            "url": "https://docs.ag-ui.com/introduction"
+        },
+        {
             "name": "AutoGen",
             "provider": "Microsoft Research",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Conversational multi-agent orchestration with tool/LLM/human agents and group chats."
+            "notes": "Established conversational multi-agent framework with tool, model, human, and group-chat patterns. Microsoft Agent Framework is its direct next-generation successor; migration guidance is available for active projects."
         },
         {
             "name": "crewAI",
             "provider": "crewAI",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
@@ -329,7 +292,7 @@
         {
             "name": "Langfuse",
             "provider": "Langfuse",
-            "category": "eval_observability",
+            "category": "app_eval_observability",
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
@@ -338,7 +301,7 @@
         {
             "name": "Weights & Biases (Weave/Evals)",
             "provider": "W&B",
-            "category": "eval_observability",
+            "category": "app_eval_observability",
             "deployment_modes": [
                 "SaaS"
             ],
@@ -347,7 +310,7 @@
         {
             "name": "OpenAI Evals",
             "provider": "OpenAI",
-            "category": "eval_observability",
+            "category": "app_eval_observability",
             "deployment_modes": [
                 "SaaS/API"
             ],
@@ -356,7 +319,7 @@
         {
             "name": "AgentScope",
             "provider": "Research (2025)",
-            "category": "eval_observability",
+            "category": "app_eval_observability",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -365,7 +328,7 @@
         {
             "name": "Agent Lightning",
             "provider": "Research (2025)",
-            "category": "eval_observability",
+            "category": "app_eval_observability",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -374,7 +337,7 @@
         {
             "name": "Cerebrum (AIOS SDK)",
             "provider": "Research (2025)",
-            "category": "agent_framework",
+            "category": "app_agent_framework",
             "deployment_modes": [
                 "SDK / Workflow Platform"
             ],
@@ -383,7 +346,7 @@
         {
             "name": "Guardrails AI",
             "provider": "Guardrails AI",
-            "category": "guardrails_safety",
+            "category": "app_guardrails_safety",
             "deployment_modes": [
                 "Library/SaaS"
             ],
@@ -392,7 +355,7 @@
         {
             "name": "NeMo Guardrails",
             "provider": "NVIDIA",
-            "category": "guardrails_safety",
+            "category": "app_guardrails_safety",
             "deployment_modes": [
                 "Library (Python)"
             ],
@@ -401,11 +364,13 @@
         {
             "name": "Rebuff",
             "provider": "Rebuff",
-            "category": "guardrails_safety",
+            "category": "app_guardrails_safety",
             "deployment_modes": [
                 "Library"
             ],
             "notes": "Prompt injection/jailbreak defenses, detectors, and sanitization for tool-using agents."
         }
-    ]
+    ],
+    "scope": "ai_application_development_agents",
+    "description": "Platforms, frameworks, protocols, evaluation tools, and guardrails for building applications that use AI agents. SDLC-support products such as coding agents, IDE assistants, and PR review agents live in software-engineering.json."
 }

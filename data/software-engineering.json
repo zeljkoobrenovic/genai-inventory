@@ -1,0 +1,375 @@
+{
+    "updated_at": "2026-07-23",
+    "scope": "software_engineering_sdlc_support",
+    "description": "SDLC-support products that help plan, implement, review, test, secure, modernize, or maintain software. General-purpose agent application platforms, frameworks, eval tools, and guardrails live in agents.json.",
+    "categories": [
+        {
+            "category": "autonomous_swe_agent",
+            "group": "implementation agents",
+            "description": "Agents that can take tickets, prompts, issues, or tasks and independently modify repositories, run tests, and produce pull requests or deployable application changes."
+        },
+        {
+            "category": "ide_cli_coding_agent",
+            "group": "developer workspace",
+            "description": "Interactive coding agents embedded in IDEs, terminals, editors, or local developer environments."
+        },
+        {
+            "category": "enterprise_dev_platform_agent",
+            "group": "enterprise SDLC",
+            "description": "Enterprise developer-platform agents that combine coding, repository intelligence, cloud context, DevSecOps workflows, governance, modernization, and organizational controls."
+        },
+        {
+            "category": "code_review_quality_agent",
+            "group": "quality and governance",
+            "description": "Agents focused on pull request review, bug finding, standards enforcement, test coverage, CI feedback, and code quality governance."
+        }
+    ],
+    "options": [
+        {
+            "name": "OpenAI Codex Agent",
+            "provider": "OpenAI",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "SaaS/API",
+                "CLI",
+                "Desktop app",
+                "IDE plugins",
+                "Cloud tasks"
+            ],
+            "notes": "Developer agent for cloud, CLI, IDE, and desktop workflows. Supports repository edits, debugging, PR suggestions, parallel long-running tasks, skills, and supervised terminal-local approvals.",
+            "url": "https://platform.openai.com/docs/codex"
+        },
+        {
+            "name": "Claude Code",
+            "provider": "Anthropic",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "CLI",
+                "IDE integrations",
+                "Desktop app",
+                "Web",
+                "Slack",
+                "CI/CD"
+            ],
+            "notes": "Agentic coding tool that reads codebases, edits files, runs commands, creates commits and pull requests, and can automate development tasks through CLI, IDE, desktop, web, and team-chat surfaces.",
+            "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
+        },
+        {
+            "name": "GitHub Copilot Coding Agent",
+            "provider": "GitHub (Microsoft)",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "GitHub.com",
+                "GitHub Issues",
+                "Pull requests",
+                "VS Code",
+                "JetBrains",
+                "GitHub CLI",
+                "MCP"
+            ],
+            "notes": "Background coding agent that can be assigned GitHub issues or asked to create and update pull requests. Useful for bug fixes, incremental features, test coverage, documentation, and technical debt tasks.",
+            "url": "https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot"
+        },
+        {
+            "name": "Devin",
+            "provider": "Cognition",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "SaaS",
+                "Terminal",
+                "Cloud development environment",
+                "Jira/Linear workflows"
+            ],
+            "notes": "Autonomous AI software engineer for backlog tasks, feature implementation, bug reproduction and fixes, tests, PR review, internal tools, code migrations, and documentation.",
+            "url": "https://docs.devin.ai/"
+        },
+        {
+            "name": "Factory Droids",
+            "provider": "Factory",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "CLI",
+                "Desktop app",
+                "Web",
+                "IDE integrations",
+                "CI/CD",
+                "Slack",
+                "Linear",
+                "Enterprise deployment"
+            ],
+            "notes": "Agent-native software development platform for delegating SDLC work to Droids across IDE, terminal, web, CI/CD, Slack, and issue-tracking workflows. Covers feature work, migrations, incident response, local review, QA, and custom subagents.",
+            "url": "https://docs.factory.ai/"
+        },
+        {
+            "name": "Replit Agent",
+            "provider": "Replit",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "Browser IDE",
+                "Hosted workspace",
+                "App builder"
+            ],
+            "notes": "Natural-language app-building agent that creates projects, writes code, sets up infrastructure, tests its work, fixes problems, and deploys applications from Replit workspaces.",
+            "url": "https://docs.replit.com/core-concepts/agent"
+        },
+        {
+            "name": "Cursor Background Agents",
+            "provider": "Cursor",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "Desktop IDE",
+                "Remote cloud environment",
+                "GitHub branches"
+            ],
+            "notes": "Asynchronous remote agents that clone repositories, edit and run code in isolated environments, push branches, and allow developers to follow up or take over.",
+            "url": "https://docs.cursor.com/en/background-agents"
+        },
+        {
+            "name": "Google Antigravity 2.0",
+            "provider": "Google",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "Desktop app",
+                "CLI",
+                "SDK",
+                "Managed cloud agents",
+                "Scheduled tasks"
+            ],
+            "notes": "Agent-first development environment that can orchestrate parallel coding agents, create dynamic subagents, run scheduled work, and continue tasks in isolated Google-managed environments.",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+        },
+        {
+            "name": "Mistral Vibe",
+            "provider": "Mistral AI",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "CLI",
+                "VS Code",
+                "Web",
+                "Remote cloud agents"
+            ],
+            "notes": "Unified work and coding agent with local and asynchronous remote sessions, parallel long-running tasks, skills, MCP, file and terminal tools, and human approval for sensitive actions.",
+            "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+        },
+        {
+            "name": "Cursor",
+            "provider": "Cursor",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "Desktop IDE",
+                "SaaS backend"
+            ],
+            "notes": "Agentic IDE for coding, refactoring, debugging, repo-aware chat, and multi-agent development workflows.",
+            "url": "https://www.cursor.com/"
+        },
+        {
+            "name": "Windsurf Cascade",
+            "provider": "Windsurf",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "Windsurf IDE",
+                "VS Code-style editor",
+                "JetBrains plugin"
+            ],
+            "notes": "Agentic coding assistant with Code/Chat modes, tool calling, planning, checkpoints, terminal access, MCP support, real-time editor awareness, and linter integration.",
+            "url": "https://docs.windsurf.com/windsurf/cascade"
+        },
+        {
+            "name": "Cline",
+            "provider": "Cline",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "VS Code",
+                "Cursor",
+                "JetBrains",
+                "CLI"
+            ],
+            "notes": "Open-source coding agent that runs in the editor, reads and writes files, executes terminal commands with user approval, uses browser/tools, supports MCP, and works with user-provided model keys.",
+            "url": "https://docs.cline.bot/introduction/overview"
+        },
+        {
+            "name": "Aider",
+            "provider": "aider.chat",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "CLI",
+                "IDE/editor workflows"
+            ],
+            "notes": "Terminal-first AI pair programmer with whole-repo maps, Git-native diffs and commits, support for many languages, and broad model-provider compatibility.",
+            "url": "https://github.com/Aider-AI/aider"
+        },
+        {
+            "name": "Continue",
+            "provider": "Continue",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "VS Code",
+                "JetBrains",
+                "Local-first"
+            ],
+            "notes": "Local-first IDE coding agent and assistant with model-agnostic context streaming, custom tools, and repo-aware development workflows.",
+            "url": "https://docs.continue.dev/"
+        },
+        {
+            "name": "Sourcegraph Cody",
+            "provider": "Sourcegraph",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "VS Code",
+                "JetBrains",
+                "Visual Studio",
+                "Web app",
+                "CLI",
+                "Enterprise"
+            ],
+            "notes": "AI coding assistant backed by Sourcegraph code search and codebase context. Helps understand, write, debug, and maintain code across local and remote repositories.",
+            "url": "https://sourcegraph.com/docs/cody/overview"
+        },
+        {
+            "name": "JetBrains Junie",
+            "provider": "JetBrains",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "JetBrains IDEs",
+                "CLI"
+            ],
+            "notes": "AI coding agent for JetBrains environments that plans and executes multi-step project changes, runs tests and terminal commands, and reports progress inside the IDE.",
+            "url": "https://www.jetbrains.com/help/ai-assistant/junie-agent.html"
+        },
+        {
+            "name": "Grok Build",
+            "provider": "xAI",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "CLI/TUI",
+                "Open source",
+                "Local workspace"
+            ],
+            "notes": "Local-first coding agent with planning and review modes, repository edits, shell execution, skills, plugins, hooks, MCP, and subagents. xAI open-sourced Grok Build in July 2026.",
+            "url": "https://x.ai/news/grok-build-open-source"
+        },
+        {
+            "name": "Qwen Code",
+            "provider": "Alibaba / Qwen",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "CLI",
+                "VS Code",
+                "Open source"
+            ],
+            "notes": "Terminal and editor coding agent with file and shell tools, MCP, skills, plugins, subagents, scheduled tasks, and support for Qwen and compatible model providers.",
+            "url": "https://qwenlm.github.io/qwen-code-docs/en/"
+        },
+        {
+            "name": "Kimi Code",
+            "provider": "Moonshot AI",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "CLI",
+                "VS Code",
+                "Zed",
+                "JetBrains",
+                "Open source"
+            ],
+            "notes": "Coding agent for Kimi K3 and K2.7 Code with repository tools, shell execution, subagents, plugins, skills, and MCP integrations across terminal and VS Code workflows.",
+            "url": "https://www.kimi.com/code/docs/en/"
+        },
+        {
+            "name": "GitHub Copilot",
+            "provider": "GitHub (Microsoft)",
+            "category": "enterprise_dev_platform_agent",
+            "deployment_modes": [
+                "SaaS",
+                "GitHub.com",
+                "VS Code",
+                "JetBrains",
+                "Visual Studio",
+                "Eclipse",
+                "CLI"
+            ],
+            "notes": "Developer platform assistant for code completion, chat, repository context, pull request workflows, and coding-agent task delegation across GitHub and IDEs.",
+            "url": "https://docs.github.com/en/copilot"
+        },
+        {
+            "name": "Amazon Q Developer",
+            "provider": "AWS",
+            "category": "enterprise_dev_platform_agent",
+            "deployment_modes": [
+                "IDE extensions",
+                "CLI",
+                "AWS Console",
+                "GitHub preview",
+                "GitLab Duo with Amazon Q",
+                "Slack",
+                "Microsoft Teams"
+            ],
+            "notes": "AWS developer assistant for coding, review, upgrades, cloud guidance, and operations. Its IDE plugins and paid subscriptions reach end of support on April 30, 2027; AWS directs developer-workflow users to Kiro, while Q in the AWS Console and chat apps continues.",
+            "url": "https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/"
+        },
+        {
+            "name": "Kiro",
+            "provider": "AWS",
+            "category": "enterprise_dev_platform_agent",
+            "deployment_modes": [
+                "Desktop IDE",
+                "CLI",
+                "Enterprise management"
+            ],
+            "notes": "AWS's current agentic development environment for spec-driven delivery, steering rules, hooks, powers, MCP, custom subagents, repository work, tests, and governed team adoption. It is the migration target for Amazon Q Developer's developer workflows.",
+            "url": "https://kiro.dev/"
+        },
+        {
+            "name": "Gemini Code Assist Agent Mode",
+            "provider": "Google Cloud",
+            "category": "enterprise_dev_platform_agent",
+            "deployment_modes": [
+                "VS Code",
+                "IntelliJ",
+                "Gemini CLI"
+            ],
+            "notes": "Agent mode for Gemini Code Assist that uses IDE context, built-in tools, terminal actions, and MCP servers to solve multi-step software tasks, generate code from issues or design docs, and run controlled tool actions.",
+            "url": "https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer"
+        },
+        {
+            "name": "GitLab Duo with Amazon Q",
+            "provider": "GitLab + AWS",
+            "category": "enterprise_dev_platform_agent",
+            "deployment_modes": [
+                "GitLab Ultimate self-managed",
+                "AWS"
+            ],
+            "notes": "Agentic DevSecOps integration that embeds Amazon Q software development agents into GitLab workflows for feature development, quality, security, pipeline troubleshooting, and Java modernization.",
+            "url": "https://about.gitlab.com/press/releases/2025-04-17-gitlab-announces-general-availability-of-gitlab-duo-with-amazon-q/"
+        },
+        {
+            "name": "CodeRabbit",
+            "provider": "CodeRabbit",
+            "category": "code_review_quality_agent",
+            "deployment_modes": [
+                "GitHub",
+                "GitLab",
+                "Azure DevOps",
+                "Bitbucket",
+                "IDE extension",
+                "CLI",
+                "Slack"
+            ],
+            "notes": "AI code review, planning, and development workflow platform. Provides context-aware PR review, IDE/CLI review, planning from issues, and Slack-based agent workflows.",
+            "url": "https://docs.coderabbit.ai/"
+        },
+        {
+            "name": "Qodo",
+            "provider": "Qodo",
+            "category": "code_review_quality_agent",
+            "deployment_modes": [
+                "Git providers",
+                "IDE plugin",
+                "CLI",
+                "CI/CD",
+                "On-premise"
+            ],
+            "notes": "AI code review and governance platform with multi-agent review, repository context, rule enforcement, standards governance, bug finding, and shift-left review in IDE and CLI workflows.",
+            "url": "https://docs.qodo.ai/"
+        }
+    ]
+}

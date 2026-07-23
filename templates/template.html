@@ -206,7 +206,8 @@
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'llms')">LLMs</button>
         <button class="tablinks" onclick="openTab(event, 'running')">LLM Hosting</button>
-        <button class="tablinks" onclick="openTab(event, 'agents')">Agent Frameworks</button>
+        <button class="tablinks" onclick="openTab(event, 'agents')">AI App Agents</button>
+        <button class="tablinks" onclick="openTab(event, 'software_agents')">SWE Agents</button>
     </div>
 
     <div id="llms" class="tabcontent" style="display: block">
@@ -228,10 +229,15 @@
         <div id="content_agents" style="text-align: left;"></div>
     </div>
 
+    <div id="software_agents" class="tabcontent" style="">
+        <div id="content_software_agents" style="text-align: left;"></div>
+    </div>
+
     <script>
         const data = "${data}".frontier_labs;
         const running = "${running}";
         const agents = "${agents}";
+        const softwareAgents = "${software_agents}";
 
         function getDisplayText(str, filters) {
             if (str && str.length > 0) {
@@ -302,11 +308,6 @@
 
             filteredData.forEach(item => {
                 html += '<div class="group" style="text-align: center;">';
-                html += '<div class="advice-as-title" title="' + item.name + '">';
-                const openModels = renderModels(item, true, 'darkgreen');
-                html += '<div style="font-size: 12px; color: darkgreen;">open-weight models (' + openModels.count + ')</div>';
-                html += openModels.html;
-                html += '</div>';
 
                 html += '<a target="_blank" href="https://google.com/search?q=' + item.name + ' LLMs">';
                 html += '<div>';
@@ -315,12 +316,17 @@
                 html += '<div style="text-align: right; margin-top: -60px; padding-right: 10px; margin-bottom: 42px;">';
                 html += `<img src="https://zeljkoobrenovic.github.io/sokrates-media/flags/1x1/${item.country}.svg" style="height: 24px; border-radius: 50%;" />`;
                 html += '</div>';
+                html += '<div class="advice-as-title" title="' + item.name + '">';
+                const openModels = renderModels(item, true, 'darkgreen');
+                html += '<div style="padding-top: 9px; font-size: 12px; color: darkgreen;">open-weight models (' + openModels.count + ')</div>';
+                html += openModels.html;
+                html += '</div>';
 
                 html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkred">';
                 html += '</a>';
 
                 const closedModels = renderModels(item, false, 'black');
-                html += '<div style="font-size: 12px; color: black;">proprietary models (' + closedModels.count + ')</div>';
+                html += '<div style="font-size: 12px; color: black;padding-top: 9px; ">proprietary models (' + closedModels.count + ')</div>';
                 html += closedModels.html;
                 html += '</div>';
 
@@ -331,7 +337,7 @@
 
                     if (models.length === 0) return { count: 0, html: '' };
 
-                    let html = '<div style="font-size: 11px;">';
+                    let html = '<div style="font-size: 11px; overflow-y: auto; max-height: 180px">';
                     // Sort models by release_date (null/undefined at the end)
                     let sortedModels = models.sort((a, b) => {
                         if (!a.release_date && !b.release_date) return 0;
@@ -417,7 +423,8 @@
             categories.forEach(category => {
                 html += '<td style="vertical-align: top">';
                 list.options.filter(o => o.category === category.category).forEach(option => {
-                    html += '<a target="_blank" href="https://google.com/search?q=' + option.provider + ' ' + option.name + '">'
+                    const optionUrl = option.url || ('https://google.com/search?q=' + encodeURIComponent(option.provider + ' ' + option.name));
+                    html += '<a target="_blank" href="' + optionUrl + '">'
                     html += '<div style="padding: 0px; margin: 8px; margin-bottom: 18px; border: 1px solid lightgrey; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
                         html += '<div style="margin-bottom: 3px; background-color: #f8f8f8;padding: 2px">';
                         html += '<div style="lightgrey; vertical-align: middle; display: inline-block"><img src="assets/' + imageOf(option.provider) + '" style="vertical-align: middle; height: 26px; width: 26px; vertical-align: top; object-fit: contain;" onerror="this.onerror=null;this.src=\'assets/logo.png\';"></div>';
@@ -439,6 +446,7 @@
         update();
         updateRunning(running, 'running');
         updateRunning(agents, 'agents');
+        updateRunning(softwareAgents, 'software_agents');
     </script>
 </body>
 

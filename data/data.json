@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-05-13",
+    "updated_at": "2026-07-23",
     "model_categories": [
         {
             "category": "frontier_omni",
@@ -38,6 +38,95 @@
             "logo": "openai.png",
             "country": "us",
             "models": [
+                {
+                    "id": "gpt-5.6-sol",
+                    "name": "GPT-5.6 Sol",
+                    "release_date": "2026-07-09",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "codex": true,
+                        "api": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 30
+                    }
+                },
+                {
+                    "id": "gpt-5.6-terra",
+                    "name": "GPT-5.6 Terra",
+                    "release_date": "2026-07-09",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "access": {
+                        "chatgpt_free": true,
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "codex": true,
+                        "api": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2.5,
+                        "output_per_million_tokens": 15
+                    }
+                },
+                {
+                    "id": "gpt-5.6-luna",
+                    "name": "GPT-5.6 Luna",
+                    "release_date": "2026-07-09",
+                    "category": "small_edge",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "codex": true,
+                        "api": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1,
+                        "output_per_million_tokens": 6
+                    }
+                },
+                {
+                    "id": "gpt-live-1",
+                    "name": "GPT-Live-1",
+                    "release_date": "2026-07-08",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "full-duplex-voice"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "chatgpt": true,
+                        "api_planned": true
+                    }
+                },
                 {
                     "id": "gpt-5.5",
                     "name": "GPT-5.5",
@@ -379,6 +468,101 @@
             "country": "us",
             "models": [
                 {
+                    "id": "claude-sonnet-5",
+                    "name": "Claude Sonnet 5",
+                    "release_date": "2026-06-30",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true,
+                        "claude_free_pro_team_enterprise": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 10,
+                        "introductory_until": "2026-08-31",
+                        "standard_input_per_million_tokens": 3,
+                        "standard_output_per_million_tokens": 15
+                    }
+                },
+                {
+                    "id": "claude-fable-5",
+                    "name": "Claude Fable 5",
+                    "release_date": "2026-06-09",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 10,
+                        "output_per_million_tokens": 50
+                    }
+                },
+                {
+                    "id": "claude-mythos-5",
+                    "name": "Claude Mythos 5",
+                    "release_date": "2026-06-09",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "limited_defensive_cyber": true,
+                        "api": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 10,
+                        "output_per_million_tokens": 50
+                    }
+                },
+                {
+                    "id": "claude-opus-4.8",
+                    "name": "Claude Opus 4.8",
+                    "release_date": "2026-05-28",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true,
+                        "claude_pro_max_team_enterprise": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 25
+                    }
+                },
+                {
                     "id": "claude-mythos-preview",
                     "name": "Claude Mythos Preview",
                     "release_date": "2026-04-07",
@@ -670,6 +854,145 @@
             "logo": "google-gemini.png",
             "country": "us",
             "models": [
+                {
+                    "id": "gemini-3.6-flash",
+                    "name": "Gemini 3.6 Flash",
+                    "release_date": "2026-07-21",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video",
+                        "pdf"
+                    ],
+                    "context_window_tokens": 1048576,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "vertex_ai": true,
+                        "generally_available": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1.5,
+                        "output_per_million_tokens": 7.5
+                    }
+                },
+                {
+                    "id": "gemini-3.5-flash-lite",
+                    "name": "Gemini 3.5 Flash-Lite",
+                    "release_date": "2026-07-21",
+                    "category": "small_edge",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video",
+                        "pdf"
+                    ],
+                    "context_window_tokens": 1048576,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "vertex_ai": true,
+                        "generally_available": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.3,
+                        "output_per_million_tokens": 2.5
+                    }
+                },
+                {
+                    "id": "gemini-3.5-flash",
+                    "name": "Gemini 3.5 Flash",
+                    "release_date": "2026-05-19",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video",
+                        "pdf",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1048576,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "vertex_ai": true
+                    }
+                },
+                {
+                    "id": "gemini-3.5-flash-cyber",
+                    "name": "Gemini 3.5 Flash Cyber",
+                    "release_date": "2026-07-21",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1048576,
+                    "access": {
+                        "limited_access_pilot_planned": true,
+                        "codemender": true,
+                        "governments_and_trusted_partners": true
+                    }
+                },
+                {
+                    "id": "gemini-omni-flash",
+                    "name": "Gemini Omni Flash",
+                    "release_date": "2026-06-30",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "video-generation",
+                        "video-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "public_preview": true
+                    }
+                },
+                {
+                    "id": "nano-banana-2-lite",
+                    "name": "Nano Banana 2 Lite",
+                    "release_date": "2026-06-30",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true
+                    }
+                },
+                {
+                    "id": "gemma-4-family",
+                    "name": "Gemma 4",
+                    "release_date": "2026-04-02",
+                    "category": "open_weight_foundation",
+                    "parameters": "2_000_000_000_to_31_000_000_000",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true
+                    }
+                },
                 {
                     "id": "gemini-3.1-pro",
                     "name": "Gemini 3.1 Pro",
@@ -978,6 +1301,58 @@
             "country": "us",
             "models": [
                 {
+                    "id": "muse-spark-1.1",
+                    "name": "Muse Spark 1.1",
+                    "release_date": "2026-07-09",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "audio",
+                        "pdf",
+                        "computer-use",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "meta_ai": true,
+                        "meta_model_api": true,
+                        "public_preview": true
+                    }
+                },
+                {
+                    "id": "muse-image",
+                    "name": "Muse Image",
+                    "release_date": "2026-07-07",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "meta_ai": true,
+                        "preview": true
+                    }
+                },
+                {
+                    "id": "muse-video-preview",
+                    "name": "Muse Video Preview",
+                    "release_date": "2026-07-07",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video-generation"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "preview": true
+                    }
+                },
+                {
                     "id": "llama-4-maverick",
                     "name": "Llama 4 Maverick",
                     "release_date": "2025-04-05",
@@ -1171,6 +1546,121 @@
             "country": "us",
             "models": [
                 {
+                    "id": "mai-thinking-1",
+                    "name": "MAI-Thinking-1",
+                    "release_date": "2026-06-02",
+                    "category": "reasoning",
+                    "parameters": "1_000_000_000_000_total_35_000_000_000_active",
+                    "context_window_tokens": 256000,
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "private_preview": true,
+                        "microsoft_foundry": true
+                    }
+                },
+                {
+                    "id": "mai-code-1-flash",
+                    "name": "MAI-Code-1-Flash",
+                    "release_date": "2026-06-02",
+                    "category": "agentic_coding",
+                    "parameters": 5000000000,
+                    "context_window_tokens": null,
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "github_copilot": true,
+                        "visual_studio_code": true
+                    }
+                },
+                {
+                    "id": "mai-image-2.5",
+                    "name": "MAI-Image-2.5",
+                    "release_date": "2026-06-02",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "microsoft_foundry": true,
+                        "mai_playground": true,
+                        "openrouter": true
+                    }
+                },
+                {
+                    "id": "mai-image-2.5-flash",
+                    "name": "MAI-Image-2.5-Flash",
+                    "release_date": "2026-06-02",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "microsoft_foundry": true,
+                        "mai_playground": true
+                    }
+                },
+                {
+                    "id": "mai-transcribe-1.5",
+                    "name": "MAI-Transcribe-1.5",
+                    "release_date": "2026-06-02",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "audio",
+                        "speech-to-text"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "microsoft_foundry": true,
+                        "mai_playground": true
+                    }
+                },
+                {
+                    "id": "mai-voice-2",
+                    "name": "MAI-Voice-2",
+                    "release_date": "2026-06-02",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "text-to-speech",
+                        "voice-cloning"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "microsoft_foundry": true,
+                        "mai_playground": true
+                    }
+                },
+                {
+                    "id": "phi-4-reasoning-vision-15b",
+                    "name": "Phi-4 Reasoning Vision 15B",
+                    "release_date": "2026-03-04",
+                    "category": "reasoning",
+                    "parameters": 15000000000,
+                    "context_window_tokens": 131072,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "microsoft_foundry": true
+                    }
+                },
+                {
                     "id": "phi-4-mini-flash-reasoning",
                     "name": "Phi-4 Mini Flash Reasoning",
                     "release_date": "2025-07-15",
@@ -1274,6 +1764,93 @@
             "logo": "alibaba.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "qwen-image-3.0",
+                    "name": "Qwen Image 3.0",
+                    "release_date": "2026-07-21",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "qwen_chat": true
+                    }
+                },
+                {
+                    "id": "qwen-audio-3.0-tts",
+                    "name": "Qwen Audio 3.0 TTS",
+                    "release_date": "2026-07-14",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "text-to-speech",
+                        "voice-control"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "qwencloud": true,
+                        "api": true,
+                        "plus": true,
+                        "flash": true
+                    }
+                },
+                {
+                    "id": "qwen3.7-max",
+                    "name": "Qwen 3.7 Max",
+                    "release_date": "2026-06-10",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "qwencloud": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "qwen3.7-plus",
+                    "name": "Qwen 3.7 Plus",
+                    "release_date": "2026-06-01",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "qwencloud": true,
+                        "api": true
+                    }
+                },
+                {
+                    "id": "wan-2.7",
+                    "name": "Wan 2.7",
+                    "release_date": "2026-04-03",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video-generation",
+                        "video-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "qwencloud": true,
+                        "api": true
+                    }
+                },
                 {
                     "id": "qwen3.6-plus",
                     "name": "Qwen 3.6 Plus",
@@ -1550,6 +2127,78 @@
             "country": "us",
             "models": [
                 {
+                    "id": "amazon-nova-2-lite",
+                    "name": "Amazon Nova 2 Lite",
+                    "release_date": "2025-12-02",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "document",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "aws_bedrock": true,
+                        "amazon_sagemaker": true,
+                        "generally_available": true
+                    }
+                },
+                {
+                    "id": "amazon-nova-2-pro-preview",
+                    "name": "Amazon Nova 2 Pro Preview",
+                    "release_date": "2025-12-02",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "document",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "nova_forge_early_access": true,
+                        "preview": true
+                    }
+                },
+                {
+                    "id": "amazon-nova-2-sonic",
+                    "name": "Amazon Nova 2 Sonic",
+                    "release_date": "2025-12-02",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-speech",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "aws_bedrock": true,
+                        "generally_available": true
+                    }
+                },
+                {
+                    "id": "amazon-nova-multimodal-embeddings",
+                    "name": "Amazon Nova Multimodal Embeddings",
+                    "release_date": "2025-12-02",
+                    "category": "embeddings_retrieval",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "audio",
+                        "document",
+                        "embeddings"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "aws_bedrock": true
+                    }
+                },
+                {
                     "id": "amazon.titan-text-premier-v1:0",
                     "name": "Amazon Titan Text Premier",
                     "release_date": "2024-05-07",
@@ -1715,6 +2364,87 @@
             "country": "us",
             "models": [
                 {
+                    "id": "afm-3-core",
+                    "name": "AFM 3 Core",
+                    "release_date": "2026-06-08",
+                    "category": "small_edge",
+                    "parameters": 3000000000,
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "on_device": true,
+                        "apple_intelligence": true
+                    }
+                },
+                {
+                    "id": "afm-3-core-advanced",
+                    "name": "AFM 3 Core Advanced",
+                    "release_date": "2026-06-08",
+                    "category": "small_edge",
+                    "parameters": "20_000_000_000_total_1_000_000_000_to_4_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "on_device": true,
+                        "apple_intelligence": true,
+                        "advanced_apple_silicon": true
+                    }
+                },
+                {
+                    "id": "afm-3-cloud",
+                    "name": "AFM 3 Cloud",
+                    "release_date": "2026-06-08",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "private_cloud_compute": true,
+                        "apple_intelligence": true
+                    }
+                },
+                {
+                    "id": "afm-3-cloud-pro",
+                    "name": "AFM 3 Cloud Pro",
+                    "release_date": "2026-06-08",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "private_cloud_compute": true,
+                        "apple_intelligence": true
+                    }
+                },
+                {
+                    "id": "adm-3-cloud-image",
+                    "name": "ADM 3 Cloud (Image)",
+                    "release_date": "2026-06-08",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "private_cloud_compute": true,
+                        "apple_intelligence": true
+                    }
+                },
+                {
                     "id": "openelm",
                     "name": "OpenELM",
                     "release_date": "2024-04-22",
@@ -1799,9 +2529,47 @@
             "country": "eu",
             "models": [
                 {
+                    "id": "leanstral-1.5",
+                    "name": "Leanstral 1.5",
+                    "release_date": "2026-07-02",
+                    "category": "agentic_coding",
+                    "parameters": "119_000_000_000_total_6_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "mistral-ocr-4-0",
+                    "name": "Mistral OCR 4",
+                    "release_date": "2026-06-23",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "document",
+                        "image",
+                        "text"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "document_ai": true,
+                        "self_hosted_enterprise": true,
+                        "amazon_sagemaker": true,
+                        "microsoft_foundry": true
+                    }
+                },
+                {
                     "id": "mistral-medium-3.5",
                     "name": "Mistral Medium 3.5",
-                    "release_date": "2026-04",
+                    "release_date": "2026-05-22",
                     "category": "agentic_coding",
                     "modalities": [
                         "text",
@@ -2144,6 +2912,28 @@
             "country": "us",
             "models": [
                 {
+                    "id": "grok-4.5",
+                    "name": "Grok 4.5",
+                    "release_date": "2026-07-16",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "grok_build": true,
+                        "cursor": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 6
+                    }
+                },
+                {
                     "id": "grok-4.3",
                     "name": "Grok 4.3",
                     "release_date": "2026-05",
@@ -2357,6 +3147,42 @@
             "country": "ca",
             "models": [
                 {
+                    "id": "command-a-plus",
+                    "name": "Command A+",
+                    "release_date": "2026-05-20",
+                    "category": "open_weight_foundation",
+                    "parameters": "218_000_000_000_total_25_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true,
+                        "model_vault": true
+                    }
+                },
+                {
+                    "id": "north-mini-code",
+                    "name": "North Mini Code",
+                    "release_date": "2026-06-09",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "cohere_platform": true
+                    }
+                },
+                {
                     "id": "command-a-03-2025",
                     "name": "Command A",
                     "release_date": "2025-03-13",
@@ -2494,6 +3320,25 @@
             "country": "us",
             "models": [
                 {
+                    "id": "nemotron-3-ultra",
+                    "name": "Nemotron 3 Ultra",
+                    "release_date": "2026-06-04",
+                    "category": "open_weight_foundation",
+                    "parameters": "550_000_000_000_total_55_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "nvidia_build": true,
+                        "nvidia_nim": true
+                    }
+                },
+                {
                     "id": "nemotron-4-340b-base",
                     "name": "Nemotron-4 340B Base",
                     "release_date": "2024-06-14",
@@ -2546,6 +3391,40 @@
             "logo": "baidu.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "ernie-5.1",
+                    "name": "ERNIE 5.1",
+                    "release_date": "2026-05",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "baidu_ai_cloud": true,
+                        "ernie_bot": true
+                    }
+                },
+                {
+                    "id": "ernie-5.0",
+                    "name": "ERNIE 5.0",
+                    "release_date": "2026-02-06",
+                    "category": "frontier_omni",
+                    "parameters": 2400000000000,
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "baidu_ai_cloud": true,
+                        "ernie_bot": true
+                    }
+                },
                 {
                     "id": "ernie-4.0",
                     "name": "ERNIE 4.0",
@@ -2641,6 +3520,45 @@
             "country": "cn",
             "models": [
                 {
+                    "id": "kimi-k3",
+                    "name": "Kimi K3",
+                    "release_date": "2026-07-16",
+                    "category": "frontier_omni",
+                    "parameters": 2800000000000,
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "weights_release_planned": "2026-07-27",
+                        "kimi_code": true
+                    }
+                },
+                {
+                    "id": "kimi-k2.7-code",
+                    "name": "Kimi K2.7 Code",
+                    "release_date": "2026-06-12",
+                    "category": "agentic_coding",
+                    "parameters": "1_000_000_000_000_total_32_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "kimi_code": true
+                    }
+                },
+                {
                     "id": "kimi-k1.5",
                     "name": "Kimi k1.5",
                     "release_date": "2025-01-20",
@@ -2676,7 +3594,7 @@
             "name": "AI21 Labs",
             "url": "https://www.ai21.com",
             "description": "Enterprise-focused foundation-model lab behind the Jamba family of long-context hybrid SSM/Transformer models.",
-            "logo": "ai21-labs.jpeg",
+            "logo": "ai21-labs.png",
             "country": "il",
             "models": [
                 {
@@ -2735,9 +3653,27 @@
             "name": "Tencent AI Lab",
             "url": "https://tencent.github.io/llm.hunyuan.T1/README_EN.html",
             "description": "Tencent's Hunyuan foundation-model organization, covering open-weight MoE models, reasoning models, and multimodal generation.",
-            "logo": "logo.png",
+            "logo": "tecantai.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "hunyuan-hy3-preview",
+                    "name": "Hunyuan Hy3 Preview",
+                    "release_date": "2026-04-24",
+                    "category": "open_weight_foundation",
+                    "parameters": "295_000_000_000_total_21_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "preview": true
+                    }
+                },
                 {
                     "id": "hunyuan-t1",
                     "name": "Hunyuan T1",
@@ -2776,9 +3712,60 @@
             "name": "Z.ai",
             "url": "https://docs.z.ai/guides/llm/glm-4.5",
             "description": "Formerly Zhipu AI; developer of the GLM model family with strong open-weight, reasoning, coding, and agentic capabilities.",
-            "logo": "logo.png",
+            "logo": "zai.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "glm-5.2",
+                    "name": "GLM-5.2",
+                    "release_date": "2026-06-16",
+                    "category": "agentic_coding",
+                    "parameters": "744_000_000_000_total_40_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "huggingface": true
+                    }
+                },
+                {
+                    "id": "glm-5.1",
+                    "name": "GLM-5.1",
+                    "release_date": "2026-05-27",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 200000,
+                    "access": {
+                        "api": true,
+                        "qwencloud": true
+                    }
+                },
+                {
+                    "id": "glm-5",
+                    "name": "GLM-5",
+                    "release_date": "2026-02-12",
+                    "category": "open_weight_foundation",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "huggingface": true
+                    }
+                },
                 {
                     "id": "glm-4.5",
                     "name": "GLM-4.5",
@@ -2838,7 +3825,7 @@
             "name": "ByteDance Seed",
             "url": "https://seed.bytedance.com/en/models",
             "description": "ByteDance's Seed foundation-model team behind Doubao/Seed language, agent, code, and media models.",
-            "logo": "logo.png",
+            "logo": "bytedance.png",
             "country": "cn",
             "models": [
                 {
@@ -2908,9 +3895,27 @@
             "name": "MiniMax",
             "url": "https://www.minimax.io",
             "description": "Global foundation-model company building text, agent, speech, image, video, and music models, including long-context reasoning and coding models.",
-            "logo": "logo.png",
+            "logo": "minimax.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "minimax-m3",
+                    "name": "MiniMax M3",
+                    "release_date": "2026-06-01",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "huggingface": true
+                    }
+                },
                 {
                     "id": "minimax-m2.7",
                     "name": "MiniMax M2.7",
@@ -2983,7 +3988,7 @@
             "name": "StepFun",
             "url": "https://platform.stepfun.com/docs/en/llm/modeloverview",
             "description": "Chinese frontier-model lab behind the Step model family for reasoning, multimodal, text, coding, image, and audio workloads.",
-            "logo": "logo.png",
+            "logo": "stepfun.png",
             "country": "cn",
             "models": [
                 {
@@ -3051,9 +4056,28 @@
             "name": "Reka AI",
             "url": "https://www.reka.ai",
             "description": "Multimodal AI lab building deployable models for video, image, audio, text, reasoning, and action-oriented workflows.",
-            "logo": "logo.png",
+            "logo": "reka.png",
             "country": "us",
             "models": [
+                {
+                    "id": "reka-edge-2026",
+                    "name": "Reka Edge",
+                    "release_date": "2026-03-11",
+                    "category": "small_edge",
+                    "parameters": 7000000000,
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": null,
+                    "access": {
+                        "api": true,
+                        "openrouter": true,
+                        "edge_deployment": true
+                    }
+                },
                 {
                     "id": "reka-core",
                     "name": "Reka Core",
@@ -3078,7 +4102,7 @@
             "name": "Sarvam AI",
             "url": "https://www.sarvam.ai/models/",
             "description": "Indian sovereign AI lab building multilingual language, reasoning, speech, translation, and vision models optimized for Indian languages.",
-            "logo": "logo.png",
+            "logo": "sarvam.png",
             "country": "in",
             "models": [
                 {
