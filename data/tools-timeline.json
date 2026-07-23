@@ -1,0 +1,392 @@
+{
+    "updated_at": "2026-07-23",
+    "milestones": [
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2020-06-11",
+            "name": "OpenAI API",
+            "provider": "OpenAI",
+            "summary": "Introduced a general API for accessing OpenAI's hosted language models.",
+            "url": "https://openai.com/index/openai-api/"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2023-12-13",
+            "name": "Gemini API",
+            "provider": "Google",
+            "summary": "Opened Gemini Pro to developers through Google AI Studio and an API.",
+            "url": "https://developers.googleblog.com/en/gemini-api-and-ai-studio-now-available/"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-07-09",
+            "name": "Meta Model API",
+            "provider": "Meta",
+            "summary": "Launched Meta's first public model API with Muse Spark 1.1.",
+            "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2021-11",
+            "name": "Azure OpenAI Service",
+            "provider": "Microsoft Azure",
+            "summary": "Debuted enterprise access to OpenAI models through Microsoft Azure.",
+            "url": "https://azure.microsoft.com/en-us/blog/general-availability-of-azure-openai-service-expands-access-to-large-advanced-ai-models-with-added-enterprise-benefits/"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2023-03-14",
+            "name": "Generative AI on Vertex AI",
+            "provider": "Google Cloud",
+            "summary": "Introduced foundation-model access and customization within Vertex AI.",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/generative-ai-for-businesses-and-governments"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2023-04-13",
+            "name": "Amazon Bedrock",
+            "provider": "AWS",
+            "summary": "Introduced a serverless platform for building with multiple foundation-model providers.",
+            "url": "https://aws.amazon.com/blogs/aws/amazon-bedrock-a-new-way-to-build-and-scale-generative-ai-applications-with-foundation-models/"
+        },
+        {
+            "domain": "hosting",
+            "category": "inference_cloud",
+            "date": "2023-07-14",
+            "name": "Together API",
+            "provider": "Together AI",
+            "summary": "Launched managed inference and fine-tuning for leading open models.",
+            "url": "https://www.together.ai/blog/api-announcement"
+        },
+        {
+            "domain": "hosting",
+            "category": "inference_cloud",
+            "date": "2023-09-27",
+            "name": "Cloudflare Workers AI",
+            "provider": "Cloudflare",
+            "summary": "Introduced serverless GPU inference across Cloudflare's global network.",
+            "url": "https://blog.cloudflare.com/workers-ai/"
+        },
+        {
+            "domain": "hosting",
+            "category": "inference_cloud",
+            "date": "2024-02-19",
+            "name": "GroqCloud",
+            "provider": "Groq",
+            "summary": "Opened self-serve, low-latency LPU inference to developers.",
+            "url": "https://groq.com/newsroom/groq-acquires-definitive-intelligence-to-launch-groqcloud"
+        },
+        {
+            "domain": "hosting",
+            "category": "model_router_gateway",
+            "date": "2023-08-23",
+            "name": "Portkey AI Gateway",
+            "provider": "Portkey",
+            "summary": "Launched a hosted gateway for routing and reliability across LLM providers.",
+            "url": "https://portkey.ai/blog/building-a-full-stack-llmops-platform/"
+        },
+        {
+            "domain": "hosting",
+            "category": "gpu_cloud_infrastructure",
+            "date": "2020-09-05",
+            "name": "CoreWeave GPU Cloud",
+            "provider": "CoreWeave",
+            "summary": "Established CoreWeave as an on-demand NVIDIA GPU cloud provider.",
+            "url": "https://www.coreweave.com/blog/coreweave-nvidia"
+        },
+        {
+            "domain": "hosting",
+            "category": "on_prem_platform",
+            "date": "2023-08-22",
+            "name": "VMware Private AI",
+            "provider": "VMware",
+            "summary": "Introduced an enterprise architecture for private generative AI deployments.",
+            "url": "https://blogs.vmware.com/cloud-foundation/2023/08/22/introducing-vmware-private-ai-foundation/"
+        },
+        {
+            "domain": "hosting",
+            "category": "on_prem_platform",
+            "date": "2024-03-18",
+            "name": "NVIDIA NIM",
+            "provider": "NVIDIA",
+            "summary": "Launched packaged inference microservices for cloud and private infrastructure.",
+            "url": "https://nvidianews.nvidia.com/news/generative-ai-microservices-for-developers"
+        },
+        {
+            "domain": "hosting",
+            "category": "open_source_inference_engine",
+            "date": "2018-09-12",
+            "name": "NVIDIA Triton Inference Server",
+            "provider": "NVIDIA",
+            "summary": "Introduced an open inference server for deploying models from multiple frameworks.",
+            "url": "https://developer.nvidia.com/blog/nvidia-triton-inference-server-boosts-deep-learning-inference/"
+        },
+        {
+            "domain": "hosting",
+            "category": "open_source_inference_engine",
+            "date": "2023-06-20",
+            "name": "vLLM",
+            "provider": "vLLM Project",
+            "summary": "Introduced PagedAttention and a high-throughput open LLM serving engine.",
+            "url": "https://vllm.ai/blog/2023-06-20-vllm"
+        },
+        {
+            "domain": "hosting",
+            "category": "local_runtime_app",
+            "date": "2023-03",
+            "name": "GPT4All",
+            "provider": "Nomic",
+            "summary": "Released a locally runnable assistant model and desktop-oriented ecosystem.",
+            "url": "https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf"
+        },
+        {
+            "domain": "hosting",
+            "category": "local_runtime_app",
+            "date": "2023-10-05",
+            "name": "Ollama Docker image",
+            "provider": "Ollama",
+            "summary": "Made Ollama's local model runtime available as an official portable image.",
+            "url": "https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image"
+        },
+        {
+            "domain": "hosting",
+            "category": "edge_on_device",
+            "date": "2024-02-26",
+            "name": "Qualcomm AI Hub",
+            "provider": "Qualcomm",
+            "summary": "Opened optimized on-device AI models and deployment workflows to developers.",
+            "url": "https://www.qualcomm.com/news/releases/2024/02/qualcomm-continues-to-bring-the-generative-ai-revolution-to-devi"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2023-11-06",
+            "name": "OpenAI Assistants API",
+            "provider": "OpenAI",
+            "summary": "Introduced hosted threads, retrieval, code execution, and tool-using assistants.",
+            "url": "https://openai.com/index/new-models-and-developer-products-announced-at-devday/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2025-03-11",
+            "name": "OpenAI Responses API",
+            "provider": "OpenAI",
+            "summary": "Introduced a unified API primitive for agentic applications and built-in tools.",
+            "url": "https://openai.com/index/new-tools-for-building-agents/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2025-07-16",
+            "name": "Amazon Bedrock AgentCore",
+            "provider": "AWS",
+            "summary": "Introduced managed runtime, memory, identity, browser, and observability for agents.",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2025/07/amazon-bedrock-agentcore-preview/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "workflow_lowcode",
+            "date": "2023-10",
+            "name": "n8n LangChain integration",
+            "provider": "n8n",
+            "summary": "Brought visual AI and LangChain workflows into the n8n automation canvas.",
+            "url": "https://blog.n8n.io/n8ns-october-highlights-new-features-refined-cloud-plans-and-workflow-editor-improvements/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2022-10",
+            "name": "LangChain",
+            "provider": "LangChain",
+            "summary": "Established a composable open framework for LLM-powered applications and tools.",
+            "url": "https://github.com/langchain-ai/langchain"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2023-10",
+            "name": "Microsoft AutoGen",
+            "provider": "Microsoft Research",
+            "summary": "Released a multi-agent conversation framework for orchestrating LLM applications.",
+            "url": "https://www.microsoft.com/en-us/research/project/autogen/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2024-01-17",
+            "name": "LangGraph",
+            "provider": "LangChain",
+            "summary": "Introduced graph-based, stateful orchestration for controllable agent workflows.",
+            "url": "https://blog.langchain.com/langgraph/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2025-03-11",
+            "name": "OpenAI Agents SDK",
+            "provider": "OpenAI",
+            "summary": "Released open primitives for agents, handoffs, guardrails, and tracing.",
+            "url": "https://openai.com/index/new-tools-for-building-agents/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2025-04-09",
+            "name": "Google Agent Development Kit",
+            "provider": "Google",
+            "summary": "Released Google's open framework for production multi-agent applications.",
+            "url": "https://developers.googleblog.com/agent-development-kit-easy-to-build-multi-agent-applications/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "tool_context_protocol",
+            "date": "2024-11-25",
+            "name": "Model Context Protocol",
+            "provider": "Anthropic",
+            "summary": "Open-sourced a standard for connecting AI applications to tools and data.",
+            "url": "https://www.anthropic.com/news/model-context-protocol"
+        },
+        {
+            "domain": "app_agents",
+            "category": "tool_context_protocol",
+            "date": "2025-04-09",
+            "name": "Agent2Agent Protocol",
+            "provider": "Google",
+            "summary": "Introduced an open protocol for discovery and collaboration between agents.",
+            "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_eval_observability",
+            "date": "2023-07-19",
+            "name": "Langfuse",
+            "provider": "Langfuse",
+            "summary": "Publicly launched open-source analytics and observability for LLM applications.",
+            "url": "https://langfuse.com/blog/product-analytics-for-LLM-apps"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_eval_observability",
+            "date": "2024-04-18",
+            "name": "W&B Weave",
+            "provider": "W&B",
+            "summary": "Introduced tracing and evaluations for production generative AI applications.",
+            "url": "https://wandb.ai/site/press-release/weave-announcement/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_guardrails_safety",
+            "date": "2023-04-25",
+            "name": "NVIDIA NeMo Guardrails",
+            "provider": "NVIDIA",
+            "summary": "Released an open toolkit for programmable safety controls around LLM applications.",
+            "url": "https://developer.nvidia.com/blog/nvidia-enables-trustworthy-safe-and-secure-large-language-model-conversational-systems/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2024-03-12",
+            "name": "Devin",
+            "provider": "Cognition",
+            "summary": "Introduced an autonomous software-engineering agent with its own development environment.",
+            "url": "https://www.cognition.ai/blog/introducing-devin"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2024-09-16",
+            "name": "Replit Agent",
+            "provider": "Replit",
+            "summary": "Introduced an agent that creates, configures, tests, and deploys applications.",
+            "url": "https://replit.com/blog/introducing-replit-agent"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2025-02-24",
+            "name": "Claude Code",
+            "provider": "Anthropic",
+            "summary": "Launched a terminal coding agent able to inspect, edit, and execute code.",
+            "url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2025-05-16",
+            "name": "OpenAI Codex",
+            "provider": "OpenAI",
+            "summary": "Introduced a cloud software-engineering agent for parallel repository tasks.",
+            "url": "https://openai.com/index/introducing-codex/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2025-05-19",
+            "name": "GitHub Copilot coding agent",
+            "provider": "GitHub (Microsoft)",
+            "summary": "Introduced issue-to-pull-request delegation in a managed GitHub Actions environment.",
+            "url": "https://github.blog/changelog/2025-05-19-github-copilot-coding-agent-in-public-preview/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-05-22",
+            "name": "Mistral Vibe remote agents",
+            "provider": "Mistral AI",
+            "summary": "Introduced asynchronous cloud coding sessions that can run in parallel.",
+            "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2023-05",
+            "name": "Aider",
+            "provider": "aider.chat",
+            "summary": "Introduced Git-aware AI pair programming directly in the terminal.",
+            "url": "https://github.com/Aider-AI/aider"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2026-07-15",
+            "name": "Grok Build open source",
+            "provider": "xAI",
+            "summary": "Open-sourced a local-first coding-agent harness, TUI, and extension system.",
+            "url": "https://x.ai/news/grok-build-open-source"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "enterprise_dev_platform_agent",
+            "date": "2021-06-29",
+            "name": "GitHub Copilot",
+            "provider": "GitHub (Microsoft)",
+            "summary": "Introduced the first broadly adopted AI pair programmer as a technical preview.",
+            "url": "https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "enterprise_dev_platform_agent",
+            "date": "2025-07",
+            "name": "Kiro",
+            "provider": "AWS",
+            "summary": "Introduced an agentic IDE centered on specifications, plans, and implementation hooks.",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-kiro-aws-lambda-remote-debugging-amazon-ecs-blue-green-deployments-amazon-bedrock-agentcore-and-more-july-21-2025/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "code_review_quality_agent",
+            "date": "2023-07-06",
+            "name": "Qodo PR-Agent",
+            "provider": "Qodo",
+            "summary": "Launched an open agent for pull-request summaries, reviews, and code suggestions.",
+            "url": "https://www.qodo.ai/blog/unveiling-the-future-of-streamlined-software-development/"
+        }
+    ]
+}

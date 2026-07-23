@@ -115,6 +115,419 @@
             border: 1px solid #ccc;
             border-top: none;
         }
+
+        .timeline-shell {
+            padding: 16px;
+            background: #fff;
+        }
+
+        .timeline-scroll {
+            max-height: calc(100vh - 235px);
+            overflow: auto;
+            border: 1px solid #cfcfcf;
+            background: #fff;
+            text-align: left;
+        }
+
+        .timeline-table {
+            width: max-content;
+            min-width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            table-layout: fixed;
+            font-family: Ubuntu, Segoe UI, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .timeline-table th,
+        .timeline-table td {
+            box-sizing: border-box;
+            border-right: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .timeline-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            height: 44px;
+            padding: 7px 8px;
+            background: #f2f3f3;
+            color: #333;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .timeline-table tbody tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .timeline-lab-header,
+        .timeline-lab-cell {
+            position: sticky;
+            left: 0;
+            width: 190px;
+            min-width: 190px;
+            max-width: 190px;
+        }
+
+        .timeline-table thead .timeline-lab-header {
+            z-index: 5;
+            text-align: left;
+        }
+
+        .timeline-lab-cell {
+            z-index: 2;
+            padding: 8px;
+            background: #fff;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-table tbody tr:nth-child(even) .timeline-lab-cell {
+            background: #fafafa;
+        }
+
+        .timeline-lab-link {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-height: 38px;
+        }
+
+        .timeline-lab-mark {
+            position: relative;
+            width: 46px;
+            min-width: 46px;
+            height: 34px;
+        }
+
+        .timeline-lab-logo {
+            width: 42px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .timeline-country-flag {
+            position: absolute;
+            right: -1px;
+            bottom: -2px;
+            width: 17px;
+            height: 17px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px #c7c7c7;
+        }
+
+        .timeline-lab-name {
+            min-width: 0;
+            overflow-wrap: anywhere;
+            color: #202020;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        .timeline-month,
+        .timeline-cell {
+            width: 146px;
+            min-width: 146px;
+            max-width: 146px;
+        }
+
+        .timeline-month span {
+            display: block;
+            line-height: 1.2;
+        }
+
+        .timeline-month span:last-child {
+            color: #777;
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        .timeline-table thead .timeline-month-latest {
+            background: #e7ece9;
+        }
+
+        .timeline-cell {
+            height: 58px;
+            padding: 5px;
+            vertical-align: top;
+            background: #fff;
+        }
+
+        .timeline-year-boundary {
+            border-left: 2px solid #929292;
+        }
+
+        .timeline-model {
+            display: block;
+            margin-bottom: 4px;
+            padding: 5px 6px;
+            overflow: hidden;
+            border: 1px solid #d2ddd7;
+            border-left: 3px solid #39745a;
+            border-radius: 3px;
+            background: #eef5f1;
+            color: #173326;
+            line-height: 1.2;
+        }
+
+        .timeline-model:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-model:hover {
+            border-color: #8eaa9b;
+            background: #e3efe8;
+        }
+
+        .timeline-model-name {
+            display: block;
+            overflow-wrap: anywhere;
+            font-weight: 600;
+        }
+
+        .timeline-model-date {
+            display: block;
+            margin-top: 3px;
+            color: #65716b;
+            font-size: 10px;
+        }
+
+        .tools-category-header,
+        .tools-category-cell {
+            position: sticky;
+            left: 0;
+            width: 230px;
+            min-width: 230px;
+            max-width: 230px;
+        }
+
+        .timeline-table thead .tools-category-header {
+            z-index: 5;
+            text-align: left;
+        }
+
+        .tools-category-cell {
+            z-index: 2;
+            padding: 9px 10px;
+            background: #fff;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05);
+            vertical-align: middle;
+        }
+
+        .timeline-table tbody tr:nth-child(even) .tools-category-cell {
+            background: #fafafa;
+        }
+
+        .tools-domain-start th,
+        .tools-domain-start td {
+            border-top: 3px solid #8b8b8b;
+        }
+
+        .tools-category-domain {
+            margin-bottom: 6px;
+            color: #6c6c6c;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .tools-category-main {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tools-category-icon {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .tools-category-name {
+            min-width: 0;
+            overflow-wrap: anywhere;
+            color: #242424;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        .tools-year,
+        .tools-cell {
+            width: 220px;
+            min-width: 220px;
+            max-width: 220px;
+        }
+
+        .timeline-table thead .tools-year-latest {
+            background: #e7ece9;
+        }
+
+        .tools-cell {
+            height: 68px;
+            padding: 6px;
+            background: #fff;
+            vertical-align: top;
+        }
+
+        .tools-milestone {
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+            margin-bottom: 5px;
+            padding: 6px;
+            overflow: hidden;
+            border: 1px solid #d4d8d6;
+            border-left: 3px solid #39745a;
+            border-radius: 3px;
+            background: #f3f6f4;
+            color: #222;
+            line-height: 1.2;
+        }
+
+        .tools-milestone:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-milestone:hover {
+            border-color: #9ca8a2;
+            background: #e9efec;
+        }
+
+        .tools-domain-app_agents {
+            border-left-color: #376da8;
+            background: #f0f4f9;
+        }
+
+        .tools-domain-app_agents:hover {
+            border-color: #8fa8c2;
+            background: #e6edf5;
+        }
+
+        .tools-domain-swe_agents {
+            border-left-color: #a45c2a;
+            background: #f8f2ed;
+        }
+
+        .tools-domain-swe_agents:hover {
+            border-color: #c2a28c;
+            background: #f2e8e0;
+        }
+
+        .tools-milestone-logo {
+            width: 26px;
+            min-width: 26px;
+            height: 26px;
+            object-fit: contain;
+        }
+
+        .tools-milestone-copy {
+            min-width: 0;
+        }
+
+        .tools-milestone-name {
+            display: block;
+            overflow-wrap: anywhere;
+            font-weight: 600;
+        }
+
+        .tools-milestone-meta {
+            display: block;
+            margin-top: 3px;
+            overflow-wrap: anywhere;
+            color: #66706b;
+            font-size: 10px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                margin: 12px;
+            }
+
+            .site-header {
+                padding-left: 0 !important;
+            }
+
+            .site-header-logo {
+                height: 70px !important;
+            }
+
+            .site-title {
+                font-size: 24px !important;
+                line-height: 1.1;
+            }
+
+            .timeline-shell {
+                padding: 8px;
+            }
+
+            .timeline-scroll {
+                max-height: calc(100vh - 270px);
+            }
+
+            .timeline-lab-header,
+            .timeline-lab-cell {
+                width: 126px;
+                min-width: 126px;
+                max-width: 126px;
+            }
+
+            .timeline-lab-link {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .timeline-lab-name {
+                font-size: 11px;
+            }
+
+            .timeline-month,
+            .timeline-cell {
+                width: 126px;
+                min-width: 126px;
+                max-width: 126px;
+            }
+
+            .tools-category-header,
+            .tools-category-cell {
+                width: 146px;
+                min-width: 146px;
+                max-width: 146px;
+            }
+
+            .tools-category-main {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .tools-category-name {
+                font-size: 11px;
+            }
+
+            .tools-year,
+            .tools-cell {
+                width: 180px;
+                min-width: 180px;
+                max-width: 180px;
+            }
+        }
     </style>
     <link rel="stylesheet" target="_blank" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" target="_blank" href="https://fonts.googleapis.com/css?family=Lato">
@@ -187,14 +600,14 @@
 </head>
 
 <body>
-    <div style="padding-left: 20px">
+    <div class="site-header" style="padding-left: 20px">
         <table>
             <tr style="white-space: nowrap; overflow: hidden;">
                 <td>
-                    <img src="assets/logo.png" style="height:  100px;" />
+                    <img class="site-header-logo" src="assets/logo.png" style="height: 100px;" alt="Generative AI Inventory logo" />
                 </td>
                 <td style="text-align: left; padding-left: 12px;">
-                    <div style="font-size: 240%;"><b style="font-size: 120%;">Generative AI Inventory</div>
+                    <div class="site-title" style="font-size: 288%;"><b>Generative AI Inventory</b></div>
                 </td>
             </tr>
         </table>
@@ -205,9 +618,11 @@
     </div>
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'llms')">LLMs</button>
-        <button class="tablinks" onclick="openTab(event, 'running')">LLM Hosting</button>
-        <button class="tablinks" onclick="openTab(event, 'agents')">AI App Agents</button>
-        <button class="tablinks" onclick="openTab(event, 'software_agents')">SWE Agents</button>
+        <button class="tablinks" onclick="openTab(event, 'llm_timeline')">LLM Timeline</button>
+        <button class="tablinks" style="color: blue" onclick="openTab(event, 'running')">LLM Hosting</button>
+        <button class="tablinks" style="color: blue" onclick="openTab(event, 'agents')">AI App Agents</button>
+        <button class="tablinks" style="color: blue" onclick="openTab(event, 'software_agents')">SWE Agents</button>
+        <button class="tablinks" style="color: blue" onclick="openTab(event, 'tools_timeline')">Tools Timeline</button>
     </div>
 
     <div id="llms" class="tabcontent" style="display: block">
@@ -219,6 +634,18 @@
             </div>
         </div>
         <div id="content" style="text-align: left;"></div>
+    </div>
+
+    <div id="llm_timeline" class="tabcontent">
+        <div class="timeline-shell">
+            <div id="content_llm_timeline"></div>
+        </div>
+    </div>
+
+    <div id="tools_timeline" class="tabcontent">
+        <div class="timeline-shell">
+            <div id="content_tools_timeline"></div>
+        </div>
     </div>
 
     <div id="running" class="tabcontent" style="">
@@ -238,6 +665,7 @@
         const running = "${running}";
         const agents = "${agents}";
         const softwareAgents = "${software_agents}";
+        const toolsTimeline = "${tools_timeline}";
 
         function getDisplayText(str, filters) {
             if (str && str.length > 0) {
@@ -296,6 +724,227 @@
 
         function getFilters(filterText) {
             return filterText.split(';').map(f => f.trim()).filter(f => f && f.length > 0);
+        }
+
+        function escapeHtml(value) {
+            const replacements = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return String(value ?? '').replace(/[&<>"']/g, character => replacements[character]);
+        }
+
+        function modelMonthKey(releaseDate) {
+            const match = /^(\d{4})-(\d{2})(?:-\d{2})?$/.exec(releaseDate || '');
+            if (!match) return null;
+
+            const month = Number(match[2]);
+            if (month < 1 || month > 12) return null;
+            return match[1] + '-' + match[2];
+        }
+
+        function timelineMonthKeys(labs) {
+            const datedMonths = [];
+            labs.forEach(lab => {
+                (lab.models || []).forEach(model => {
+                    const monthKey = modelMonthKey(model.release_date);
+                    if (monthKey) datedMonths.push(monthKey);
+                });
+            });
+
+            if (datedMonths.length === 0) return [];
+
+            datedMonths.sort();
+            const earliestParts = datedMonths[0].split('-').map(Number);
+            const latestParts = datedMonths[datedMonths.length - 1].split('-').map(Number);
+            const earliest = Date.UTC(earliestParts[0], earliestParts[1] - 1, 1);
+            const cursor = new Date(Date.UTC(latestParts[0], latestParts[1] - 1, 1));
+            const months = [];
+
+            while (cursor.getTime() >= earliest) {
+                months.push(
+                    cursor.getUTCFullYear() + '-' + String(cursor.getUTCMonth() + 1).padStart(2, '0')
+                );
+                cursor.setUTCMonth(cursor.getUTCMonth() - 1);
+            }
+
+            return months;
+        }
+
+        function updateLlmTimeline(labs) {
+            const months = timelineMonthKeys(labs);
+            let html = '<div class="timeline-scroll">';
+            html += '<table class="timeline-table">';
+            html += '<caption class="visually-hidden">Foundation lab model releases by month, newest first</caption>';
+            html += '<thead><tr><th scope="col" class="timeline-lab-header">Foundation lab</th>';
+
+            months.forEach((monthKey, index) => {
+                const parts = monthKey.split('-').map(Number);
+                const date = new Date(Date.UTC(parts[0], parts[1] - 1, 1));
+                const monthName = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+                const fullMonth = date.toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+                const classes = ['timeline-month'];
+                if (index === 0) classes.push('timeline-month-latest');
+                if (index > 0 && monthKey.endsWith('-12')) classes.push('timeline-year-boundary');
+                html += '<th scope="col" class="' + classes.join(' ') + '" title="' + escapeHtml(fullMonth) + '">';
+                html += '<span>' + escapeHtml(monthName) + '</span><span>' + parts[0] + '</span></th>';
+            });
+            html += '</tr></thead><tbody>';
+
+            labs.forEach(lab => {
+                const modelsByMonth = new Map();
+                (lab.models || []).forEach(model => {
+                    const monthKey = modelMonthKey(model.release_date);
+                    if (!monthKey) return;
+                    if (!modelsByMonth.has(monthKey)) modelsByMonth.set(monthKey, []);
+                    modelsByMonth.get(monthKey).push(model);
+                });
+
+                modelsByMonth.forEach(models => {
+                    models.sort((a, b) => (b.release_date || '').localeCompare(a.release_date || '') || a.name.localeCompare(b.name));
+                });
+
+                const labName = lab.name || '';
+                const labTitle = lab.description ? labName + ': ' + lab.description : labName;
+                const country = lab.country || '';
+                const labUrl = 'https://google.com/search?q=' + encodeURIComponent(labName + ' LLMs');
+                html += '<tr>';
+                html += '<th scope="row" class="timeline-lab-cell" title="' + escapeHtml(labTitle) + '">';
+                html += '<a class="timeline-lab-link" target="_blank" rel="noopener" href="' + labUrl + '" title="' + escapeHtml(labTitle) + '">';
+                html += '<span class="timeline-lab-mark">';
+                html += '<img class="timeline-lab-logo" src="assets/' + escapeHtml(lab.logo || 'logo.png') + '" alt="' + escapeHtml(labName) + ' logo" loading="lazy" onerror="this.onerror=null;this.src=\'assets/logo.png\';">';
+                html += '<img class="timeline-country-flag" src="https://zeljkoobrenovic.github.io/sokrates-media/flags/1x1/' + escapeHtml(country) + '.svg" alt="' + escapeHtml(country.toUpperCase()) + ' flag" loading="lazy">';
+                html += '</span><span class="timeline-lab-name">' + escapeHtml(labName) + '</span></a></th>';
+
+                months.forEach((monthKey, index) => {
+                    const classes = ['timeline-cell'];
+                    if (index > 0 && monthKey.endsWith('-12')) classes.push('timeline-year-boundary');
+                    html += '<td class="' + classes.join(' ') + '">';
+                    (modelsByMonth.get(monthKey) || []).forEach(model => {
+                        const category = (model.category || '').replace(/_/g, ' ');
+                        const modalities = (model.modalities || []).join(' + ');
+                        const modelTitle = [model.name, model.release_date, category, modalities].filter(Boolean).join(' | ');
+                        const modelUrl = 'https://google.com/search?q=' + encodeURIComponent(labName + ' ' + model.name + ' LLM');
+                        html += '<a class="timeline-model" target="_blank" rel="noopener" href="' + modelUrl + '" title="' + escapeHtml(modelTitle) + '">';
+                        html += '<span class="timeline-model-name">' + escapeHtml(model.name) + '</span>';
+                        html += '<span class="timeline-model-date">' + escapeHtml(model.release_date || monthKey) + '</span></a>';
+                    });
+                    html += '</td>';
+                });
+                html += '</tr>';
+            });
+
+            html += '</tbody></table></div>';
+            document.getElementById('content_llm_timeline').innerHTML = html;
+        }
+
+        function displayCategoryName(category) {
+            const acronyms = new Map([
+                ['ai', 'AI'],
+                ['api', 'API'],
+                ['cli', 'CLI'],
+                ['gpu', 'GPU'],
+                ['ide', 'IDE'],
+                ['llm', 'LLM'],
+                ['sdk', 'SDK'],
+                ['swe', 'SWE']
+            ]);
+            return category.split('_').map((word, index) => {
+                if (acronyms.has(word)) return acronyms.get(word);
+                return index === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word;
+            }).join(' ');
+        }
+
+        function toolsCategoryImage(category) {
+            const images = {
+                app_agent_platform: 'agent_platform_managed.png',
+                app_agent_framework: 'agent_framework.png',
+                tool_context_protocol: 'multi_agent_framework.png',
+                app_eval_observability: 'eval_observability.png',
+                app_guardrails_safety: 'guardrails_safety.png',
+                autonomous_swe_agent: 'domain_agent_product.png',
+                ide_cli_coding_agent: 'logo.png',
+                enterprise_dev_platform_agent: 'audience.png',
+                code_review_quality_agent: 'clarity.png'
+            };
+            return images[category] || category + '.png';
+        }
+
+        function toolsMilestoneImage(provider, category) {
+            const providerImage = imageOf(provider);
+            return providerImage === 'logo.png' ? toolsCategoryImage(category) : providerImage;
+        }
+
+        function formatMilestoneDate(value) {
+            const match = /^(\d{4})-(\d{2})(?:-(\d{2}))?$/.exec(value || '');
+            if (!match) return value || '';
+            const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3] || 1)));
+            const options = { month: 'short', timeZone: 'UTC' };
+            if (match[3]) options.day = 'numeric';
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        function updateToolsTimeline(timeline) {
+            const domains = [
+                { id: 'hosting', label: 'LLM hosting', inventory: running },
+                { id: 'app_agents', label: 'App agents', inventory: agents },
+                { id: 'swe_agents', label: 'SWE agents', inventory: softwareAgents }
+            ];
+            const years = timeline.milestones
+                .map(milestone => Number((milestone.date || '').slice(0, 4)))
+                .filter(year => Number.isInteger(year));
+            const earliestYear = Math.min(...years);
+            const latestYear = Math.max(...years);
+            const timelineYears = [];
+            for (let year = latestYear; year >= earliestYear; year -= 1) timelineYears.push(year);
+
+            let html = '<div class="timeline-scroll">';
+            html += '<table class="timeline-table tools-timeline-table">';
+            html += '<caption class="visually-hidden">Major tool introductions by category and year, newest first</caption>';
+            html += '<thead><tr><th scope="col" class="tools-category-header">Tool category</th>';
+            timelineYears.forEach((year, index) => {
+                const classes = ['tools-year'];
+                if (index === 0) classes.push('tools-year-latest');
+                html += '<th scope="col" class="' + classes.join(' ') + '">' + year + '</th>';
+            });
+            html += '</tr></thead><tbody>';
+
+            domains.forEach(domain => {
+                domain.inventory.categories.forEach((category, categoryIndex) => {
+                    const categoryName = displayCategoryName(category.category);
+                    const categoryTitle = categoryName + ': ' + category.description;
+                    const rowClass = categoryIndex === 0 ? ' class="tools-domain-start"' : '';
+                    html += '<tr' + rowClass + '>';
+                    html += '<th scope="row" class="tools-category-cell" title="' + escapeHtml(categoryTitle) + '">';
+                    html += '<div class="tools-category-domain">' + escapeHtml(domain.label + ' / ' + (category.group || 'other')) + '</div>';
+                    html += '<div class="tools-category-main">';
+                    html += '<img class="tools-category-icon" src="assets/' + escapeHtml(toolsCategoryImage(category.category)) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'assets/logo.png\';">';
+                    html += '<span class="tools-category-name">' + escapeHtml(categoryName) + '</span></div></th>';
+
+                    timelineYears.forEach(year => {
+                        const milestones = timeline.milestones
+                            .filter(milestone => milestone.domain === domain.id && milestone.category === category.category && Number(milestone.date.slice(0, 4)) === year)
+                            .sort((a, b) => b.date.localeCompare(a.date));
+                        html += '<td class="tools-cell">';
+                        milestones.forEach(milestone => {
+                            const title = [milestone.name, milestone.date, milestone.summary].filter(Boolean).join(' | ');
+                            const image = toolsMilestoneImage(milestone.provider, milestone.category);
+                            html += '<a class="tools-milestone tools-domain-' + escapeHtml(domain.id) + '" target="_blank" rel="noopener" href="' + escapeHtml(milestone.url) + '" title="' + escapeHtml(title) + '">';
+                            html += '<img class="tools-milestone-logo" src="assets/' + escapeHtml(image) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'assets/logo.png\';">';
+                            html += '<span class="tools-milestone-copy"><span class="tools-milestone-name">' + escapeHtml(milestone.name) + '</span>';
+                            html += '<span class="tools-milestone-meta">' + escapeHtml(formatMilestoneDate(milestone.date)) + ' | ' + escapeHtml(milestone.provider) + '</span></span></a>';
+                        });
+                        html += '</td>';
+                    });
+                    html += '</tr>';
+                });
+            });
+
+            html += '</tbody></table></div>';
+            document.getElementById('content_tools_timeline').innerHTML = html;
         }
 
         function update() {
@@ -444,6 +1093,8 @@
         }
 
         update();
+        updateLlmTimeline(data);
+        updateToolsTimeline(toolsTimeline);
         updateRunning(running, 'running');
         updateRunning(agents, 'agents');
         updateRunning(softwareAgents, 'software_agents');
