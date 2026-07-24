@@ -357,9 +357,9 @@
 
         .tools-year,
         .tools-cell {
-            width: 220px;
-            min-width: 220px;
-            max-width: 220px;
+            width: 160px;
+            min-width: 160px;
+            max-width: 160px;
         }
 
         .timeline-table thead .tools-year-latest {
@@ -371,12 +371,14 @@
             padding: 6px;
             background: #fff;
             vertical-align: top;
+            white-space: nowrap;
         }
 
         .tools-milestone {
             display: flex;
             align-items: flex-start;
             gap: 7px;
+            margin-left: var(--tools-month-offset, 0);
             margin-bottom: 5px;
             padding: 6px;
             overflow: hidden;
@@ -593,6 +595,15 @@
             if (label.includes('hugging')) return 'huggingface.png';
             if (label.includes('ollama')) return 'ollama.png';
             if (label.includes('aleph')) return 'aleph-alpha.png';
+            if (label.includes('replit')) return 'replit.png';
+            if (label.includes('meta')) return 'meta.png';
+            if (label.includes('cloudflare')) return 'cloudflare.png';
+            if (label.includes('langchain')) return 'langchain.png';
+            if (label.includes('qwen')) return 'qwen.png';
+            if (label.includes('coreweave')) return 'coreweave.png';
+            if (label.includes('vllm')) return 'vllm.png';
+            if (label.includes('cognition')) return 'devin.png';
+            if (label.includes('cursor')) return 'cursor.png';
 
             return 'logo.png';
         }
@@ -887,6 +898,13 @@
             return date.toLocaleDateString('en-US', options);
         }
 
+        function toolsMilestoneMonthOffset(value) {
+            const match = /^\d{4}-(\d{2})/.exec(value || '');
+            if (!match) return 0;
+            const month = Number(match[1]);
+            return month >= 1 && month <= 12 ? (12 - month) * 5 : 0;
+        }
+
         function updateToolsTimeline(timeline) {
             const domains = [
                 { id: 'hosting', label: 'LLM hosting', inventory: running },
@@ -932,7 +950,8 @@
                         milestones.forEach(milestone => {
                             const title = [milestone.name, milestone.date, milestone.summary].filter(Boolean).join(' | ');
                             const image = toolsMilestoneImage(milestone.provider, milestone.category);
-                            html += '<a class="tools-milestone tools-domain-' + escapeHtml(domain.id) + '" target="_blank" rel="noopener" href="' + escapeHtml(milestone.url) + '" title="' + escapeHtml(title) + '">';
+                            const monthOffset = toolsMilestoneMonthOffset(milestone.date);
+                            html += '<a class="tools-milestone tools-domain-' + escapeHtml(domain.id) + '" style="--tools-month-offset: ' + monthOffset + 'px" target="_blank" rel="noopener" href="' + escapeHtml(milestone.url) + '" title="' + escapeHtml(title) + '">';
                             html += '<img class="tools-milestone-logo" src="assets/' + escapeHtml(image) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'assets/logo.png\';">';
                             html += '<span class="tools-milestone-copy"><span class="tools-milestone-name">' + escapeHtml(milestone.name) + '</span>';
                             html += '<span class="tools-milestone-meta">' + escapeHtml(formatMilestoneDate(milestone.date)) + ' | ' + escapeHtml(milestone.provider) + '</span></span></a>';
