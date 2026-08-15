@@ -540,6 +540,15 @@
             "provider": "Cursor / SpaceX",
             "summary": "Closed the $60B acquisition of Cursor, giving the agentic IDE access to SpaceX's GPU fleet; Grok 4.6 shipped a day earlier.",
             "url": "https://cursor.com/blog/joining-spacex"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2026-08-05",
+            "name": "Muse Code",
+            "provider": "Meta",
+            "summary": "Released Meta's first terminal coding agent with persistent async background sub-agents.",
+            "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
         }
     ]
 }

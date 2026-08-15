@@ -396,6 +396,16 @@
             ],
             "notes": "Context-engine-based coding agent platform: Auggie CLI, IDE extensions, and the Cosmos cloud workspace with remote agents, session forking, file comments, cost analytics, and a managed MCP/integrations catalog. Weekly Cosmos releases and Auggie CLI 0.34 (Jul 23-Aug 13, 2026).",
             "url": "https://www.augmentcode.com/changelog"
+        },
+        {
+            "name": "Muse Code",
+            "provider": "Meta",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "CLI (macOS/Linux)"
+            ],
+            "notes": "Meta's first terminal coding agent (beta, Aug 5, 2026), powered by Muse Spark 1.2, with persistent asynchronous background sub-agents, a replay-exact local event log, and bundled /plan, /grill, and /goal skills.",
+            "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
         }
     ]
 }

@@ -561,8 +561,13 @@
         }
     </script>
     <script>
-        function imageOf(text) {
+        function imageOf(text, name) {
             const label = text.toLowerCase().trim();
+            const title = (name || '').toLowerCase().trim();
+
+            if (title.includes('kiro')) return 'kiro.png';
+            if (title.includes('agent plugins')) return 'agent-plugins.png';
+            if (title.includes('muse code')) return 'muse-code.png';
 
             if (label.includes('vmware')) return 'vmware.png';
             if (label.includes('hpe')) return 'hpe.png';
@@ -887,8 +892,8 @@
             return images[category] || category + '.png';
         }
 
-        function toolsMilestoneImage(provider, category) {
-            const providerImage = imageOf(provider);
+        function toolsMilestoneImage(provider, category, name) {
+            const providerImage = imageOf(provider, name);
             return providerImage === 'logo.png' ? toolsCategoryImage(category) : providerImage;
         }
 
@@ -952,7 +957,7 @@
                         html += '<td class="tools-cell">';
                         milestones.forEach(milestone => {
                             const title = [milestone.name, milestone.date, milestone.summary].filter(Boolean).join(' | ');
-                            const image = toolsMilestoneImage(milestone.provider, milestone.category);
+                            const image = toolsMilestoneImage(milestone.provider, milestone.category, milestone.name);
                             const monthOffset = toolsMilestoneMonthOffset(milestone.date);
                             html += '<a class="tools-milestone tools-domain-' + escapeHtml(domain.id) + '" style="--tools-month-offset: ' + monthOffset + 'px" target="_blank" rel="noopener" href="' + escapeHtml(milestone.url) + '" title="' + escapeHtml(title) + '">';
                             html += '<img class="tools-milestone-logo" src="assets/' + escapeHtml(image) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'assets/logo.png\';">';
@@ -1098,7 +1103,7 @@
                     html += '<a target="_blank" href="' + optionUrl + '">'
                     html += '<div style="padding: 0px; margin: 8px; margin-bottom: 18px; border: 1px solid lightgrey; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">';
                         html += '<div style="margin-bottom: 3px; background-color: #f8f8f8;padding: 2px">';
-                        html += '<div style="lightgrey; vertical-align: middle; display: inline-block"><img src="assets/' + imageOf(option.provider) + '" style="vertical-align: middle; height: 26px; width: 26px; vertical-align: top; object-fit: contain;" onerror="this.onerror=null;this.src=\'assets/logo.png\';"></div>';
+                        html += '<div style="lightgrey; vertical-align: middle; display: inline-block"><img src="assets/' + imageOf(option.provider, option.name) + '" style="vertical-align: middle; height: 26px; width: 26px; vertical-align: top; object-fit: contain;" onerror="this.onerror=null;this.src=\'assets/logo.png\';"></div>';
                         html += '<div style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; padding-left: 4px; display: inline-block; width: 80px; font-size: 60%; color: grey">' + option.provider + '</div>';
                         html += '</div>';
                         html += '<div style="padding: 4px; font-size: 80%">' + option.name + '</div>';
