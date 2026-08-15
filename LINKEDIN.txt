@@ -1,25 +1,14 @@
 GenAI Inventory — mid-August 2026 update 🗺️
 
-Three weeks since the last refresh, and the pace hasn't slowed. The inventory now tracks 280+ models from 25 labs, plus hosting options, agent frameworks and software-engineering agents. Main changes:
+Three weeks, 280+ models from 25 labs, and a busy tooling landscape. Highlights:
 
-🧠 Models
-• Anthropic: Claude Opus 5 ($5/$25) — Sonnet 5's $2/$10 price made permanent
-• Google: Gemini 3.7 Flash, Robotics-ER 2, Lyria 3.5 — Gemini 3.6 Flash price halved
-• OpenAI: GPT-5.6 Cyber (gated), GPT Transcribe — Luna now 80% cheaper and the default for free ChatGPT
-• xAI: Grok 4.6 (500K context) · Meta: Muse Spark 1.2 + Muse Glimmer 30B, its first open-weight model
-• Microsoft: MAI-Code-1.1-Flash, MAI-Cyber-1-Flash, MAI-Image-2.5-Pro · NVIDIA: Nemotron 3.5 Lightning
-• China: Qwen3.8-Max (and open 2.4T weights), DeepSeek V4 0731/0813 checkpoints (with new peak/off-peak pricing), GLM-5.3, Kimi K3 open weights, Hunyuan Hy3 global, Seedance 2.5, MiniMax H3
-• Amazon quietly winds down Nova Premier/Omni/Canvas/Reel
+🧠 Models: Claude Opus 5, Gemini 3.7 Flash, GPT-5.6 Cyber, Grok 4.6, Muse Spark 1.2 + Meta's first open-weight model (Muse Glimmer), Qwen3.8-Max, DeepSeek V4 updates, GLM-5.3, Kimi K3 open weights, MAI-Code-1.1-Flash. Prices keep dropping: GPT-5.6 Luna −80%, Gemini 3.6 Flash halved, Sonnet 5's $2/$10 made permanent.
 
-🛠️ Tools & platforms
-• MCP 2026-07-28 spec (stateless core) and the new vendor-neutral Agent Plugins 1.0 standard
-• Cloudflare Workers AI + AI Gateway unified; vLLM 0.27; OpenAI "Ultrafast" tier on Cerebras
-• Claude Code auto mode by default, Codex desktop for Linux, Kiro Crew, Antigravity Custom Agents — and Meta enters the coding-agent race with Muse Code
-• SpaceX closes the Cursor acquisition; Lovable and Augment Code added
+🛠️ Tools: MCP 2026-07-28 spec and the new Agent Plugins 1.0 standard, Claude Code auto mode by default, Codex for Linux, Kiro Crew, Meta's Muse Code, SpaceX closing the Cursor deal; Lovable and Augment Code added.
 
-Take-aways: prices keep falling for mid-tier models, "cyber" variants are becoming a standard SKU, and open weights are arriving even for flagship-class models (Qwen 3.8, Kimi K3, Muse Glimmer).
+Take-aways: mid-tier prices keep falling, "cyber" variants are becoming a standard SKU, and open weights now reach flagship-class models.
 
-Browse it here 👉 https://zeljkoobrenovic.github.io/genai-inventory/
-Source & data: https://github.com/zeljkoobrenovic/genai-inventory
+Browse 👉 https://zeljkoobrenovic.github.io/genai-inventory/
+Data & source: https://github.com/zeljkoobrenovic/genai-inventory
 
 #GenAI #LLM #AIAgents #OpenSource
