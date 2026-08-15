@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-08-15",
     "categories": [
         {
             "category": "app_agent_platform",
@@ -40,7 +40,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Type-safe agent orchestration using Pydantic models. Strong validation of inputs/outputs and structured reasoning flows."
+            "notes": "Type-safe agent framework using Pydantic models, with structured outputs, tools, MCP (FastMCP 4), UI event streams, and multi-provider support. The 2.x line (v2.26-v2.31, Aug 6-14, 2026) added run cancellation, deferred tool hiding, realtime speech-to-speech with WebRTC, and new providers (Crusoe, Snowflake Cortex, Azure Voice Live), plus security fixes for the dev web UI; 1.x receives security backports."
         },
         {
             "name": "OpenAI Agents SDK",
@@ -49,7 +49,7 @@
             "deployment_modes": [
                 "Library (Python/TypeScript)"
             ],
-            "notes": "Lightweight primitives for building single- and multi-agent systems (agents, handoffs, sessions, tracing, guardrails). Provider-agnostic; integrates with Temporal and supports MCP."
+            "notes": "Lightweight primitives for building single- and multi-agent systems (agents, handoffs, sessions, tracing, guardrails, sandboxed execution). Provider-agnostic; integrates with Temporal. Summer 2026 releases added Programmatic Tool Calling (v0.19, July 27), MCP v1 and v2 (2026-07-28 spec) support across transports, gpt-5.6-luna as default model, durable RunState input staging (v0.20, Aug 11), and deterministic testing utilities for agents, realtime, and voice (v0.21, Aug 15)."
         },
         {
             "name": "Claude Agent SDK",
@@ -59,7 +59,7 @@
                 "Library (Python/TypeScript)",
                 "Self-hosted runtime"
             ],
-            "notes": "Production agent SDK built on the Claude Code runtime, with file and shell tools, sessions, permissions, hooks, checkpointing, subagents, skills, plugins, MCP, and OpenTelemetry support.",
+            "notes": "Production agent SDK built on the Claude Code runtime, with file and shell tools, sessions, permissions, hooks, checkpointing, subagents (including forking), skills, plugins, MCP, cross-session messaging, and OpenTelemetry support. Tracks Claude Code CLI releases closely; v0.2.137 (Aug 12, 2026) added ConversationResetMessage, message-origin tracking, and safe session-resume truncation options.",
             "url": "https://code.claude.com/docs/en/agent-sdk/overview"
         },
         {
@@ -70,7 +70,7 @@
                 "Library (.NET/Python/Go)",
                 "Open source"
             ],
-            "notes": "Direct successor to AutoGen and Semantic Kernel. Combines provider-neutral agents, an agent harness, graph workflows, durable state, middleware, human-in-the-loop execution, MCP, A2A, AG-UI, and Microsoft Foundry integration.",
+            "notes": "Direct successor to AutoGen and Semantic Kernel. Combines provider-neutral agents, an agent harness, graph workflows, durable state and replayable checkpoints, middleware, human-in-the-loop execution, MCP, A2A, AG-UI, and Microsoft Foundry integration. Recent releases added a stable GitHub Copilot agent integration (Python 1.0.0, July 23, 2026), a native Mistral chat client, experimental AGENT-HOOKS-0.1 enforcement middleware, and workflow checkpoint resume (Python 1.14.0, Aug 14, 2026).",
             "url": "https://learn.microsoft.com/en-us/agent-framework/overview/"
         },
         {
@@ -80,7 +80,7 @@
             "deployment_modes": [
                 "Library (Python/TypeScript/Go/Java)"
             ],
-            "notes": "Open-source framework for production agents with tools, graph workflows, multi-agent orchestration, human-in-the-loop controls, visual debugging, evaluation, and deployment to Google Cloud. Go 2.0 is now supported alongside Python, TypeScript, and Java.",
+            "notes": "Open-source framework for production agents with tools, graph workflows, multi-agent orchestration, human-in-the-loop controls, visual debugging, evaluation, and deployment to Google Cloud; available for Python, TypeScript, Go, and Java. ADK Python 2.7.0 (Aug 13, 2026) lets models declare their own capabilities, allows tools to return media directly, and adds Jinja2 instruction templating. Google's Agents CLI and Data Agent Kit ship as Agent Plugins for coding agents.",
             "url": "https://google.github.io/adk-docs/"
         },
         {
@@ -139,7 +139,7 @@
             "deployment_modes": [
                 "AWS"
             ],
-            "notes": "Managed runtime and services for agents, including browser, code interpreter, memory, identity, observability, evaluations, policies, and registry support."
+            "notes": "Managed runtime and services for agents, including harness, browser, code interpreter, memory, identity, gateway, observability, evaluations, policies, and AWS Agent Registry. Runtime Instances (GA Aug 6, 2026) run agents on AWS-managed EC2 in your account with sessions up to 14 days and GPU instance types; August 2026 also added temporal (stateful) policies, configurable gateway rate limits, and memory/policy/harness in AWS GovCloud (US-West)."
         },
         {
             "name": "OpenRouter Actions",
@@ -220,7 +220,7 @@
             "deployment_modes": [
                 "Library/SDK (Python, TypeScript, C#, Java)"
             ],
-            "notes": "Open interoperability standard (2024). Enables tool/data integrations across frameworks. Adopted in OpenAI Agents SDK, Responses API, Microsoft Copilot Studio, and more."
+            "notes": "Open interoperability standard (2024) for exposing tools, data, and prompts to AI applications; adopted across OpenAI, Anthropic, Google, Microsoft, and most agent frameworks. The 2026-07-28 specification (published July 28, 2026) makes the protocol core stateless (no session handshake), adds Multi Round-Trip Requests, header-based routing, cacheable list results, hardened authorization (DCR deprecated in favor of CIMD), and a formal extensions framework (Tasks, MCP Apps, Enterprise Managed Authorization); Roots, Sampling, and Logging are deprecated. Tier 1 SDKs: TypeScript, Python, Go, C# (Rust in beta)."
         },
         {
             "name": "Agent2Agent Protocol (A2A)",
@@ -260,7 +260,7 @@
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
-            "notes": "Role-based multi-agent teams, tasks, tools, and process supervision."
+            "notes": "Role-based multi-agent teams, tasks, tools, flows, skills, and process supervision. 1.15.x releases (Jul 26-Aug 14, 2026) added OpenAI Responses API and GPT-5.6 support, a WaitTool for long-running jobs, progressive skill disclosure, human-in-the-loop flow signals, and unified `crewai create` scaffolding."
         },
         {
             "name": "FlowiseAI",
@@ -369,6 +369,28 @@
                 "Library"
             ],
             "notes": "Prompt injection/jailbreak defenses, detectors, and sanitization for tool-using agents."
+        },
+        {
+            "name": "Agent Plugins",
+            "provider": "Agent Plugins core maintainers (AWS, Cursor, Google, Microsoft, OpenAI, Vercel)",
+            "category": "tool_context_protocol",
+            "deployment_modes": [
+                "Open specification",
+                "CLI"
+            ],
+            "notes": "Vendor-neutral open standard (1.0.0, Aug 6, 2026) that packages Agent Skills and MCP servers into a single installable plugin folder (plugin.json, skills/, mcp.json). Launch clients include ChatGPT, Codex, Cursor, GitHub Copilot, Kiro, and VS Code; the plugins CLI can also target Claude Code. Governance charter prevents any single vendor from holding a majority of maintainer seats; permission model, sandboxing, and signing are future work.",
+            "url": "https://github.com/agentplugins/agent-plugins-spec/blob/main/spec/1.0.0.md"
+        },
+        {
+            "name": "Mastra",
+            "provider": "Mastra",
+            "category": "app_agent_framework",
+            "deployment_modes": [
+                "Library (TypeScript)",
+                "Self-host/Cloud"
+            ],
+            "notes": "TypeScript agent framework with agents, tools, workflows (including persistable declarative workflows), memory, RAG, evals, observability, MCP, and AG-UI. Weekly 1.5x releases in summer 2026 added file-based agent schedules, in-process Code Mode execution, sandbox deployments, chat-channel controllers (Slack/Discord/Telegram), and tool-result guardrails.",
+            "url": "https://mastra.ai/"
         }
     ],
     "scope": "ai_application_development_agents",

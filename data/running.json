@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-08-15",
     "categories": [
         {
             "category": "managed_api_llm",
@@ -55,7 +55,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "GPT-5.6 Sol, Terra, and Luna with 1.05M-token context, plus image, audio, realtime, embeddings, computer use, built-in tools, multi-agent orchestration, and programmatic tool calling through the Responses API.",
+            "notes": "GPT-5.6 Sol, Terra, and Luna with 1.05M-token context, plus image, audio, GPT Transcribe, realtime, embeddings, computer use, built-in tools, multi-agent orchestration, and programmatic tool calling through the Responses API, Daybreak Blue/Red security tiers, and a limited-preview Ultrafast tier for GPT-5.6 Sol.",
             "sources": [
                 "S1",
                 "S11",
@@ -69,7 +69,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Claude Sonnet 5, Fable 5, Opus 4.8, and earlier Claude 4.x models with 1M-token context, tool use, computer use, and limited Mythos 5 access for defensive cybersecurity.",
+            "notes": "Claude Opus 5, Sonnet 5, Fable 5, Opus 4.8, and earlier Claude 4.x models with 1M-token context, adjustable effort levels, fast mode, tool use, computer use, and limited Mythos 5 access for defensive cybersecurity.",
             "sources": [
                 "S2",
                 "S3",
@@ -83,7 +83,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Gemini 3.6 Flash, Gemini 3.5 Flash and Flash-Lite, Gemini Live, Omni Flash video generation/editing, image generation, long context, computer use, and Google AI Studio access.",
+            "notes": "Gemini 3.7 Flash, Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, Gemini Live, Omni Flash video generation/editing, image generation, Gemini Robotics-ER 2 preview, long context, computer use, and Google AI Studio access.",
             "sources": [
                 "S5",
                 "S18"
@@ -122,7 +122,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Mistral Medium 3.5, Mistral Small 4, Leanstral 1.5, OCR 4, Devstral, Voxtral, function calling, agents, and streaming.",
+            "notes": "Mistral Medium 3.5, Mistral Small 4, Leanstral 1.5, OCR 4.1, Devstral, Voxtral, Shieldstral moderation, function calling, agents, and streaming.",
             "sources": [
                 "S8"
             ]
@@ -159,7 +159,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Grok 4.5, Grok 4.3, Grok 4.20, voice, image, tool use, and an OpenAI-compatible API.",
+            "notes": "Grok 4.6 with a 500K-token context and configurable reasoning effort, Grok 4.5, Grok 4.3, voice, image, tool use, and an OpenAI-compatible API.",
             "sources": [
                 "S16",
                 "S1xai",
@@ -174,7 +174,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "DeepSeek V4 Pro and V4 Flash through an OpenAI-compatible API. The legacy deepseek-chat and deepseek-reasoner aliases retire on July 24, 2026 at 15:59 UTC.",
+            "notes": "DeepSeek V4 Pro (0813 update with stronger agent capabilities and native Responses API support) and V4 Flash through an OpenAI-compatible API; peak/off-peak pricing with higher rates takes effect August 16, 2026.",
             "url": "https://api-docs.deepseek.com/"
         },
         {
@@ -194,7 +194,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Generally available Qwen API platform with Qwen 3.7, Audio 3.0 TTS, Wan 2.7, Qwen Image, and selected partner models through OpenAI-compatible endpoints.",
+            "notes": "Generally available Qwen API platform with Qwen 3.8 Max, Qwen 3.7, Audio 3.0 realtime/TTS/ASR, Wan 3.0, Qwen Image 3.0, and partner models such as GLM-5.2 and DeepSeek V4 through OpenAI-compatible endpoints.",
             "url": "https://docs.qwencloud.com/changelog/models"
         },
         {
@@ -204,7 +204,7 @@
             "deployment_modes": [
                 "AWS managed endpoints"
             ],
-            "notes": "Multi-provider model hub with Amazon Nova 2, Claude 5, Grok, open-weight, embedding, image, and speech models; availability varies by region.",
+            "notes": "Multi-provider model hub with Amazon Nova 2, Claude 5 (including Opus 5), OpenAI GPT-5.6 and Daybreak, Grok, open-weight, embedding, image, and speech models, plus a built-in Web Search tool; availability varies by region.",
             "sources": [
                 "S12",
                 "S13",
@@ -234,7 +234,7 @@
             "deployment_modes": [
                 "GCP managed endpoints"
             ],
-            "notes": "Managed Gemini 3.6/3.5 and partner models with versioned endpoints, tuning, grounding, evaluation, and model lifecycle controls.",
+            "notes": "Managed Gemini 3.7/3.6/3.5 and partner models, including Claude Opus 5, with versioned endpoints, tuning, grounding, evaluation, and model lifecycle controls.",
             "sources": [
                 "S4",
                 "S6g"
@@ -247,7 +247,7 @@
             "deployment_modes": [
                 "Azure managed endpoints"
             ],
-            "notes": "Current Microsoft Foundry catalog for Microsoft, OpenAI, DeepSeek, Mistral, xAI, Cohere, Meta, and other partner models.",
+            "notes": "Current Microsoft Foundry catalog for Microsoft MAI, OpenAI, Anthropic (including Claude Opus 5), DeepSeek, Mistral, xAI, Cohere, Meta, and Fireworks-served open-weight partner models.",
             "sources": [
                 "S13",
                 "S9",
@@ -326,7 +326,7 @@
                 "SaaS/API",
                 "serverless"
             ],
-            "notes": "High-throughput OSS model inference & fine-tuning.",
+            "notes": "High-throughput OSS model inference & fine-tuning; building a dedicated NVIDIA HGX B300 inference cluster on IBM Cloud under a $240M multi-year deal (available Q1 2027).",
             "sources": [
                 "S17"
             ]
@@ -339,7 +339,7 @@
                 "SaaS/API",
                 "serverless"
             ],
-            "notes": "Fast inference for OSS models, tool use, agents.",
+            "notes": "Fast inference for OSS models, tool use, agents; also sold as Fireworks-served open models inside the Microsoft Foundry catalog.",
             "sources": [
                 "S18"
             ]
@@ -390,7 +390,7 @@
             "deployment_modes": [
                 "Groq LPU cloud"
             ],
-            "notes": "Ultra-low-latency inference for supported open models.",
+            "notes": "Ultra-low-latency inference for supported open models on Groq LPUs; joined the NVIDIA Cloud Partner program to add NVIDIA accelerated capacity alongside LPUs.",
             "sources": [
                 "S14",
                 "S15"
@@ -404,7 +404,7 @@
                 "SaaS/API",
                 "Dedicated endpoints"
             ],
-            "notes": "High-throughput LLM inference on Cerebras wafer-scale hardware; supports OpenAI-compatible chat completions and dedicated endpoint deployments.",
+            "notes": "High-throughput LLM inference on Cerebras wafer-scale hardware with OpenAI-compatible chat completions and dedicated endpoints; also powers OpenAI's Ultrafast tier for GPT-5.6 Sol (up to 750 tokens/s).",
             "sources": [
                 "S66"
             ]
@@ -416,7 +416,7 @@
             "deployment_modes": [
                 "Serverless edge inference"
             ],
-            "notes": "Serverless GPU inference on Cloudflare's global network with 50+ open-source models, OpenAI SDK compatibility, AI Gateway, Vectorize, and agent-building primitives.",
+            "notes": "Serverless GPU inference on Cloudflare's global network with 50+ open-source models, now unified with AI Gateway so the same AI binding, billing, and observability cover Workers AI and third-party provider models, plus Vectorize and agent-building primitives.",
             "sources": [
                 "S67"
             ]
@@ -441,7 +441,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Meta-API routing across 100s of models/providers.",
+            "notes": "Meta-API routing across 100s of models/providers, with Ori Eval model evaluation, generation tagging, team spend controls, and live web-search benchmarks.",
             "sources": [
                 "S23",
                 "S63"
@@ -688,7 +688,7 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "High-throughput LLM server with paged KV cache.",
+            "notes": "High-throughput LLM server with paged KV cache; v0.27 adds a Rust frontend with gRPC control plane, FlashAttention 4 on Blackwell, and Kimi K3 support.",
             "sources": [
                 "S44",
                 "S44g"
@@ -715,7 +715,7 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "Fast serving engine for LLM/VLM; EP & KV-reuse features.",
+            "notes": "Fast serving engine for LLM/VLM with EP & KV-reuse features; v0.5.17 adds Kimi K3 day-0 support, a Rust server frontend, and DSpark speculative decoding.",
             "sources": [
                 "S46s",
                 "S46s2",
@@ -755,7 +755,7 @@
             "deployment_modes": [
                 "Laptop/desktop/server"
             ],
-            "notes": "One-line local model runner & registry; simple HTTP API.",
+            "notes": "One-line local model runner & registry with OpenAI-compatible chat and Responses APIs (including web search), an MLX engine on Apple Silicon, and day-0 support for Muse Glimmer, Qwen 3.8, and Nemotron 3.5 Lightning.",
             "sources": [
                 "S48"
             ]
@@ -767,7 +767,7 @@
             "deployment_modes": [
                 "Laptop/desktop"
             ],
-            "notes": "GUI to run/chat with local models; uses local backends.",
+            "notes": "GUI to run/chat with local models plus LM Studio Bionic hybrid local/US-hosted access to models such as Kimi K3, DeepSeek V4 Flash, and Muse Glimmer.",
             "sources": [
                 "S49"
             ]

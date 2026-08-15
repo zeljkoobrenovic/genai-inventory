@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-08-15",
     "milestones": [
         {
             "domain": "hosting",
@@ -387,6 +387,159 @@
             "provider": "Qodo",
             "summary": "Launched an open agent for pull-request summaries, reviews, and code suggestions.",
             "url": "https://www.qodo.ai/blog/unveiling-the-future-of-streamlined-software-development/"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-07-24",
+            "name": "Claude Opus 5",
+            "provider": "Anthropic",
+            "summary": "Released Opus 5 with adjustable effort levels on the Claude API, Bedrock, Vertex AI, and Foundry.",
+            "url": "https://www.anthropic.com/news/claude-opus-5"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2026-08-04",
+            "name": "Amazon Bedrock Web Search",
+            "provider": "AWS",
+            "summary": "Made a built-in server-side web search tool generally available for OpenAI GPT models on Bedrock.",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web/"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2026-08-06",
+            "name": "Fireworks models in Microsoft Foundry",
+            "provider": "Microsoft + Fireworks",
+            "summary": "Brought 26 Fireworks-served open-weight models to general availability in the Foundry catalog.",
+            "url": "https://www.unite.ai/microsoft-opens-26-open-models-to-startups-through-fireworks-ai-on-foundry/"
+        },
+        {
+            "domain": "hosting",
+            "category": "inference_cloud",
+            "date": "2026-08-07",
+            "name": "Workers AI and AI Gateway unification",
+            "provider": "Cloudflare",
+            "summary": "Unified Workers AI and AI Gateway into one binding, billing, and observability plane for managed and third-party models.",
+            "url": "https://developers.cloudflare.com/changelog/post/2026-08-07-workers-ai-unified-billing/"
+        },
+        {
+            "domain": "hosting",
+            "category": "open_source_inference_engine",
+            "date": "2026-08-10",
+            "name": "vLLM 0.27",
+            "provider": "vLLM Project",
+            "summary": "Shipped a Rust frontend with gRPC control plane, FlashAttention 4 on Blackwell, and Kimi K3 support.",
+            "url": "https://github.com/vllm-project/vllm/releases"
+        },
+        {
+            "domain": "hosting",
+            "category": "inference_cloud",
+            "date": "2026-08-11",
+            "name": "Together AI on IBM Cloud",
+            "provider": "Together + IBM",
+            "summary": "Signed a $240M deal for a dedicated NVIDIA B300 open-model inference cluster on IBM Cloud.",
+            "url": "https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-08-13",
+            "name": "Gemini 3.7 Flash",
+            "provider": "Google",
+            "summary": "Released Gemini 3.7 Flash GA in the Gemini API and Vertex AI at half the price of 3.6 Flash.",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-08-13",
+            "name": "OpenAI Ultrafast tier",
+            "provider": "OpenAI + Cerebras",
+            "summary": "Introduced a Cerebras-powered Ultrafast service tier running GPT-5.6 Sol up to 14x faster in limited preview.",
+            "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+            "domain": "app_agents",
+            "category": "tool_context_protocol",
+            "date": "2026-07-28",
+            "name": "MCP 2026-07-28 specification",
+            "provider": "Model Context Protocol",
+            "summary": "Published the stateless MCP core with Multi Round-Trip Requests, header-based routing, authorization hardening, and a formal extensions framework.",
+            "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "tool_context_protocol",
+            "date": "2026-08-06",
+            "name": "Agent Plugins 1.0",
+            "provider": "AWS, Cursor, Google, Microsoft, OpenAI, Vercel",
+            "summary": "Launched a vendor-neutral open standard packaging Agent Skills and MCP servers into one installable plugin across ChatGPT, Codex, Cursor, GitHub Copilot, Kiro, and VS Code.",
+            "url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2026-08-06",
+            "name": "Bedrock AgentCore Runtime Instances",
+            "provider": "AWS",
+            "summary": "Made Runtime Instances generally available, running agents on AWS-managed EC2 with 14-day sessions and GPU instance types.",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-bedrock-agentcore-runtime-instances-generally-available/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-08-14",
+            "name": "Claude Code auto mode by default",
+            "provider": "Anthropic",
+            "summary": "Turned classifier-gated auto mode on by default for Pro, Max, and Team sessions, following self-hosted environments and cross-session messaging (Aug 7).",
+            "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-08-11",
+            "name": "Codex desktop app for Linux",
+            "provider": "OpenAI",
+            "summary": "Released a Linux desktop preview with import of Claude Code and Cursor setups, following Codex CLI support for Agent Plugins and MCP 2026-07-28.",
+            "url": "https://learn.chatgpt.com/docs/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "enterprise_dev_platform_agent",
+            "date": "2026-08-04",
+            "name": "Kiro Crew",
+            "provider": "AWS",
+            "summary": "Open-sourced a multi-agent workspace built on the Agent Client Protocol for delegating asynchronous engineering tasks to agent teams.",
+            "url": "https://kiro.dev/blog/introducing-kiro-crew/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-08-12",
+            "name": "Antigravity Custom Agents",
+            "provider": "Google",
+            "summary": "Introduced file-based custom agents that run as primary or delegated subagents with execution policies and lifecycle hooks.",
+            "url": "https://antigravity.google/blog/introducing-custom-agents"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "code_review_quality_agent",
+            "date": "2026-08-12",
+            "name": "CodeRabbit Agentic Change Management",
+            "provider": "CodeRabbit",
+            "summary": "Launched Triage, Change Stack, and CodeRabbit Security alongside a $143M Series C at a $1.5B valuation.",
+            "url": "https://www.coderabbit.ai/blog/introducing-agentic-change-management"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2026-08-14",
+            "name": "SpaceX completes Cursor acquisition",
+            "provider": "Cursor / SpaceX",
+            "summary": "Closed the $60B acquisition of Cursor, giving the agentic IDE access to SpaceX's GPU fleet; Grok 4.6 shipped a day earlier.",
+            "url": "https://cursor.com/blog/joining-spacex"
         }
     ]
 }

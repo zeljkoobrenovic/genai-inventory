@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-08-15",
     "scope": "software_engineering_sdlc_support",
     "description": "SDLC-support products that help plan, implement, review, test, secure, modernize, or maintain software. General-purpose agent application platforms, frameworks, eval tools, and guardrails live in agents.json.",
     "categories": [
@@ -36,7 +36,7 @@
                 "IDE plugins",
                 "Cloud tasks"
             ],
-            "notes": "Developer agent for cloud, CLI, IDE, and desktop workflows. Supports repository edits, debugging, PR suggestions, parallel long-running tasks, skills, and supervised terminal-local approvals.",
+            "notes": "Developer agent for cloud, CLI, IDE, and desktop workflows. Supports repository edits, debugging, PR suggestions, parallel long-running tasks, skills, Agent Plugins, MCP (2026-07-28 spec), and supervised terminal-local approvals. Codex CLI 0.146/0.147 (Jul 29-Aug 7, 2026) added session naming, thread pinning, and portable Agent Plugins; a Linux desktop app entered preview (Aug 11) with import of Claude Code and Cursor setups. GPT-5.4 retires from ChatGPT-authenticated Codex on Aug 31, 2026 in favor of GPT-5.6 Terra/Luna.",
             "url": "https://platform.openai.com/docs/codex"
         },
         {
@@ -51,7 +51,7 @@
                 "Slack",
                 "CI/CD"
             ],
-            "notes": "Agentic coding tool that reads codebases, edits files, runs commands, creates commits and pull requests, and can automate development tasks through CLI, IDE, desktop, web, and team-chat surfaces.",
+            "notes": "Agentic coding tool that reads codebases, edits files, runs commands, creates commits and pull/merge requests, and automates development tasks through CLI, IDE, desktop, web, Remote Control, and team-chat surfaces. Claude Opus 5 became the default Opus model (2.1.219, Jul 24, 2026). Auto mode (classifier-gated permissions) is on by default for new Pro, Max, and Team sessions from Aug 14, 2026. August 2026 also added self-hosted environments/runners for Team and Enterprise, cross-session messaging, default subagent forking, archive plugin sources, and GitLab merge-request support.",
             "url": "https://docs.anthropic.com/en/docs/claude-code/overview"
         },
         {
@@ -67,7 +67,7 @@
                 "GitHub CLI",
                 "MCP"
             ],
-            "notes": "Background coding agent that can be assigned GitHub issues or asked to create and update pull requests. Useful for bug fixes, incremental features, test coverage, documentation, and technical debt tasks.",
+            "notes": "Background coding agent (Copilot cloud agent) that can be assigned GitHub issues or asked to create and update pull requests, with configurable reasoning levels. Useful for bug fixes, incremental features, test coverage, documentation, and technical debt tasks. Agent Plugins 1.0 support is GA across VS Code, Copilot CLI, the Copilot SDK, and the Copilot app (Aug 12, 2026); Copilot code review effort levels are GA (Aug 7, 2026).",
             "url": "https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot"
         },
         {
@@ -80,7 +80,7 @@
                 "Cloud development environment",
                 "Jira/Linear workflows"
             ],
-            "notes": "Autonomous AI software engineer for backlog tasks, feature implementation, bug reproduction and fixes, tests, PR review, internal tools, code migrations, and documentation.",
+            "notes": "Autonomous AI software engineer for backlog tasks, feature implementation, bug reproduction and fixes, tests, PR review, migrations, and documentation, available in the cloud, in Devin Desktop (formerly Windsurf, with Devin Local as the local agent), and via Outposts that execute Devin sessions on customer-owned machines.",
             "url": "https://docs.devin.ai/"
         },
         {
@@ -109,7 +109,7 @@
                 "Hosted workspace",
                 "App builder"
             ],
-            "notes": "Natural-language app-building agent that creates projects, writes code, sets up infrastructure, tests its work, fixes problems, and deploys applications from Replit workspaces.",
+            "notes": "Natural-language app-building agent that creates projects, writes code, sets up infrastructure, tests its work, fixes problems, and deploys applications from Replit workspaces (web and mobile). Since Aug 14, 2026 Replit can be connected natively to ChatGPT, Claude, or Slack via MCP, and Agent can generate inline charts.",
             "url": "https://docs.replit.com/core-concepts/agent"
         },
         {
@@ -121,7 +121,7 @@
                 "Remote cloud environment",
                 "GitHub branches"
             ],
-            "notes": "Asynchronous remote agents that clone repositories, edit and run code in isolated environments, push branches, and allow developers to follow up or take over.",
+            "notes": "Asynchronous cloud agents that clone repositories, edit and run code in isolated environments, push branches, and allow developers to follow up or take over from desktop, web, or mobile. Builds (Aug 13, 2026) pre-prepare development environments in the background so cloud agents start up to 3x faster and reuse the last successful build.",
             "url": "https://docs.cursor.com/en/background-agents"
         },
         {
@@ -135,7 +135,7 @@
                 "Managed cloud agents",
                 "Scheduled tasks"
             ],
-            "notes": "Agent-first development environment that can orchestrate parallel coding agents, create dynamic subagents, run scheduled work, and continue tasks in isolated Google-managed environments.",
+            "notes": "Agent-first development environment (desktop, Antigravity CLI, SDK) that orchestrates parallel coding agents, dynamic subagents, scheduled work, and isolated Google-managed cloud environments. Custom Agents (Aug 12, 2026) define file-based agents that can run as primary or delegated subagents with execution policies and lifecycle hooks; Gemini 3.7 Flash arrived Aug 13, 2026.",
             "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
         },
         {
@@ -159,11 +159,11 @@
                 "Desktop IDE",
                 "SaaS backend"
             ],
-            "notes": "Agentic IDE for coding, refactoring, debugging, repo-aware chat, and multi-agent development workflows.",
+            "notes": "Agentic IDE for coding, refactoring, debugging, repo-aware chat, and multi-agent development workflows across desktop, iPad/iOS, and cloud agents. Auto mode is powered by Cursor Router (Intelligence/Balance/Cost modes); Google Workspace plugins arrived Aug 3, 2026. SpaceX completed its acquisition of Cursor on Aug 14, 2026; Grok 4.6 (Aug 12) is the first model shipped under the partnership.",
             "url": "https://www.cursor.com/"
         },
         {
-            "name": "Windsurf Cascade",
+            "name": "Devin Desktop (formerly Windsurf)",
             "provider": "Windsurf",
             "category": "ide_cli_coding_agent",
             "deployment_modes": [
@@ -171,7 +171,7 @@
                 "VS Code-style editor",
                 "JetBrains plugin"
             ],
-            "notes": "Agentic coding assistant with Code/Chat modes, tool calling, planning, checkpoints, terminal access, MCP support, real-time editor awareness, and linter integration.",
+            "notes": "Windsurf is now Devin Desktop (renamed June 2, 2026 after Cognition's acquisition); Devin Local has replaced Cascade as the default local agent, with Cascade-specific configuration being phased out. Devin Desktop v3.7.x (Aug 2026) adds shareable Devin Local conversations, editor-file context awareness, persistent 'Always Allow' permissions, and MCP auth fixes.",
             "url": "https://docs.windsurf.com/windsurf/cascade"
         },
         {
@@ -257,7 +257,7 @@
                 "VS Code",
                 "Open source"
             ],
-            "notes": "Terminal and editor coding agent with file and shell tools, MCP, skills, plugins, subagents, scheduled tasks, and support for Qwen and compatible model providers.",
+            "notes": "Terminal, editor, and web-shell coding agent with file and shell tools, MCP, skills, plugins, subagents, scheduled tasks, OpenTelemetry tracing, and support for Qwen and compatible model providers. v0.21.12 (Aug 14, 2026) added workspace file uploads to the Web Shell and stricter gating of autofix code-review findings.",
             "url": "https://qwenlm.github.io/qwen-code-docs/en/"
         },
         {
@@ -271,7 +271,7 @@
                 "JetBrains",
                 "Open source"
             ],
-            "notes": "Coding agent for Kimi K3 and K2.7 Code with repository tools, shell execution, subagents, plugins, skills, and MCP integrations across terminal and VS Code workflows.",
+            "notes": "Coding agent for Kimi K3 (incl. K3-256K) and K2.7 Code with repository tools, shell execution, subagents with dynamic model pools, plugins, skills, Computer Use plugin, and MCP across terminal, web, and IDE workflows. Kimi Code CLI 0.34-0.36 (Aug 6-13, 2026) added an experimental fullscreen TUI, live background-subagent progress, and Windows x64 Computer Use.",
             "url": "https://www.kimi.com/code/docs/en/"
         },
         {
@@ -287,7 +287,7 @@
                 "Eclipse",
                 "CLI"
             ],
-            "notes": "Developer platform assistant for code completion, chat, repository context, pull request workflows, and coding-agent task delegation across GitHub and IDEs.",
+            "notes": "Developer platform assistant for code completion, chat, repository context, pull request workflows, code review, and coding-agent task delegation across GitHub, the Copilot app, CLI, and IDEs. August 2026 additions include Agent Plugins 1.0 support, Copilot memory and Ollama BYOK for JetBrains, enterprise MCP allowlists, per-model usage reporting, MAI-Code-1.1-Flash, and new models (Grok 4.6, Gemini 3.7 Flash, Kimi K3).",
             "url": "https://docs.github.com/en/copilot"
         },
         {
@@ -315,7 +315,7 @@
                 "CLI",
                 "Enterprise management"
             ],
-            "notes": "AWS's current agentic development environment for spec-driven delivery, steering rules, hooks, powers, MCP, custom subagents, repository work, tests, and governed team adoption. It is the migration target for Amazon Q Developer's developer workflows.",
+            "notes": "AWS's agentic development environment for spec-driven delivery, steering rules, hooks, powers, MCP, Agent Plugins, custom subagents, and governed team adoption; migration target for Amazon Q Developer's developer workflows. Kiro Crew (Aug 4, 2026) is an open-source multi-agent workspace built on the Agent Client Protocol for delegating asynchronous tasks and ticket queues to agent teams; Kiro powers support Agent Plugins (Aug 7) and Claude Opus 5 is available (Jul 24).",
             "url": "https://kiro.dev/"
         },
         {
@@ -354,7 +354,7 @@
                 "CLI",
                 "Slack"
             ],
-            "notes": "AI code review, planning, and development workflow platform. Provides context-aware PR review, IDE/CLI review, planning from issues, and Slack-based agent workflows.",
+            "notes": "AI code review and 'Agentic Change Management' platform: context-aware PR review, IDE/CLI review, planning from issues, Slack workflows, plus Triage (routing changes by value/risk), Change Stack (semantic explanation of large agent-generated diffs), and CodeRabbit Security (reachability-aware vulnerability detection and fixes in PRs), launched with a $143M Series C at a $1.5B valuation (Aug 12-13, 2026).",
             "url": "https://docs.coderabbit.ai/"
         },
         {
@@ -368,8 +368,34 @@
                 "CI/CD",
                 "On-premise"
             ],
-            "notes": "AI code review and governance platform with multi-agent review, repository context, rule enforcement, standards governance, bug finding, and shift-left review in IDE and CLI workflows.",
+            "notes": "AI code review and governance platform with multi-agent review, repository context, Rule Miner (learns rules from past reviews), Review Effort Modes with adaptive depth routing, standards governance, bug finding, and shift-left review in IDE, CLI, and Kiro workflows.",
             "url": "https://docs.qodo.ai/"
+        },
+        {
+            "name": "Lovable",
+            "provider": "Lovable",
+            "category": "autonomous_swe_agent",
+            "deployment_modes": [
+                "Web",
+                "iOS/Android app",
+                "Hosted cloud"
+            ],
+            "notes": "AI software-creation platform that builds and publishes full-stack apps from natural-language conversation, with hosting, payments, integrations (Google Workspace, Microsoft 365, Salesforce, Stripe), security scanning, and enterprise governance. Raised a $400M Series C at a $13.3B valuation on Aug 12, 2026 (60M+ projects created).",
+            "url": "https://lovable.dev/blog/series-c"
+        },
+        {
+            "name": "Augment Code (Cosmos / Auggie)",
+            "provider": "Augment Code",
+            "category": "ide_cli_coding_agent",
+            "deployment_modes": [
+                "VS Code",
+                "JetBrains",
+                "CLI",
+                "Cloud agents",
+                "Enterprise"
+            ],
+            "notes": "Context-engine-based coding agent platform: Auggie CLI, IDE extensions, and the Cosmos cloud workspace with remote agents, session forking, file comments, cost analytics, and a managed MCP/integrations catalog. Weekly Cosmos releases and Auggie CLI 0.34 (Jul 23-Aug 13, 2026).",
+            "url": "https://www.augmentcode.com/changelog"
         }
     ]
 }
