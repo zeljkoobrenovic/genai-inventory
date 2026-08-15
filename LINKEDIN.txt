@@ -14,7 +14,7 @@ Three weeks since the last refresh, and the pace hasn't slowed. The inventory no
 🛠️ Tools & platforms
 • MCP 2026-07-28 spec (stateless core) and the new vendor-neutral Agent Plugins 1.0 standard
 • Cloudflare Workers AI + AI Gateway unified; vLLM 0.27; OpenAI "Ultrafast" tier on Cerebras
-• Claude Code auto mode by default, Codex desktop for Linux, Kiro Crew, Antigravity Custom Agents
+• Claude Code auto mode by default, Codex desktop for Linux, Kiro Crew, Antigravity Custom Agents — and Meta enters the coding-agent race with Muse Code
 • SpaceX closes the Cursor acquisition; Lovable and Augment Code added
 
 Take-aways: prices keep falling for mid-tier models, "cyber" variants are becoming a standard SKU, and open weights are arriving even for flagship-class models (Qwen 3.8, Kimi K3, Muse Glimmer).
