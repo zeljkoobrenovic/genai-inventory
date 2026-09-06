@@ -996,17 +996,17 @@
                 html += `<img src="https://zeljkoobrenovic.github.io/sokrates-media/flags/1x1/${item.country}.svg" style="height: 24px; border-radius: 50%;" />`;
                 html += '</div>';
                 html += '<div class="advice-as-title" title="' + item.name + '">';
-                const openModels = renderModels(item, true, 'darkgreen');
-                html += '<div style="padding-top: 9px; font-size: 12px; color: darkgreen;">open-weight models (' + openModels.count + ')</div>';
-                html += openModels.html;
+                const closedModels = renderModels(item, false, 'black');
+                html += '<div style="font-size: 12px; color: black;padding-top: 9px; ">proprietary models (' + closedModels.count + ')</div>';
+                html += closedModels.html;
                 html += '</div>';
 
                 html += '<div class="advice-as-title" title="' + item.name + '" style="color: darkred">';
                 html += '</a>';
 
-                const closedModels = renderModels(item, false, 'black');
-                html += '<div style="font-size: 12px; color: black;padding-top: 9px; ">proprietary models (' + closedModels.count + ')</div>';
-                html += closedModels.html;
+                const openModels = renderModels(item, true, 'darkgreen');
+                html += '<div style="padding-top: 9px; font-size: 12px; color: darkgreen;">open-weight models (' + openModels.count + ')</div>';
+                html += openModels.html;
                 html += '</div>';
 
 
