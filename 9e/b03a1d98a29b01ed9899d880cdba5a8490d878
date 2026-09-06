@@ -1,0 +1,21 @@
+templates/template.html
+  s_ae743551c1056b::t_3c94a516682a58 999-1001,1007-1009
+docs/index.html
+  s_ae743551c1056b::t_09defc7e26de9b 999-1001,1007-1009
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "9eb03a1d98a29b01ed9899d880cdba5a8490d878",
+  "prompts": {},
+  "sessions": {
+    "s_ae743551c1056b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a075d9-052d-73c1-8844-a79431b3532c",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Zeljko Obrenovic <zeljkoobrenovic@yahoo.com>"
+    }
+  }
+}
