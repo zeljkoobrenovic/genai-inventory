@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-15",
+    "updated_at": "2026-09-06",
     "categories": [
         {
             "category": "app_agent_platform",
@@ -40,7 +40,14 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Type-safe agent framework using Pydantic models, with structured outputs, tools, MCP (FastMCP 4), UI event streams, and multi-provider support. The 2.x line (v2.26-v2.31, Aug 6-14, 2026) added run cancellation, deferred tool hiding, realtime speech-to-speech with WebRTC, and new providers (Crusoe, Snowflake Cortex, Azure Voice Live), plus security fixes for the dev web UI; 1.x receives security backports."
+            "notes": "Type-safe agent framework with structured outputs, tools, MCP, and realtime model support. v2.40.0 adds agent event listeners, realtime interruption and queued-prompt controls, and background price updates; its release is dated September 4 and was published September 5 UTC.",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.40.0",
+                    "date": "2026-09-05"
+                }
+            ]
         },
         {
             "name": "OpenAI Agents SDK",
@@ -49,7 +56,19 @@
             "deployment_modes": [
                 "Library (Python/TypeScript)"
             ],
-            "notes": "Lightweight primitives for building single- and multi-agent systems (agents, handoffs, sessions, tracing, guardrails, sandboxed execution). Provider-agnostic; integrates with Temporal. Summer 2026 releases added Programmatic Tool Calling (v0.19, July 27), MCP v1 and v2 (2026-07-28 spec) support across transports, gpt-5.6-luna as default model, durable RunState input staging (v0.20, Aug 11), and deterministic testing utilities for agents, realtime, and voice (v0.21, Aug 15)."
+            "notes": "Framework for agents, handoffs, sessions, tracing, guardrails, and sandboxed execution. v0.21.1 (August 16) adds model-call timeouts, run-scoped working directories, and optional network-disabled Docker sandboxes; v0.22.0 (August 19) strengthens replay-state redaction, failure handling, and checkpoint usage accounting.",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.22.0",
+                    "date": "2026-08-19"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.1",
+                    "date": "2026-08-16"
+                }
+            ]
         },
         {
             "name": "Claude Agent SDK",
@@ -59,8 +78,15 @@
                 "Library (Python/TypeScript)",
                 "Self-hosted runtime"
             ],
-            "notes": "Production agent SDK built on the Claude Code runtime, with file and shell tools, sessions, permissions, hooks, checkpointing, subagents (including forking), skills, plugins, MCP, cross-session messaging, and OpenTelemetry support. Tracks Claude Code CLI releases closely; v0.2.137 (Aug 12, 2026) added ConversationResetMessage, message-origin tracking, and safe session-resume truncation options.",
-            "url": "https://code.claude.com/docs/en/agent-sdk/overview"
+            "notes": "Agent SDK built on Claude Code, with sessions, file and shell tools, permissions, hooks, subagents, skills, plugins, and MCP. Python v0.2.152 (September 2) bundles Claude CLI 2.1.259.",
+            "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.152",
+                    "date": "2026-09-02"
+                }
+            ]
         },
         {
             "name": "Microsoft Agent Framework",
@@ -70,8 +96,15 @@
                 "Library (.NET/Python/Go)",
                 "Open source"
             ],
-            "notes": "Direct successor to AutoGen and Semantic Kernel. Combines provider-neutral agents, an agent harness, graph workflows, durable state and replayable checkpoints, middleware, human-in-the-loop execution, MCP, A2A, AG-UI, and Microsoft Foundry integration. Recent releases added a stable GitHub Copilot agent integration (Python 1.0.0, July 23, 2026), a native Mistral chat client, experimental AGENT-HOOKS-0.1 enforcement middleware, and workflow checkpoint resume (Python 1.14.0, Aug 14, 2026).",
-            "url": "https://learn.microsoft.com/en-us/agent-framework/overview/"
+            "notes": "Successor to AutoGen and Semantic Kernel for provider-neutral agents, workflows, checkpoints, approvals, and Foundry integration. Python 1.17.0 (September 3) adds explicit hosted-history ownership and OpenAI SDK 3.x support, migrates Mistral clients to the official SDK, and removes the experimental agent-hooks core extra.",
+            "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0",
+                    "date": "2026-09-03"
+                }
+            ]
         },
         {
             "name": "Google Agent Development Kit (ADK)",
@@ -80,8 +113,15 @@
             "deployment_modes": [
                 "Library (Python/TypeScript/Go/Java)"
             ],
-            "notes": "Open-source framework for production agents with tools, graph workflows, multi-agent orchestration, human-in-the-loop controls, visual debugging, evaluation, and deployment to Google Cloud; available for Python, TypeScript, Go, and Java. ADK Python 2.7.0 (Aug 13, 2026) lets models declare their own capabilities, allows tools to return media directly, and adds Jinja2 instruction templating. Google's Agents CLI and Data Agent Kit ship as Agent Plugins for coding agents.",
-            "url": "https://google.github.io/adk-docs/"
+            "notes": "Open-source framework for agents, tools, workflows, evaluation, and Google Cloud deployment, with Python, TypeScript, Go, and Java libraries. Python 2.8.0 (published August 26) adds native A2A task mode, a Model Armor guardrail plugin, live-video support, and optional per-agent and per-workflow telemetry.",
+            "url": "https://google.github.io/adk-docs/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/google/adk-python/releases/tag/v2.8.0",
+                    "date": "2026-08-26"
+                }
+            ]
         },
         {
             "name": "Responses API",
@@ -90,8 +130,15 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Primary OpenAI API for agentic applications, with streaming, persistent conversations, built-in web/file search, code interpreter, computer use, remote MCP, programmatic tool calling, and multi-agent orchestration.",
-            "url": "https://platform.openai.com/docs/api-reference/responses"
+            "notes": "OpenAI's primary agent API, with persistent conversations, built-in tools, remote MCP, and programmatic tool calling. September 3 updates add asynchronous tool execution controls, WebSocket mid-turn steering, and reasoning-effort changes that preserve cached prefixes.",
+            "url": "https://platform.openai.com/docs/api-reference/responses",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/changelog",
+                    "date": "2026-09-03"
+                }
+            ]
         },
         {
             "name": "OpenAI Assistants API",
@@ -100,8 +147,22 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Deprecated hosted threads and assistant runs. It shuts down on August 26, 2026; existing integrations should migrate to the Responses API.",
-            "url": "https://platform.openai.com/docs/assistants/deep-dive"
+            "notes": "Retired on August 26, 2026. Hosted assistant, thread, and run integrations must migrate to the Responses API and Conversations API.",
+            "url": "https://platform.openai.com/docs/assistants/deep-dive",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/changelog",
+                    "date": "2026-08-26"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/deprecations",
+                    "date": "2026-08-26"
+                }
+            ],
+            "status": "retired",
+            "retired_at": "2026-08-26"
         },
         {
             "name": "Anthropic Messages (Tool Use & Computer Use)",
@@ -110,7 +171,14 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Structured tool use, input/output text+image, and managed ‘computer use’ for software control."
+            "notes": "Claude's API for text, image, and structured tool use. Computer and browser toolsets, Files API, and Skills APIs became generally available August 19, adding batched computer actions, zoom, and browser interaction through accessibility elements, tabs, forms, and files.",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-08-19"
+                }
+            ]
         },
         {
             "name": "Gemini Enterprise Agent Platform",
@@ -166,7 +234,14 @@
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
-            "notes": "Graph-based, interruptible, resumable agent runtime; human-in-the-loop; multi-agent patterns."
+            "notes": "Graph-based runtime for stateful agents with durable execution, interrupts, resumable workflows, and human review. Python SDK 0.4.4 (August 27) adds routing of LangSmith traces from thread streams.",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
+                    "date": "2026-08-27"
+                }
+            ]
         },
         {
             "name": "LlamaIndex",
@@ -296,7 +371,19 @@
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
-            "notes": "Tracing, datasets, evals, A/B tests, and prompt/version management for agents."
+            "notes": "Agent tracing, prompt management, datasets, and evaluation platform. v4 became generally available August 17 for cloud and self-hosted deployments, adding observation-level evaluation, monitors, code evaluators, and expanded search; stable evaluator-management APIs followed August 27, with legacy cloud APIs scheduled to retire November 16.",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://langfuse.com/changelog/2026-08-17-langfuse-v4",
+                    "date": "2026-08-17"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://langfuse.com/changelog/2026-08-27-stable-evaluator-api",
+                    "date": "2026-08-27"
+                }
+            ]
         },
         {
             "name": "Weights & Biases (Weave/Evals)",
@@ -391,6 +478,112 @@
             ],
             "notes": "TypeScript agent framework with agents, tools, workflows (including persistable declarative workflows), memory, RAG, evals, observability, MCP, and AG-UI. Weekly 1.5x releases in summer 2026 added file-based agent schedules, in-process Code Mode execution, sandbox deployments, chat-channel controllers (Slack/Discord/Telegram), and tool-result guardrails.",
             "url": "https://mastra.ai/"
+        },
+        {
+            "name": "Claude Managed Agents",
+            "provider": "Anthropic",
+            "category": "app_agent_platform",
+            "deployment_modes": [
+                "Managed cloud service",
+                "Self-hosted sandbox integration"
+            ],
+            "notes": "Managed Claude agent service with environments, skills, memory stores, and deployment controls. August updates add domain allow/block lists and memory access from self-hosted sandboxes; ant CLI 1.30 (September 3) adds declarative resource management with ant apply.",
+            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-08-19"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-09-03"
+                }
+            ]
+        },
+        {
+            "name": "Mistral Search Toolkit",
+            "provider": "Mistral AI",
+            "category": "app_agent_framework",
+            "deployment_modes": [
+                "Library",
+                "Cloud",
+                "On-premise"
+            ],
+            "notes": "Retrieval toolkit for ingesting, embedding, and indexing enterprise documents. Agentic Search (August 20) lets agents search, open, navigate, read, and inspect sources through a multi-step retrieval loop, also available in Libraries across Studio and Vibe.",
+            "url": "https://mistral.ai/news/agentic-search/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://mistral.ai/news/agentic-search/",
+                    "date": "2026-08-20"
+                }
+            ]
+        },
+        {
+            "name": "Sarvam Voice Agents",
+            "provider": "Sarvam AI",
+            "category": "app_agent_platform",
+            "deployment_modes": [
+                "SaaS/API",
+                "Telephony"
+            ],
+            "notes": "Platform for building, deploying, and monitoring voice agents on telephony. September 2 adds Saaras V4 as the default speech recognizer, live call transfers, and inbound completion webhooks; outbound completion webhooks arrived August 20.",
+            "url": "https://docs.sarvam.ai/conversations/releases",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.sarvam.ai/conversations/releases",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.sarvam.ai/conversations/releases",
+                    "date": "2026-08-20"
+                }
+            ]
+        },
+        {
+            "name": "Gemini Enterprise Workflow Builder",
+            "provider": "Google",
+            "category": "workflow_lowcode",
+            "deployment_modes": [
+                "Gemini Enterprise web app"
+            ],
+            "notes": "Workflow Builder, formerly Agent Designer, became generally available September 3. Builds scheduled or on-demand workflows, connects enterprise applications, imports ADK and A2A agents, and makes workflows and chat agents available through chat mentions under administrator controls.",
+            "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes?authuser=993749347",
+                    "date": "2026-09-03"
+                }
+            ]
+        },
+        {
+            "name": "DeepSeek Harness",
+            "provider": "DeepSeek",
+            "category": "app_agent_framework",
+            "deployment_modes": [
+                "Open-source runtime",
+                "CLI",
+                "Local web interface"
+            ],
+            "notes": "Developer preview of DeepSeek's open-source agent runtime, built on Cordis with a plugin-based architecture. The dsh CLI starts a local web interface; the project is iterating rapidly with compatibility-breaking changes.",
+            "url": "https://github.com/deepseek-ai/deepseek-harness",
+            "sources": [
+                {
+                    "title": "DeepSeek Harness README",
+                    "url": "https://github.com/deepseek-ai/deepseek-harness",
+                    "accessed_at": "2026-09-06"
+                },
+                {
+                    "title": "DeepSeek Harness September 4 development",
+                    "url": "https://github.com/deepseek-ai/deepseek-harness/commits/master/",
+                    "date": "2026-09-04"
+                }
+            ]
         }
     ],
     "scope": "ai_application_development_agents",

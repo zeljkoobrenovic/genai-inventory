@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-15",
+    "updated_at": "2026-09-06",
     "milestones": [
         {
             "domain": "hosting",
@@ -549,6 +549,231 @@
             "provider": "Meta",
             "summary": "Released Meta's first terminal coding agent with persistent async background sub-agents.",
             "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-08-21",
+            "name": "OpenAI regional processing per request",
+            "provider": "OpenAI",
+            "summary": "Eligible Global projects can select regional processing on individual requests.",
+            "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+            "domain": "hosting",
+            "category": "open_source_inference_engine",
+            "date": "2026-08-26",
+            "name": "vLLM 0.28",
+            "provider": "vLLM",
+            "summary": "Adds serving optimizations for Kimi K3 and DeepSeek V4, speculative decoding, and tiered KV-cache offloading.",
+            "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0"
+        },
+        {
+            "domain": "hosting",
+            "category": "managed_api_llm",
+            "date": "2026-08-29",
+            "name": "OpenAI mTLS and workload identity GA",
+            "provider": "OpenAI",
+            "summary": "mTLS and X.509 workload identity become generally available for API access.",
+            "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+            "domain": "hosting",
+            "category": "local_runtime_app",
+            "date": "2026-08-31",
+            "name": "Ollama per-token cloud plans",
+            "provider": "Ollama",
+            "summary": "New Pro, Max, and Team plans include monthly token-priced usage; existing subscribers can retain legacy plans.",
+            "url": "https://ollama.com/blog/transparent-pricing"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2026-09-01",
+            "name": "Claude Fable 5.1 on Bedrock",
+            "provider": "AWS",
+            "summary": "Claude Fable 5.1 becomes available through Amazon Bedrock.",
+            "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2026-09-03",
+            "name": "GPT-6 Astra on Microsoft Foundry",
+            "provider": "Microsoft",
+            "summary": "GPT-6 Astra begins its Foundry rollout with Azure enterprise controls.",
+            "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/"
+        },
+        {
+            "domain": "hosting",
+            "category": "cloud_model_platform",
+            "date": "2026-09-04",
+            "name": "GPT-6 Astra on Databricks Unity Gateway",
+            "provider": "Databricks",
+            "summary": "GPT-6 Astra becomes available through Foundation Model APIs on Unity Gateway.",
+            "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+        },
+        {
+            "domain": "hosting",
+            "category": "open_source_inference_engine",
+            "date": "2026-09-05",
+            "name": "SGLang 0.5.19",
+            "provider": "SGLang",
+            "summary": "Adds Qwen3.8 support, beam search, DeepEP v2, and expanded deployment guides.",
+            "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_eval_observability",
+            "date": "2026-08-17",
+            "name": "Langfuse v4 GA",
+            "provider": "Langfuse",
+            "summary": "Observation-level evaluation, monitors, code evaluators, and expanded search become available in cloud and self-hosted deployments.",
+            "url": "https://langfuse.com/changelog/2026-08-17-langfuse-v4"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2026-08-19",
+            "name": "Claude computer, browser, Files, and Skills GA",
+            "provider": "Anthropic",
+            "summary": "Computer and browser toolsets and the Files and Skills APIs reach general availability.",
+            "url": "https://platform.claude.com/docs/en/release-notes/overview"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_framework",
+            "date": "2026-08-20",
+            "name": "Mistral Agentic Search",
+            "provider": "Mistral AI",
+            "summary": "Multi-step document retrieval arrives through Search Toolkit and Libraries in Studio and Vibe.",
+            "url": "https://mistral.ai/news/agentic-search/"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2026-08-26",
+            "name": "OpenAI Assistants API shutdown",
+            "provider": "OpenAI",
+            "summary": "Assistants API shuts down; integrations move to Responses and Conversations APIs.",
+            "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2026-09-02",
+            "name": "Sarvam Voice Agents: V4 and call transfers",
+            "provider": "Sarvam AI",
+            "summary": "Saaras V4 becomes the default recognizer, with live transfers and inbound completion webhooks.",
+            "url": "https://docs.sarvam.ai/conversations/releases"
+        },
+        {
+            "domain": "app_agents",
+            "category": "workflow_lowcode",
+            "date": "2026-09-03",
+            "name": "Gemini Enterprise Workflow Builder GA",
+            "provider": "Google",
+            "summary": "Workflow Builder reaches GA with schedules, application connectors, and ADK/A2A agent import.",
+            "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+        },
+        {
+            "domain": "app_agents",
+            "category": "app_agent_platform",
+            "date": "2026-09-03",
+            "name": "Responses API steering and async tools",
+            "provider": "OpenAI",
+            "summary": "Adds asynchronous tool controls, mid-turn WebSocket steering, and cache-preserving reasoning changes.",
+            "url": "https://developers.openai.com/api/docs/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-08-19",
+            "name": "Cursor agent subscriptions and VM subagents",
+            "provider": "Cursor",
+            "summary": "Adds PR-, chat-, and schedule-triggered subscriptions, steering, and subagents with separate virtual machines.",
+            "url": "https://cursor.com/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2026-08-24",
+            "name": "Junie Local",
+            "provider": "JetBrains",
+            "summary": "Junie gains free local inference on M5 Macs with at least 64 GB RAM.",
+            "url": "https://junie.jetbrains.com/blog/junie-local-launch/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-08-27",
+            "name": "Cursor projects from scratch",
+            "provider": "Cursor",
+            "summary": "Agents can start projects with Origin repositories, live previews, and Vercel publishing.",
+            "url": "https://cursor.com/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "enterprise_dev_platform_agent",
+            "date": "2026-09-01",
+            "name": "Kiro Web GA",
+            "provider": "AWS",
+            "summary": "Browser-based development and delegation reach general availability with cloud configuration sync.",
+            "url": "https://kiro.dev/changelog/web/kiro-web-is-now-generally-available/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "enterprise_dev_platform_agent",
+            "date": "2026-09-01",
+            "name": "Genie Code scheduled tasks GA",
+            "provider": "Databricks",
+            "summary": "Recurring prompts run as full Genie Code sessions and produce continuable results.",
+            "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "code_review_quality_agent",
+            "date": "2026-09-01",
+            "name": "Copilot pull-request approvals preview",
+            "provider": "GitHub",
+            "summary": "Copilot code review can approve pull requests when an administrator enables the public-preview feature.",
+            "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-09-02",
+            "name": "Cursor agents on customer machines",
+            "provider": "Cursor",
+            "summary": "Cloud agents can execute on personal and team-managed infrastructure with worker pools.",
+            "url": "https://cursor.com/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-09-02",
+            "name": "Antigravity /boost reasoning",
+            "provider": "Google",
+            "summary": "Paid users gain a command that applies a multi-agent reasoning pipeline.",
+            "url": "https://antigravity.google/changelog"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "ide_cli_coding_agent",
+            "date": "2026-09-04",
+            "name": "Kimi Code Tower web preview",
+            "provider": "Moonshot AI",
+            "summary": "Kimi Code 0.41 adds experimental multi-agent Tower collaboration in the web interface.",
+            "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html"
+        },
+        {
+            "domain": "swe_agents",
+            "category": "autonomous_swe_agent",
+            "date": "2026-09-04",
+            "name": "GPT-6 Astra becomes Codex CLI default",
+            "provider": "OpenAI",
+            "summary": "Codex CLI 0.153.4 sets GPT-6 Astra as the bundled default model.",
+            "url": "https://learn.chatgpt.com/docs/changelog"
         }
     ]
 }

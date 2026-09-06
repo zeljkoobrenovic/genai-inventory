@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-15",
+    "updated_at": "2026-09-06",
     "categories": [
         {
             "category": "managed_api_llm",
@@ -55,11 +55,23 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "GPT-5.6 Sol, Terra, and Luna with 1.05M-token context, plus image, audio, GPT Transcribe, realtime, embeddings, computer use, built-in tools, multi-agent orchestration, and programmatic tool calling through the Responses API, Daybreak Blue/Red security tiers, and a limited-preview Ultrafast tier for GPT-5.6 Sol.",
+            "notes": "Managed GPT-6 Astra and GPT-5.6 models, plus image, speech, realtime, and embeddings APIs. August–September updates add per-request regional processing for eligible projects, mTLS and X.509 workload identity, and Responses API controls for asynchronous tools and mid-turn steering.",
             "sources": [
-                "S1",
-                "S11",
-                "S12"
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/changelog",
+                    "date": "2026-09-03"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/changelog",
+                    "date": "2026-08-29"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://developers.openai.com/api/docs/changelog",
+                    "date": "2026-08-21"
+                }
             ]
         },
         {
@@ -69,11 +81,23 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Claude Opus 5, Sonnet 5, Fable 5, Opus 4.8, and earlier Claude 4.x models with 1M-token context, adjustable effort levels, fast mode, tool use, computer use, and limited Mythos 5 access for defensive cybersecurity.",
+            "notes": "Managed Claude models including Fable 5.1, Opus 5, and Sonnet 5, with restricted Mythos 5.1 access through Project Glasswing. Computer and browser toolsets, Files API, and Skills APIs are generally available; Sonnet 5's $2/$10 per-million-token introductory rates became standard pricing.",
             "sources": [
-                "S2",
-                "S3",
-                "S19"
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-09-01"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-08-19"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-08-10"
+                }
             ]
         },
         {
@@ -83,10 +107,23 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Gemini 3.7 Flash, Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, Gemini Live, Omni Flash video generation/editing, image generation, Gemini Robotics-ER 2 preview, long context, computer use, and Google AI Studio access.",
+            "notes": "Managed Gemini 3.8 Flash, Gemini Omni 1.1 Flash video generation/editing, Gemini 3.5 Transcribe and Transcribe Live, plus other Gemini models. Lyria 3.5 music generation entered API public preview on September 3; AI Studio provides interactive access.",
             "sources": [
-                "S5",
-                "S18"
+                {
+                    "title": "Official release notes",
+                    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                    "date": "2026-09-03"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                    "date": "2026-08-26"
+                }
             ]
         },
         {
@@ -96,11 +133,18 @@
             "deployment_modes": [
                 "SaaS/API (Azure)"
             ],
-            "notes": "OpenAI models on Azure with enterprise controls.",
+            "notes": "OpenAI models on Azure with enterprise identity, networking, and governance controls. GPT-6 Astra began rolling out in Microsoft Foundry on September 3; access depends on deployment availability and quota.",
             "sources": [
-                "S6",
-                "S9",
-                "S13"
+                {
+                    "title": "Official release notes",
+                    "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
+                    "date": "2026-09-03"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/responses",
+                    "accessed_at": "2026-09-06"
+                }
             ]
         },
         {
@@ -110,9 +154,13 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Command A+, Command A family, North Mini Code, embeddings, and rerank APIs, with Model Vault deployment options for enterprise workloads.",
+            "notes": "Managed Command, Embed, Rerank, and document-intelligence APIs, with Model Vault for isolated inference. Parse launched August 27 at $1.50 per 1,000 pages, with Model Vault and private-infrastructure deployment options.",
             "sources": [
-                "S7"
+                {
+                    "title": "Official release notes",
+                    "url": "https://cohere.com/blog/parse",
+                    "date": "2026-08-27"
+                }
             ]
         },
         {
@@ -122,9 +170,18 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Mistral Medium 3.5, Mistral Small 4, Leanstral 1.5, OCR 4.1, Devstral, Voxtral, Shieldstral moderation, function calling, agents, and streaming.",
+            "notes": "Managed Mistral language, coding, OCR, speech, and moderation models with agent and retrieval tools. OCR 4.1 became generally available on August 31; Agentic Search arrived August 20 in Search Toolkit and Libraries across Studio and Vibe.",
             "sources": [
-                "S8"
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.mistral.ai/resources/changelogs",
+                    "date": "2026-08-31"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://mistral.ai/news/agentic-search/",
+                    "date": "2026-08-20"
+                }
             ]
         },
         {
@@ -159,12 +216,18 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Grok 4.6 with a 500K-token context and configurable reasoning effort, Grok 4.5, Grok 4.3, voice, image, tool use, and an OpenAI-compatible API.",
+            "notes": "Managed Grok 4.6 reasoning and coding, voice, image generation, and tool use through compatible APIs. Grok Imagine Image 2.0 gained automatic quality selection, five-reference-image editing, and additional wide aspect ratios on August 28; the older Imagine Image Quality endpoint is scheduled to retire November 2.",
             "sources": [
-                "S16",
-                "S1xai",
-                "S2xai",
-                "S3xai"
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.x.ai/developers/release-notes",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.x.ai/developers/release-notes",
+                    "date": "2026-08-28"
+                }
             ]
         },
         {
@@ -174,8 +237,20 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "DeepSeek V4 Pro (0813 update with stronger agent capabilities and native Responses API support) and V4 Flash through an OpenAI-compatible API; peak/off-peak pricing with higher rates takes effect August 16, 2026.",
-            "url": "https://api-docs.deepseek.com/"
+            "notes": "Managed DeepSeek V4 Pro and V4 Flash with Responses-compatible access and 1M-token context. Experimental V4 Flash Vision launched August 21 for text and image input; the peak/off-peak pricing schedule has been in effect since August 16.",
+            "url": "https://api-docs.deepseek.com/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://api-docs.deepseek.com/updates/",
+                    "date": "2026-08-21"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://api-docs.deepseek.com/news/news260813/",
+                    "date": "2026-08-13"
+                }
+            ]
         },
         {
             "name": "Meta Model API",
@@ -184,8 +259,20 @@
             "deployment_modes": [
                 "SaaS/API (public preview)"
             ],
-            "notes": "Public-preview API for Meta's Muse models, starting with the multimodal, agent-oriented Muse Spark 1.1.",
-            "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+            "notes": "API access to Meta's Muse models, including Muse Spark 1.3 with max reasoning from September 2. Muse Voice Transcribe launched September 1 for streaming speech recognition, speaker diarization, and endpointing.",
+            "url": "https://dev.meta.ai/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+                    "date": "2026-09-01"
+                }
+            ]
         },
         {
             "name": "QwenCloud",
@@ -194,8 +281,25 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Generally available Qwen API platform with Qwen 3.8 Max, Qwen 3.7, Audio 3.0 realtime/TTS/ASR, Wan 3.0, Qwen Image 3.0, and partner models such as GLM-5.2 and DeepSeek V4 through OpenAI-compatible endpoints.",
-            "url": "https://docs.qwencloud.com/changelog/models"
+            "notes": "Managed Qwen and partner-model APIs, including Qwen3.8 Max 0902, Qwen3.8 Flash, Qwen3.8-27B, and roleplay and image-translation models. Wan 3.0 Video became generally available on August 24 alongside the faster Prime variant; GLM-5.3 and Kimi K3 are also hosted.",
+            "url": "https://docs.qwencloud.com/changelog/models",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.qwencloud.com/changelog/models",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.qwencloud.com/changelog/models",
+                    "date": "2026-08-24"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.qwencloud.com/changelog/models",
+                    "date": "2026-08-19"
+                }
+            ]
         },
         {
             "name": "Amazon Bedrock",
@@ -204,13 +308,18 @@
             "deployment_modes": [
                 "AWS managed endpoints"
             ],
-            "notes": "Multi-provider model hub with Amazon Nova 2, Claude 5 (including Opus 5), OpenAI GPT-5.6 and Daybreak, Grok, open-weight, embedding, image, and speech models, plus a built-in Web Search tool; availability varies by region.",
+            "notes": "Managed multi-provider model platform with regional endpoints and enterprise controls. Claude Fable 5.1 became available September 1; the September 2 retention update introduced aws_review for models requiring review, while existing provider_data_share configurations remain compatible.",
             "sources": [
-                "S12",
-                "S13",
-                "S14b",
-                "S14c",
-                "S14d"
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html",
+                    "date": "2026-09-01"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/",
+                    "date": "2026-09-02"
+                }
             ]
         },
         {
@@ -234,10 +343,18 @@
             "deployment_modes": [
                 "GCP managed endpoints"
             ],
-            "notes": "Managed Gemini 3.7/3.6/3.5 and partner models, including Claude Opus 5, with versioned endpoints, tuning, grounding, evaluation, and model lifecycle controls.",
+            "notes": "Google Cloud managed Gemini and partner-model access with grounding, tuning, evaluation, and model lifecycle controls. Current access includes Gemini 3.8 Flash and Claude Fable 5.1; model, feature, and regional availability vary.",
             "sources": [
-                "S4",
-                "S6g"
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/grounding/grounding-with-vertex-ai-search",
+                    "accessed_at": "2026-09-06"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-09-01"
+                }
             ]
         },
         {
@@ -247,11 +364,28 @@
             "deployment_modes": [
                 "Azure managed endpoints"
             ],
-            "notes": "Current Microsoft Foundry catalog for Microsoft MAI, OpenAI, Anthropic (including Claude Opus 5), DeepSeek, Mistral, xAI, Cohere, Meta, and Fireworks-served open-weight partner models.",
+            "notes": "Managed model catalog spanning OpenAI, Anthropic, Microsoft MAI, and other providers. September additions include GPT-6 Astra, Claude Fable 5.1, MAI-Transcribe-2, and MAI-Image-2.6/Flash in public preview; model access and quotas vary by deployment.",
             "sources": [
-                "S13",
-                "S9",
-                "S12a"
+                {
+                    "title": "Official release notes",
+                    "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
+                    "date": "2026-09-03"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                    "date": "2026-09-01"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://microsoft.ai/news/pushing-the-quality-cost-frontier-with-mai-image-2-6/",
+                    "date": "2026-09-04"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
+                    "date": "2026-09-03"
+                }
             ]
         },
         {
@@ -289,9 +423,23 @@
             "deployment_modes": [
                 "Managed endpoints / serverless"
             ],
-            "notes": "Serve open-weight, custom, and hosted partner models, including current Claude and Grok releases, with serverless endpoints and tools for RAG and agents.",
+            "notes": "Managed serving for custom, open-weight, and partner models through Foundation Model APIs and Unity Gateway. September additions include Claude Fable 5.1, Gemini 3.8 Flash, and GPT-6 Astra; releases are staged across accounts.",
             "sources": [
-                "S60"
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september",
+                    "date": "2026-09-04"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september",
+                    "date": "2026-09-02"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september",
+                    "date": "2026-09-01"
+                }
             ]
         },
         {
@@ -688,10 +836,13 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "High-throughput LLM server with paged KV cache; v0.27 adds a Rust frontend with gRPC control plane, FlashAttention 4 on Blackwell, and Kimi K3 support.",
+            "notes": "High-throughput open-source model serving with paged KV cache and a Rust frontend. v0.28.0 (August 26) expands Kimi K3 and DeepSeek V4 optimizations, speculative decoding, tiered KV-cache offloading, and Muse Glimmer support.",
             "sources": [
-                "S44",
-                "S44g"
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+                    "date": "2026-08-26"
+                }
             ]
         },
         {
@@ -715,11 +866,13 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "Fast serving engine for LLM/VLM with EP & KV-reuse features; v0.5.17 adds Kimi K3 day-0 support, a Rust server frontend, and DSpark speculative decoding.",
+            "notes": "Open-source serving engine for language, vision-language, and diffusion models. v0.5.19 (September 5) adds Qwen3.8 model support, beam search, DeepEP v2, and deployment guides for GLM-5.3 and additional hardware configurations.",
             "sources": [
-                "S46s",
-                "S46s2",
-                "S46s3"
+                {
+                    "title": "Official release notes",
+                    "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19",
+                    "date": "2026-09-05"
+                }
             ]
         },
         {
@@ -755,9 +908,18 @@
             "deployment_modes": [
                 "Laptop/desktop/server"
             ],
-            "notes": "One-line local model runner & registry with OpenAI-compatible chat and Responses APIs (including web search), an MLX engine on Apple Silicon, and day-0 support for Muse Glimmer, Qwen 3.8, and Nemotron 3.5 Lightning.",
+            "notes": "Local model runner and cloud model service with compatible APIs, an Apple Silicon MLX engine, and integrations for coding tools. Claude Desktop gateway support arrived August 25; new Pro, Max, and Team cloud plans use per-token billing with included monthly usage from August 31, while existing subscribers can retain legacy plans.",
             "sources": [
-                "S48"
+                {
+                    "title": "Official release notes",
+                    "url": "https://ollama.com/blog",
+                    "date": "2026-08-25"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://ollama.com/blog/transparent-pricing",
+                    "date": "2026-08-31"
+                }
             ]
         },
         {
@@ -767,9 +929,13 @@
             "deployment_modes": [
                 "Laptop/desktop"
             ],
-            "notes": "GUI to run/chat with local models plus LM Studio Bionic hybrid local/US-hosted access to models such as Kimi K3, DeepSeek V4 Flash, and Muse Glimmer.",
+            "notes": "Desktop runtime for local models, with Bionic combining local and US-hosted open models for agent tasks. Bionic added reusable Skills on August 17, alongside its model, file, and shell workflows.",
             "sources": [
-                "S49"
+                {
+                    "title": "Official release notes",
+                    "url": "https://lmstudio.ai/blog/skills",
+                    "date": "2026-08-17"
+                }
             ]
         },
         {
@@ -882,6 +1048,45 @@
             "notes": "API access to OSS models on HPC hardware.",
             "sources": [
                 "S62"
+            ]
+        },
+        {
+            "name": "Z.ai API",
+            "provider": "Z.ai",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Managed GLM reasoning, coding, and multimodal APIs. GLM-5.3-Flash launched August 26 with 1M-token context and Coding Plan access; published weights also support independent self-hosting.",
+            "url": "https://docs.z.ai/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://docs.z.ai/release-notes/new-released",
+                    "date": "2026-08-26"
+                },
+                {
+                    "title": "Official release notes",
+                    "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+                    "accessed_at": "2026-09-06"
+                }
+            ]
+        },
+        {
+            "name": "Tencent Cloud TokenHub",
+            "provider": "Tencent",
+            "category": "managed_api_llm",
+            "deployment_modes": [
+                "SaaS/API"
+            ],
+            "notes": "Tencent Cloud API access to Hy models, including Hy3 and the open-weight Hy4 Preview released August 28. Hy4 Preview supports coding, office work, and research with a context window exceeding 1M tokens.",
+            "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+            "sources": [
+                {
+                    "title": "Official release notes",
+                    "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+                    "date": "2026-08-28"
+                }
             ]
         }
     ]
