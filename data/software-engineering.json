@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-06",
+    "updated_at": "2026-10-10",
     "scope": "software_engineering_sdlc_support",
     "description": "SDLC-support products that help plan, implement, review, test, secure, modernize, or maintain software. General-purpose agent application platforms, frameworks, eval tools, and guardrails live in agents.json.",
     "categories": [
@@ -36,7 +36,7 @@
                 "IDE plugins",
                 "Cloud tasks"
             ],
-            "notes": "Coding agent for CLI, desktop, IDE, and cloud tasks with skills, plugins, MCP, and repository tools. CLI 0.153.4 (September 4) makes GPT-6 Astra the default, following plugin marketplace CLI support in 0.153.0; GPT-5.4 access through ChatGPT-authenticated Codex ended August 31, while API-key use remains available.",
+            "notes": "Coding agent for CLI, desktop, IDE, and cloud tasks with skills, plugins, MCP, and repository tools. GPT-6 Sol and Luna arrived in Codex on September 22 at lower token prices than GPT-5.6, followed by GPT-6.1 Sol (September 29) and an Ultrafast mode for it on eligible plans (October 8); GPT-5.3-Codex-Spark was deprecated September 14 and GPT-5.5 retires from Codex on October 14.",
             "url": "https://learn.chatgpt.com/docs/changelog",
             "sources": [
                 {
@@ -63,7 +63,7 @@
                 "Slack",
                 "CI/CD"
             ],
-            "notes": "Coding agent spanning CLI, IDE, desktop, web, remote sessions, and team workflows, with subagents, skills, plugins, and MCP. September releases add skill-use diagnostics, organization-policy diagnostics, configurable command-output limits, and file-based subagent prompts; version 2.1.263 was released September 6.",
+            "notes": "Coding agent spanning CLI, IDE, desktop, web, remote sessions, and team workflows, with subagents, skills, plugins, and MCP. Opus 5.5 (v2.1.280, September 22) and Sonnet 5.5 (v2.1.284, September 28) became the default models, AGENTS.md is read when no CLAUDE.md exists (September 18), and v2.1.287 (October 1) introduced Claude Mods that let plugins change deeper behaviour; Haiku 5.5 became the default Haiku in v2.1.293 (October 7).",
             "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
             "sources": [
                 {
@@ -91,7 +91,7 @@
                 "GitHub CLI",
                 "MCP"
             ],
-            "notes": "Background coding agent for issues, pull requests, and repository tasks across GitHub and supported developer tools. September updates add Fable 5.1 and Gemini 3.8 Flash access, content exclusions in CLI/app workflows, and VS Code Agent Merge in public preview for review feedback, failing CI, and merge conflicts.",
+            "notes": "Background coding agent for issues, pull requests, and repository tasks across GitHub and supported developer tools. The week of September 21 brought mid-conversation model switching, duplicate-issue checks, and clearer plan status for the cloud agent in Slack and Microsoft Teams; Claude Sonnet 5.5 became selectable for the coding agent on September 28.",
             "url": "https://docs.github.com/en/copilot/using-github-copilot/coding-agent/about-assigning-tasks-to-copilot",
             "sources": [
                 {
@@ -111,7 +111,7 @@
                 "Cloud development environment",
                 "Jira/Linear workflows"
             ],
-            "notes": "Autonomous software engineering agent for implementation, remediation, review, and maintenance tasks, with cloud, desktop, and customer-hosted Outpost execution. August updates add nested SubDevins and enterprise MCP controls; September 2 adds cleanup scans, /scan, and recurring scans through Automations.",
+            "notes": "Autonomous software engineering agent for implementation, remediation, review, and maintenance tasks, with cloud, desktop, and customer-hosted Outpost execution. September updates add installable plugins bundling skills, rules, hooks, and MCPs (September 9), PagerDuty-triggered automations (September 11), a SWE-2 research preview in the agent selector (September 21), and a native Jira agent (September 30); October 5 adds a Terminal tab on Devin's machine.",
             "url": "https://docs.devin.ai/",
             "sources": [
                 {
@@ -140,7 +140,7 @@
                 "Linear",
                 "Enterprise deployment"
             ],
-            "notes": "Software development agents for CLI, desktop, web, IDE, CI/CD, and enterprise workflows. Late-August releases add editable queued messages, Droid doctor diagnostics, and stronger MCP recovery; CLI 0.209.0/Desktop 0.166.0 (September 1) add session archiving and GPT-5.6 Sol as the default model for unconfigured sessions.",
+            "notes": "Software development agents for CLI, desktop, web, IDE, CI/CD, and enterprise workflows. September releases add managed computers on the Pro plan (CLI 0.216.0, September 9), session forking, Databricks and ServiceNow connectors, and a /migrate command (September 26); CLI 0.237.0/Desktop 0.194.0 shipped October 9.",
             "url": "https://docs.factory.ai/",
             "sources": [
                 {
@@ -164,7 +164,7 @@
                 "Hosted workspace",
                 "App builder"
             ],
-            "notes": "App-building agent that writes code, configures infrastructure, tests, and deploys projects from Replit workspaces. Project Analytics (September 4) adds paid custom events and conversion funnels, which Agent can help instrument and analyze.",
+            "notes": "App-building agent that writes code, configures infrastructure, tests, and deploys projects from Replit workspaces. Since October 2, Agent users can build with Claude Sonnet 5.5 (Power Mode) and GPT-6.1 Sol (Max Mode), and can have Agent wire the Jev decision model into apps through Replit AI Integrations.",
             "url": "https://docs.replit.com/core-concepts/agent",
             "sources": [
                 {
@@ -185,7 +185,7 @@
                 "Customer-managed machines",
                 "Team worker pools"
             ],
-            "notes": "Asynchronous coding agents with cloud environments, branch workflows, scheduled or event-triggered subscriptions, steering, and subagents that can use separate virtual machines. Since September 2, agents can also execute on personal or team-managed machines, with worker pools, autoscaling, and Linux/macOS computer use.",
+            "notes": "Asynchronous coding agents with cloud environments, branch workflows, scheduled or event-triggered subscriptions, steering, and subagents, which can also run on customer-managed machines. Cloud agents power Cursor Projects (beta, September 10), where a coordinator agent plans long-running work and delegates it to implementing agents; Rollouts (September 23) can hand detected deploy regressions to a cloud agent for a fix.",
             "url": "https://docs.cursor.com/en/background-agents",
             "sources": [
                 {
@@ -211,7 +211,7 @@
                 "Managed cloud agents",
                 "Scheduled tasks"
             ],
-            "notes": "Development environment with parallel agents, custom agents, scheduling, CLI/SDK access, and managed cloud execution. August releases add embedded terminals, Git controls, and inline interactive HTML artifacts; September 2 adds /boost multi-agent reasoning, followed by Gemini 3.8 Flash access through enterprise credentials on September 3.",
+            "notes": "Development environment with parallel agents, custom agents, scheduling, CLI/SDK access, and managed cloud execution. September releases add Windows sandboxing, a /plan mode that drafts plans before coding (v2.17.0, September 22), and a plugin marketplace (v2.18.1, September 28); v2.21.1 (October 7) renames Scheduled Tasks to Automations and adds advanced search, and v2.22.0 (October 8) lets plugins show UI extensions.",
             "url": "https://antigravity.google/changelog",
             "sources": [
                 {
@@ -241,7 +241,7 @@
                 "Web",
                 "Remote cloud agents"
             ],
-            "notes": "Work and coding agent with local and remote sessions, long-running tasks, skills, MCP, and file and terminal tools. Agentic Search arrived in Vibe Libraries on August 20, letting agents navigate and verify information across complex documents.",
+            "notes": "Work and coding agent with local and remote sessions, long-running tasks, skills, MCP, and file and terminal tools. September releases add /branch conversation forking, smart-approve escalation and stricter shell permission checks (v2.25.4, September 12), and readable subagent transcripts; v2.26.0 (October 6) adds /teleport to Vibe Code Web, /loop scheduling, and per-model thinking levels.",
             "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
             "sources": [
                 {
@@ -259,7 +259,7 @@
                 "Desktop IDE",
                 "SaaS backend"
             ],
-            "notes": "Agentic IDE and development workspace for coding, debugging, repository chat, and multi-agent work. Origin code hosting entered early beta for paid users August 17; August 27 added starting projects from scratch with live previews and Vercel publishing, and September 2 added agent execution on customer-managed machines.",
+            "notes": "Agentic IDE and development workspace for coding, debugging, repository chat, and multi-agent work. Projects (beta, September 10) let a coordinator agent run months-long features or migrations on cloud agents; September 23 added Rollouts deploy monitoring and per-PR Security Review for Teams and Enterprise, and October 6 added remote control of local agents from the iOS app.",
             "url": "https://www.cursor.com/",
             "sources": [
                 {
@@ -301,7 +301,7 @@
                 "JetBrains",
                 "CLI"
             ],
-            "notes": "Open-source coding agent that runs in the editor, reads and writes files, executes terminal commands with user approval, uses browser/tools, supports MCP, and works with user-provided model keys.",
+            "notes": "Open-source coding agent that runs in the editor, a CLI, and a desktop app, reads and writes files, executes terminal commands with user approval, supports MCP, and works with user-provided model keys. Desktop v0.0.42 (October 2) makes Connectors the default Customize tab and adds /compact; the October 7-8 releases (extension v4.1.23, CLI v3.0.70, Desktop v0.0.45) page large MCP tool output, render Mermaid diagrams inline, and move the CLI dashboard to `cline hub dashboard`.",
             "url": "https://docs.cline.bot/introduction/overview"
         },
         {
@@ -351,7 +351,7 @@
                 "CLI",
                 "Local inference (M5 Mac, 64 GB+ RAM)"
             ],
-            "notes": "Coding agent for JetBrains IDEs and CLI that plans, edits, tests, and debugs projects. Junie Local launched August 24 with a tuned Qwen3.6-27B model running entirely on an M5 Mac with at least 64 GB of RAM, without subscription or usage credits.",
+            "notes": "Coding agent for JetBrains IDEs and CLI that plans, edits, tests, and debugs projects. Junie Local launched August 24 with a tuned Qwen3.6-27B model running on an M5 Mac; release 26.9.22 (September 22-October 1) adds Grok 4.7, Claude Opus 5.5 and Sonnet 5.5, and GPT-6.1 Sol, and release 26.10.5 (October 6) adds a Notification Center and mid-run steering.",
             "url": "https://www.jetbrains.com/help/ai-assistant/junie-agent.html",
             "sources": [
                 {
@@ -382,7 +382,7 @@
                 "VS Code",
                 "Open source"
             ],
-            "notes": "Open-source coding agent for terminal, editor, and Web Shell with tools, memory, plugins, MCP, subagents, and scheduling. Stable v0.23.0 (September 3) adds scoped memory tasks, fresh sessions for scheduled runs, workflow execution controls, and named-session messaging.",
+            "notes": "Open-source coding agent for terminal, editor, desktop, and Web Shell with tools, memory, plugins, MCP, subagents, and scheduling. Desktop v0.25.0 (October 5) adds Qwen Live screen sharing into browser voice calls, in-conversation search in the Web Shell, and worktree management from the git dialog.",
             "url": "https://qwenlm.github.io/qwen-code-docs/en/",
             "sources": [
                 {
@@ -403,7 +403,7 @@
                 "JetBrains",
                 "Open source"
             ],
-            "notes": "Coding agent with terminal, web, and IDE workflows, plugins, tools, and subagents. v0.40 (September 2) makes the subagent model pool generally available and adds a web plugin panel; v0.41 (September 4) adds experimental Tower collaboration in the web interface, following experimental remote control in August.",
+            "notes": "Moonshot AI's coding agent with terminal, web, desktop, and IDE workflows, plugins, tools, and subagents. Remote Control became generally available in v0.42 (September 9), K2.8 Preview rolled out with a 1M-token context on September 11, a Kimi Code Desktop app for macOS and Windows launched with CLI v2.0 on September 17, and CLI v2.1 (September 23) adds an experimental fullscreen mode.",
             "url": "https://www.kimi.com/code/docs/en/",
             "sources": [
                 {
@@ -436,7 +436,7 @@
                 "Eclipse",
                 "CLI"
             ],
-            "notes": "Developer-platform assistant for completion, chat, coding-agent delegation, repository context, and code review across GitHub and IDEs. September updates include the JetBrains agent harness at general availability and optional Copilot pull-request approvals in public preview, disabled by default until an administrator enables them.",
+            "notes": "Developer-platform assistant for completion, chat, coding-agent delegation, repository context, and code review across GitHub, IDEs, the Copilot CLI, and the Copilot app. October 1 brought dynamic multi-agent workflows and desktop-app computer use in public preview, and local sandboxing of agent tools became generally available October 7 for the CLI, Copilot app, and VS Code Agent Host sessions.",
             "url": "https://docs.github.com/en/copilot",
             "sources": [
                 {
@@ -478,7 +478,7 @@
                 "Cloud agents",
                 "Enterprise management"
             ],
-            "notes": "AWS development environment for specifications, steering, hooks, powers, plugins, and governed agent workflows. Kiro Web became generally available September 1, with cloud configuration sync into local IDE and CLI sessions and a CLI dashboard for local and cloud sessions.",
+            "notes": "AWS development environment (IDE, CLI, and web) for specifications, steering, hooks, powers, plugins, and governed agent workflows. Opt-in Workflows arrived in the IDE, CLI, and cloud sessions on September 30, followed by saved prompts as slash commands (CLI 2.27, October 1) and memory across chat sessions (CLI 2.29, October 9).",
             "url": "https://kiro.dev/",
             "sources": [
                 {
@@ -502,7 +502,7 @@
                 "IntelliJ",
                 "Gemini CLI"
             ],
-            "notes": "Agent mode for Gemini Code Assist that uses IDE context, built-in tools, terminal actions, and MCP servers to solve multi-step software tasks, generate code from issues or design docs, and run controlled tool actions.",
+            "notes": "Agent mode for Gemini Code Assist that uses IDE context, built-in tools, terminal actions, and MCP servers to solve multi-step software tasks. Google stopped selling new Gemini Code Assist Standard and Enterprise subscriptions on October 9, 2026; existing subscriptions renew through 2026 and Google points users to Antigravity.",
             "url": "https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer"
         },
         {
@@ -529,7 +529,7 @@
                 "CLI",
                 "Slack"
             ],
-            "notes": "AI code review and 'Agentic Change Management' platform: context-aware PR review, IDE/CLI review, planning from issues, Slack workflows, plus Triage (routing changes by value/risk), Change Stack (semantic explanation of large agent-generated diffs), and CodeRabbit Security (reachability-aware vulnerability detection and fixes in PRs), launched with a $143M Series C at a $1.5B valuation (Aug 12-13, 2026).",
+            "notes": "AI code review and agentic change-management platform: context-aware PR review, IDE/CLI review, Triage, Change Stack, and CodeRabbit Security. CodeRabbit Triage (September 15) ranks open PRs across repositories and gained auto-merge and auto-fix rules on September 28; CLI v0.8 (September 22) adds deep reviews and local-to-cloud Coding Agent handoff, and Security checks can block merges from October 5.",
             "url": "https://docs.coderabbit.ai/"
         },
         {
@@ -543,7 +543,7 @@
                 "CI/CD",
                 "On-premise"
             ],
-            "notes": "AI code review and governance platform with multi-agent review, repository context, Rule Miner (learns rules from past reviews), Review Effort Modes with adaptive depth routing, standards governance, bug finding, and shift-left review in IDE, CLI, and Kiro workflows.",
+            "notes": "AI code review and governance platform with multi-agent review, repository context, Rule Miner, review effort modes, and standards governance across IDE, CLI, and Git providers. Qodo 2.10 (September 15) adds a cross-repository Software Map in beta, and Qodo 3.0 (October 1) adds PR Triage as a research preview, a review analytics dashboard, and Gerrit support.",
             "url": "https://docs.qodo.ai/"
         },
         {
@@ -555,7 +555,7 @@
                 "iOS/Android app",
                 "Hosted cloud"
             ],
-            "notes": "App-creation agent with hosting, integrations, security scanning, and enterprise controls. September updates add domain setup through chat with purchase confirmation, Slack availability across all plans, workspace adoption analytics, and Gemini Omni 1.1 Flash for video features in generated apps.",
+            "notes": "App-creation agent with hosting, integrations, security scanning, and enterprise controls. September updates add Drafts for trying changes in a project copy (September 9), a Lovable API for workspace automation (September 17), and chats outside projects (September 21); October adds EU inference for Enterprise (October 1) and workspace credit limits and alerts (October 7).",
             "url": "https://docs.lovable.dev/changelog",
             "sources": [
                 {
@@ -581,7 +581,7 @@
                 "Cloud agents",
                 "Enterprise"
             ],
-            "notes": "Coding platform combining Auggie CLI and IDE integrations with the Cosmos cloud workspace, repository context, MCP integrations, and remote agents. Auggie CLI 0.36.0 (August 21) adds configurable reasoning effort and improves session replay, daemon startup checks, and file synchronization.",
+            "notes": "Coding platform combining Auggie CLI and IDE integrations with the Cosmos cloud workspace, repository context, MCP integrations, and remote agents. Cosmos added admin model controls and user groups (September 10) and Azure DevOps for all organizations, service accounts, and GitHub Enterprise Server connectors (September 17); the IDE plugins now ask for approval before reading sensitive files (September 14).",
             "url": "https://www.augmentcode.com/changelog",
             "sources": [
                 {
@@ -621,7 +621,7 @@
                 "Databricks workspace",
                 "Scheduled tasks"
             ],
-            "notes": "Databricks assistant for code, analysis, and workspace tasks. Scheduled tasks became generally available September 1, running recurring prompts as full sessions with results that users can continue in chat.",
+            "notes": "Databricks assistant for code, analysis, and workspace tasks. Scheduled tasks became generally available September 1, chat branching and /btw side questions arrived September 9, and from September 25 Genie Code can build end-to-end document-processing pipelines that check extraction quality against labeled data.",
             "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september",
             "sources": [
                 {

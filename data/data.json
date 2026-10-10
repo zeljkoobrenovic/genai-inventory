@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-06",
+    "updated_at": "2026-10-10",
     "model_categories": [
         {
             "category": "frontier_omni",
@@ -39,6 +39,280 @@
             "country": "us",
             "models": [
                 {
+                    "id": "gpt-image-2",
+                    "name": "GPT Image 2",
+                    "release_date": "2026-04-21",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text-to-image",
+                        "image-editing"
+                    ],
+                    "access": {
+                        "api": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 30,
+                        "note": "Image token rates as stated on the GPT Image 2.5 pages (same as GPT Image 2)."
+                    },
+                    "notes": "Pre-window model missing from the inventory; predecessor of the GPT Image 2.5 family.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-04-21"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-rosalind",
+                    "name": "GPT-Rosalind",
+                    "release_date": "2026-04",
+                    "category": "reasoning",
+                    "modalities": [
+                        "text",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "api": true,
+                        "chatgpt": true,
+                        "codex": true,
+                        "gated_research_preview": true,
+                        "api_note": "Trusted-access program for approved life-sciences organizations; API GA 2026-09-08, billing from 2026-10-05"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 25,
+                        "cached_input_per_million_tokens": 0.5
+                    },
+                    "notes": "Life-sciences reasoning model (evidence synthesis, hypothesis generation, experiment planning) launched as a research preview in April 2026; generally available via trusted access since September 2026.",
+                    "sources": [
+                        {
+                            "title": "heise: OpenAI introduces GPT-Rosalind",
+                            "url": "https://heise.de/-11263023",
+                            "date": "2026-04-18"
+                        },
+                        {
+                            "title": "OpenAI API changelog (GPT-Rosalind GA)",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-08"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-image-2.5-flare",
+                    "name": "GPT Image 2.5 Flare",
+                    "release_date": "2026-09-08",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text-to-image",
+                        "image-editing"
+                    ],
+                    "access": {
+                        "api": true,
+                        "api_note": "v1/images/generations, v1/images/edits, Batch; snapshot gpt-image-2.5-flare-2026-09-08"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 30,
+                        "note": "Text input $5/M; image input $8/M; image output $30/M ($15 with Batch). Same token rates as Sunburst/GPT Image 2."
+                    },
+                    "notes": "Fastest model in the GPT Image 2.5 family, for high-quality everyday image generation.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-08"
+                        },
+                        {
+                            "title": "GPT-Image-2.5 Flare model specifications",
+                            "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-image-2.5-sunburst",
+                    "name": "GPT Image 2.5 Sunburst",
+                    "release_date": "2026-09-08",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text-to-image",
+                        "image-editing"
+                    ],
+                    "access": {
+                        "api": true,
+                        "api_note": "v1/images/generations, v1/images/edits, Batch; snapshot gpt-image-2.5-sunburst-2026-09-08"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 5,
+                        "output_per_million_tokens": 30,
+                        "note": "Text input $5/M; image input $8/M; image output $30/M ($15 with Batch). New xhigh and max quality settings."
+                    },
+                    "notes": "OpenAI's most capable image generation and editing model, aimed at precise editing workflows.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-08"
+                        },
+                        {
+                            "title": "GPT-Image-2.5 Sunburst model specifications",
+                            "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-6-luna",
+                    "name": "GPT-6 Luna",
+                    "release_date": "2026-09-22",
+                    "category": "small_edge",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "access": {
+                        "chatgpt_free": true,
+                        "chatgpt_go": true,
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "codex": true,
+                        "api": true,
+                        "microsoft_foundry": true,
+                        "amazon_bedrock": true,
+                        "api_note": "Also powers the Decisions API (beta, 2026-10-06); Free/Go access via the desktop app"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.1,
+                        "output_per_million_tokens": 0.5,
+                        "cached_input_per_million_tokens": 0.01,
+                        "cache_write_per_million_tokens": 0.125,
+                        "note": "Above 272K input tokens: 2× input/cache rates and 1.5× output. Batch and Flex 50% of Standard; Fast mode 2×."
+                    },
+                    "notes": "OpenAI's most efficient model for focused, high-volume tasks (extraction, summarization, routing). 128K max output; knowledge cutoff 2026-05-18.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "GPT-6 Luna model specifications",
+                            "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Amazon Bedrock model card: GPT-6 Luna",
+                            "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-6-sol",
+                    "name": "GPT-6 Sol",
+                    "release_date": "2026-09-22",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "access": {
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "chatgpt_edu": true,
+                        "codex": true,
+                        "api": true,
+                        "microsoft_foundry": true,
+                        "amazon_bedrock": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 10,
+                        "cached_input_per_million_tokens": 0.2,
+                        "cache_write_per_million_tokens": 2.5,
+                        "note": "Above 272K input tokens: 2× input/cache rates and 1.5× output. Batch and Flex 50% of Standard; Fast mode 2×."
+                    },
+                    "notes": "Coding and agentic-workflow model, roughly half the price of GPT-5.6 Sol; reasoning effort none through max, 128K max output. Superseded by GPT-6.1 Sol a week later.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "Introducing GPT-6 Sol and Luna",
+                            "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "GPT-6 Astra, Sol and Luna in Microsoft Foundry",
+                            "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "Amazon Bedrock model card: GPT-6 Sol",
+                            "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gpt-6.1-sol",
+                    "name": "GPT-6.1 Sol",
+                    "release_date": "2026-09-29",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "computer-use",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1050000,
+                    "based_on": "gpt-6-sol",
+                    "access": {
+                        "chatgpt_plus": true,
+                        "chatgpt_pro": true,
+                        "chatgpt_business": true,
+                        "chatgpt_enterprise": true,
+                        "chatgpt_edu": true,
+                        "codex": true,
+                        "api": true,
+                        "api_note": "ChatGPT Work and Codex (not yet in standard Chat); Ultrafast service tier added 2026-10-08"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 10,
+                        "cached_input_per_million_tokens": 0.1,
+                        "cache_write_per_million_tokens": 2.5,
+                        "note": "Above 272K input tokens: $4 input / $0.20 cached / $5 cache write / $15 output for the full request."
+                    },
+                    "notes": "Announced at DevDay 2026; near-Astra performance on agentic coding, computer use and professional work at about one-fifth of Astra's price. 128K max output; knowledge cutoff 2026-04-30.",
+                    "sources": [
+                        {
+                            "title": "OpenAI API changelog",
+                            "url": "https://developers.openai.com/api/docs/changelog",
+                            "date": "2026-09-29"
+                        },
+                        {
+                            "title": "GPT-6.1 Sol model specifications",
+                            "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
                     "id": "gpt-6-astra",
                     "name": "GPT-6 Astra",
                     "release_date": "2026-09-03",
@@ -54,7 +328,9 @@
                         "api": true,
                         "codex": true,
                         "microsoft_foundry": true,
-                        "databricks": true
+                        "databricks": true,
+                        "amazon_bedrock": true,
+                        "api_note": "Ultrafast service tier (service_tier: ultrafast, ~6× Standard price, US data residency only) since 2026-09-29"
                     },
                     "pricing": {
                         "input_per_million_tokens": 10,
@@ -234,7 +510,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "chatgpt": true,
-                        "api_planned": true
+                        "api_planned": true,
+                        "api": true,
+                        "api_note": "Generally available in the API since 2026-09-10; voice sessions $0.05/minute billed per second, backend model usage billed separately"
                     }
                 },
                 {
@@ -588,6 +866,143 @@
             "country": "us",
             "models": [
                 {
+                    "id": "claude-opus-5.5",
+                    "name": "Claude Opus 5.5",
+                    "release_date": "2026-09-22",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true,
+                        "claude_platform_on_aws": true,
+                        "claude_pro_max_team_enterprise": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 4,
+                        "output_per_million_tokens": 20,
+                        "cached_input_per_million_tokens": 0.2,
+                        "fast_mode_input_per_million_tokens": 8,
+                        "fast_mode_output_per_million_tokens": 40
+                    },
+                    "features": [
+                        "adaptive thinking (always on)",
+                        "128K max output",
+                        "fast mode (research preview)",
+                        "computer use"
+                    ],
+                    "notes": "For long-running agentic coding and knowledge work; performs near Fable 5.1 on most work and costs about 40% less to run than Opus 5.",
+                    "sources": [
+                        {
+                            "title": "Claude Opus 5.5",
+                            "url": "https://www.anthropic.com/claude-opus-5-5",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "Claude Platform release notes",
+                            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                            "date": "2026-09-22"
+                        }
+                    ]
+                },
+                {
+                    "id": "claude-sonnet-5.5",
+                    "name": "Claude Sonnet 5.5",
+                    "release_date": "2026-09-28",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true,
+                        "claude_platform_on_aws": true,
+                        "zero_data_retention": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 10,
+                        "cached_input_per_million_tokens": 0.1,
+                        "note": "Cache reads cut from $0.20 to $0.10 per MTok on October 7, 2026."
+                    },
+                    "features": [
+                        "adaptive thinking",
+                        "128K max output",
+                        "computer use"
+                    ],
+                    "notes": "Faster, lower-cost complement to Opus 5.5 at Sonnet 5 prices; uses fewer tokens per task, with up to 30% lower cost per task.",
+                    "sources": [
+                        {
+                            "title": "Claude Sonnet 5.5",
+                            "url": "https://www.anthropic.com/claude-sonnet-5-5",
+                            "date": "2026-09-28"
+                        },
+                        {
+                            "title": "Claude Platform release notes",
+                            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                            "date": "2026-09-28"
+                        }
+                    ]
+                },
+                {
+                    "id": "claude-haiku-5.5",
+                    "name": "Claude Haiku 5.5",
+                    "release_date": "2026-10-07",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "tool-use",
+                        "computer-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "amazon_bedrock": true,
+                        "google_cloud_vertex_ai": true,
+                        "microsoft_foundry": true,
+                        "claude_platform_on_aws": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.1,
+                        "output_per_million_tokens": 0.5,
+                        "cached_input_per_million_tokens": 0.01,
+                        "note": "Prompts over 100K tokens: $0.50 input / $2.50 output per MTok."
+                    },
+                    "features": [
+                        "adaptive thinking",
+                        "effort parameter (first Haiku with adjustable effort)",
+                        "128K max output",
+                        "computer use"
+                    ],
+                    "notes": "Fastest and cheapest Claude model, for high-volume, latency-sensitive work and as a subagent; about 75% cheaper than Haiku 4.5 on average.",
+                    "sources": [
+                        {
+                            "title": "Claude Haiku 5.5",
+                            "url": "https://www.anthropic.com/claude-haiku-5-5",
+                            "date": "2026-10-07"
+                        },
+                        {
+                            "title": "Claude Platform release notes",
+                            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+                            "date": "2026-10-07"
+                        }
+                    ]
+                },
+                {
                     "id": "claude-mythos-5.1",
                     "name": "Claude Mythos 5.1",
                     "release_date": "2026-09-01",
@@ -906,12 +1321,14 @@
                         "api": true,
                         "amazon_bedrock": true,
                         "google_cloud_vertex_ai": true,
-                        "claude_free_pro_team_enterprise": true
+                        "claude_free_pro_team_enterprise": true,
+                        "eol_date": "2026-11-30"
                     },
                     "pricing": {
                         "input_per_million_tokens": 3,
                         "output_per_million_tokens": 15
-                    }
+                    },
+                    "status": "deprecated"
                 },
                 {
                     "id": "claude-haiku-4.5",
@@ -959,15 +1376,17 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "api": true,
+                        "api": false,
                         "google_cloud_vertex_ai": true,
                         "amazon_bedrock": true,
-                        "claude_pro_max_team_enterprise": true
+                        "claude_pro_max_team_enterprise": true,
+                        "eol_date": "2026-06-15"
                     },
                     "pricing": {
                         "input_per_million_tokens": 15,
                         "output_per_million_tokens": 75
-                    }
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-sonnet-4",
@@ -980,15 +1399,17 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "api": true,
+                        "api": false,
                         "google_cloud_vertex_ai": true,
                         "amazon_bedrock": true,
-                        "free_and_paid_users": true
+                        "free_and_paid_users": true,
+                        "eol_date": "2026-06-15"
                     },
                     "pricing": {
                         "input_per_million_tokens": 3,
                         "output_per_million_tokens": 15
-                    }
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-sonnet-3.7",
@@ -1001,9 +1422,11 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "api": true,
-                        "claude_paid_users": true
-                    }
+                        "api": false,
+                        "claude_paid_users": true,
+                        "eol_date": "2026-02-19"
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-sonnet-3.5",
@@ -1016,16 +1439,18 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "api": true,
+                        "api": false,
                         "google_cloud_vertex_ai": true,
                         "amazon_bedrock": true,
                         "free_web_ios": true,
-                        "paid_subscribers": true
+                        "paid_subscribers": true,
+                        "eol_date": "2025-10-28"
                     },
                     "pricing": {
                         "input_per_million_tokens": 3,
                         "output_per_million_tokens": 15
-                    }
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-3.5-haiku",
@@ -1037,8 +1462,11 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "web_mobile_all_users": true
-                    }
+                        "web_mobile_all_users": true,
+                        "api": false,
+                        "eol_date": "2026-02-19"
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-2.1",
@@ -1051,8 +1479,11 @@
                     ],
                     "context_window_tokens": 200000,
                     "access": {
-                        "legacy": true
-                    }
+                        "legacy": true,
+                        "api": false,
+                        "eol_date": "2025-07-21"
+                    },
+                    "status": "retired"
                 },
                 {
                     "id": "claude-instant-1.2",
@@ -1065,8 +1496,11 @@
                     "context_window_tokens": 100000,
                     "access": {
                         "legacy": true,
-                        "faster_cheaper": true
-                    }
+                        "faster_cheaper": true,
+                        "api": false,
+                        "eol_date": "2024-11-06"
+                    },
+                    "status": "retired"
                 }
             ]
         },
@@ -1077,6 +1511,366 @@
             "logo": "google-gemini.png",
             "country": "us",
             "models": [
+                {
+                    "id": "embeddinggemma-2",
+                    "name": "EmbeddingGemma 2",
+                    "release_date": "2026-10-06",
+                    "category": "embeddings_retrieval",
+                    "parameters": "740_000_000",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "image",
+                        "video",
+                        "audio",
+                        "embeddings"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true,
+                        "kaggle": true,
+                        "on_device": true
+                    },
+                    "based_on": "gemma-4-family",
+                    "notes": "Open multimodal embedding model (270M text + 170M vision + 300M audio encoders) mapping text, code, images, video and audio into one 768-dim space with Matryoshka truncation to 512/256/128; runs on-device via LiteRT, llama.cpp, Ollama, MLX.",
+                    "sources": [
+                        {
+                            "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings",
+                            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+                            "date": "2026-10-06"
+                        },
+                        {
+                            "title": "Gemma releases",
+                            "url": "https://ai.google.dev/gemma/docs/releases",
+                            "date": "2026-10-06"
+                        },
+                        {
+                            "title": "google/embeddinggemma-2",
+                            "url": "https://huggingface.co/google/embeddinggemma-2",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-nano-banana-2.1",
+                    "name": "Nano Banana 2.1",
+                    "release_date": "2026-10-06",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "pdf",
+                        "image-generation"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "generally_available": true,
+                        "vertex_ai": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1.5,
+                        "output_per_million_tokens": 7.5,
+                        "image_output_per_million_tokens": 30.0,
+                        "note": "Per image: $0.0336 (1K), $0.0504 (2K), $0.113 (4K)."
+                    },
+                    "based_on": "gemini-3.6-flash",
+                    "notes": "Successor to Nano Banana 2 with better visual quality, prompt adherence, text rendering and multi-turn consistency; up to 14 reference images, 1K/2K/4K output.",
+                    "sources": [
+                        {
+                            "title": "Gemini Nano Banana 2.1 GA",
+                            "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                            "date": "2026-10-06"
+                        },
+                        {
+                            "title": "Gemini Nano Banana 2.1 model page",
+                            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Nano Banana 2.1 model card",
+                            "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Gemini API pricing",
+                            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-3.8-flash-lite-tts",
+                    "name": "Gemini 3.8 Flash-Lite TTS",
+                    "release_date": "2026-09-22",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "text-to-speech"
+                    ],
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "generally_available": true,
+                        "vertex_ai_preview": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.5,
+                        "output_per_million_tokens": 6.0,
+                        "introductory_until": "2026-12-31",
+                        "standard_input_per_million_tokens": 1.0,
+                        "standard_output_per_million_tokens": 12.0,
+                        "note": "Output is audio tokens. Standard rates take effect January 1, 2027."
+                    },
+                    "notes": "Lower-latency, cost-efficient text-to-speech model supporting 101 languages.",
+                    "sources": [
+                        {
+                            "title": "Gemini 3.8 Flash-Lite TTS GA",
+                            "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "Gemini API pricing",
+                            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-3.8-flash-tts",
+                    "name": "Gemini 3.8 Flash TTS",
+                    "release_date": "2026-09-22",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "text-to-speech"
+                    ],
+                    "context_window_tokens": 8192,
+                    "access": {
+                        "api": true,
+                        "google_ai_studio": true,
+                        "generally_available": true,
+                        "vertex_ai_preview": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.5,
+                        "output_per_million_tokens": 9.0,
+                        "introductory_until": "2026-12-31",
+                        "standard_input_per_million_tokens": 1.0,
+                        "standard_output_per_million_tokens": 18.0,
+                        "note": "Output is audio tokens. Standard rates take effect January 1, 2027."
+                    },
+                    "notes": "Text-to-speech in 130+ languages with voice design, voice replication and an extended library of 150+ voices via the new Voices endpoint.",
+                    "sources": [
+                        {
+                            "title": "Gemini 3.8 Flash TTS GA",
+                            "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                            "date": "2026-09-22"
+                        },
+                        {
+                            "title": "Gemini 3.8 Flash TTS model page",
+                            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Gemini API pricing",
+                            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-3.8-live-extended-thinking",
+                    "name": "Gemini 3.8 Live Extended Thinking",
+                    "release_date": "2026-09-15",
+                    "category": "reasoning",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "image",
+                        "video",
+                        "speech-to-speech",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "api": true,
+                        "live_api": true,
+                        "google_ai_studio": true,
+                        "generally_available": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.75,
+                        "output_per_million_tokens": 4.5,
+                        "audio_input_per_million_tokens": 3.0,
+                        "audio_output_per_million_tokens": 12.0,
+                        "note": "Text rates shown; audio $0.005/min in, $0.018/min out."
+                    },
+                    "based_on": "gemini-3.8-live",
+                    "notes": "High-reasoning audio-to-audio Live API model that reasons in the background while speaking (async function calls, low/medium/high thinking levels); Google reports #1 on Artificial Analysis speech-to-speech quality index.",
+                    "sources": [
+                        {
+                            "title": "Gemini 3.8 Live Extended Thinking GA",
+                            "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                            "date": "2026-09-15"
+                        },
+                        {
+                            "title": "Gemini 3.8 Live Extended Thinking model page",
+                            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Gemini API pricing",
+                            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-3.8-live",
+                    "name": "Gemini 3.8 Live",
+                    "release_date": "2026-09-15",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "image",
+                        "video",
+                        "speech-to-speech",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 131072,
+                    "access": {
+                        "api": true,
+                        "live_api": true,
+                        "google_ai_studio": true,
+                        "generally_available": true,
+                        "vertex_ai": true,
+                        "gemini_enterprise": true,
+                        "search_live": true,
+                        "gemini_live": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.75,
+                        "output_per_million_tokens": 4.5,
+                        "audio_input_per_million_tokens": 3.0,
+                        "audio_output_per_million_tokens": 12.0,
+                        "note": "Text rates shown; audio $0.005/min in, $0.018/min out."
+                    },
+                    "notes": "Default low-latency audio-to-audio Live API model for voice agents with interleaved thinking and function calling; 65,536 output tokens. Powers Live Avatar in Gemini Enterprise.",
+                    "sources": [
+                        {
+                            "title": "Gemini 3.8 Live GA",
+                            "url": "https://ai.google.dev/gemini-api/docs/changelog",
+                            "date": "2026-09-15"
+                        },
+                        {
+                            "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+                            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Gemini 3.8 Live model page",
+                            "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "Introducing Gemini 3.8 Live with Live Avatar",
+                            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+                            "date": "2026-09-24"
+                        },
+                        {
+                            "title": "Gemini API pricing",
+                            "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-3.8-flash-cyber",
+                    "name": "Gemini 3.8 Flash Cyber",
+                    "release_date": "2026-09-02",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "fairwind_program": true,
+                        "codemender": true,
+                        "trusted_cyber_defenders": true,
+                        "vertex_ai": true,
+                        "allowlist": true,
+                        "generally_available": true
+                    },
+                    "based_on": "gemini-3.8-flash",
+                    "notes": "Cyber variant of Gemini 3.8 Flash with more permissive cyber mitigations, for vulnerability discovery and automated patching; available only to vetted defenders through the Fairwind Program (GA behind allowlist on Google Cloud from 2026-09-16).",
+                    "sources": [
+                        {
+                            "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+                            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+                            "date": "2026-09-02"
+                        },
+                        {
+                            "title": "Gemini Enterprise Agent Platform release notes (3.8 Flash Cyber GA behind allowlist)",
+                            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes",
+                            "date": "2026-09-16"
+                        }
+                    ]
+                },
+                {
+                    "id": "gemini-4-argon",
+                    "name": "Gemini 4 Argon",
+                    "release_date": "2026-09-30",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "pdf",
+                        "code",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "limited_access": true,
+                        "fairwind_program": true,
+                        "trusted_cyber_defenders": true,
+                        "api_planned": true,
+                        "google_ai_ultra_planned": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2.0,
+                        "output_per_million_tokens": 10.0,
+                        "standard_input_per_million_tokens": 4.0,
+                        "standard_output_per_million_tokens": 20.0,
+                        "note": "Introductory pricing; cached input 95% off. Standard rate applies after the introductory period."
+                    },
+                    "features": [
+                        "1M output token limit",
+                        "long-horizon coding and agentic work",
+                        "cyber defense"
+                    ],
+                    "notes": "Google's first Gemini 4 frontier model; staged rollout starting with vetted cyber defenders via the Fairwind Program, then paid API customers and Google AI Ultra. 1M-token output limit (up from 64K); Google reports 77.9% on DeepSWE v1.1 and 91.7% on LVBench.",
+                    "sources": [
+                        {
+                            "title": "Gemini 4 Argon: our next era of frontier intelligence",
+                            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+                            "date": "2026-09-30"
+                        },
+                        {
+                            "title": "Gemini 4 Argon with cybersecurity defense capabilities",
+                            "url": "https://deepmind.google/models/gemini/cyber/",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
                 {
                     "id": "gemini-3.5-transcribe-live",
                     "name": "Gemini 3.5 Transcribe Live",
@@ -1257,7 +2051,9 @@
                         "consumer_app": true,
                         "api": true,
                         "google_ai_studio": true,
-                        "api_public_preview": true
+                        "api_public_preview": true,
+                        "generally_available": true,
+                        "google_vids": true
                     },
                     "sources": [
                         {
@@ -1265,7 +2061,10 @@
                             "url": "https://ai.google.dev/gemini-api/docs/changelog",
                             "date": "2026-09-03"
                         }
-                    ]
+                    ],
+                    "pricing": {
+                        "note": "$0.08 per full song via Gemini API."
+                    }
                 },
                 {
                     "id": "gemini-robotics-2",
@@ -1329,7 +2128,10 @@
                         "vertex_ai": true,
                         "antigravity": true,
                         "gemini_app": true,
-                        "generally_available": true
+                        "generally_available": true,
+                        "legacy": true,
+                        "deprecated_date": "2026-10-08",
+                        "replaced_by": "gemini-3.8-flash"
                     },
                     "pricing": {
                         "input_per_million_tokens": 0.75,
@@ -1433,7 +2235,10 @@
                     "access": {
                         "api": true,
                         "google_ai_studio": true,
-                        "vertex_ai": true
+                        "vertex_ai": true,
+                        "legacy": true,
+                        "deprecated_date": "2026-10-08",
+                        "replaced_by": "gemini-3.6-flash"
                     }
                 },
                 {
@@ -1494,7 +2299,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "api": true,
-                        "google_ai_studio": true
+                        "google_ai_studio": true,
+                        "generally_available": true,
+                        "vertex_ai": true
                     }
                 },
                 {
@@ -1574,7 +2381,9 @@
                         "gemini_live_api": true,
                         "google_ai_studio": true,
                         "gemini_enterprise": true,
-                        "search_live": true
+                        "search_live": true,
+                        "legacy": true,
+                        "replaced_by": "gemini-3.8-live"
                     }
                 },
                 {
@@ -1652,7 +2461,10 @@
                     "access": {
                         "api": true,
                         "google_ai_studio": true,
-                        "gemini_app": true
+                        "gemini_app": true,
+                        "legacy": true,
+                        "deprecated_date": "2026-10-06",
+                        "replaced_by": "gemini-nano-banana-2.1"
                     }
                 },
                 {
@@ -1669,7 +2481,9 @@
                     "context_window_tokens": 1000000,
                     "access": {
                         "api": true,
-                        "google_ai_pro": true
+                        "google_ai_pro": true,
+                        "legacy": true,
+                        "restricted_to_existing_users": "2026-09-18"
                     },
                     "retirement_date": "2026-10-16"
                 },
@@ -1686,7 +2500,9 @@
                     "context_window_tokens": 1000000,
                     "access": {
                         "api": true,
-                        "google_ai_studio": true
+                        "google_ai_studio": true,
+                        "legacy": true,
+                        "restricted_to_existing_users": "2026-09-18"
                     },
                     "retirement_date": "2026-10-16"
                 },
@@ -1703,7 +2519,9 @@
                     "context_window_tokens": 1000000,
                     "access": {
                         "api": true,
-                        "public_preview": true
+                        "public_preview": true,
+                        "legacy": true,
+                        "restricted_to_existing_users": "2026-09-18"
                     },
                     "retirement_date": "2026-10-16"
                 },
@@ -1825,6 +2643,125 @@
             "logo": "xai.png",
             "country": "us",
             "models": [
+                {
+                    "id": "grok-build-0.1",
+                    "name": "Grok Build 0.1",
+                    "release_date": "2026-05-29",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "api": true,
+                        "xai_api": true,
+                        "public_beta": true,
+                        "grok_build": true,
+                        "openrouter": true,
+                        "vercel_ai_gateway": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1,
+                        "output_per_million_tokens": 2,
+                        "cached_input_per_million_tokens": 0.2,
+                        "long_context_over_200k_input_per_million_tokens": 2,
+                        "long_context_over_200k_output_per_million_tokens": 4
+                    },
+                    "notes": "PRE-WINDOW model missing from inventory. xAI's fast coding model (100+ tokens/s) that powers Grok Build, released to the API in public beta; the old grok-code-fast-1 slugs now alias to it.",
+                    "sources": [
+                        {
+                            "title": "Grok Build 0.1",
+                            "url": "https://x.ai/news/grok-build-0-1",
+                            "date": "2026-05-29"
+                        },
+                        {
+                            "title": "xAI models: grok-build-0.1",
+                            "url": "https://docs.x.ai/developers/models/grok-build-0.1",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "grok-voice-transcribe-2.0",
+                    "name": "Grok Voice Transcribe 2.0",
+                    "release_date": "2026-09-18",
+                    "category": "media_generation",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-text"
+                    ],
+                    "access": {
+                        "api": true,
+                        "xai_api": true
+                    },
+                    "pricing": {
+                        "batch_per_audio_hour": 0.1,
+                        "streaming_per_audio_hour": 0.2,
+                        "currency": "USD"
+                    },
+                    "notes": "Batch and streaming speech-to-text built on the Grok Voice audio foundation model; xAI claims 2x the accuracy of 1.0 at the same price. Includes diarization, word timestamps, up to 8 channels, key-term biasing and turn detection; now the API default, with grok-voice-transcribe-1.0 retired on 2026-10-02.",
+                    "sources": [
+                        {
+                            "title": "Grok Voice Transcribe 2.0",
+                            "url": "https://x.ai/news/grok-voice-transcribe-2",
+                            "date": "2026-09-18"
+                        },
+                        {
+                            "title": "xAI release notes",
+                            "url": "https://docs.x.ai/developers/release-notes",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "grok-4.7",
+                    "name": "Grok 4.7",
+                    "release_date": "2026-09-21",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 500000,
+                    "access": {
+                        "api": true,
+                        "xai_api": true,
+                        "grok_build": true,
+                        "cursor": true,
+                        "fast_variant_cursor_grok_build_only": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 2,
+                        "output_per_million_tokens": 6,
+                        "cached_input_per_million_tokens": 0.5,
+                        "long_context_over_200k_input_per_million_tokens": 4,
+                        "long_context_over_200k_output_per_million_tokens": 12
+                    },
+                    "notes": "xAI's frontier model for coding, agentic tasks and knowledge work, built on a larger base model than Grok 4.6 at the same price and speed; low/medium/high (default)/xhigh reasoning effort. A Grok 4.7 Fast variant (2x token rates) is available only in Cursor and Grok Build. xAI reports CursorBench 4.0 46.3%, Terminal-Bench 4.0 37.6%.",
+                    "sources": [
+                        {
+                            "title": "Introducing Grok 4.7",
+                            "url": "https://x.ai/news/grok-4-7",
+                            "date": "2026-09-21"
+                        },
+                        {
+                            "title": "xAI models: grok-4.7",
+                            "url": "https://docs.x.ai/developers/models/grok-4.7",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "xAI release notes",
+                            "url": "https://docs.x.ai/developers/release-notes",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
                 {
                     "id": "grok-imagine-video-1.5",
                     "name": "Grok Imagine Video 1.5",
@@ -2193,6 +3130,59 @@
             "country": "us",
             "models": [
                 {
+                    "id": "muse-spark",
+                    "name": "Muse Spark",
+                    "release_date": "2026-04-08",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "meta_ai": true,
+                        "private_preview_api": true,
+                        "open_weights": false
+                    },
+                    "notes": "PRE-WINDOW model missing from inventory. First Meta Superintelligence Labs model and successor to Llama: closed, natively multimodal (text/image/video in, text out) with Instant and Thinking modes and parallel sub-agents; powers Meta AI and meta.ai, with a private-preview API for partners.",
+                    "sources": [
+                        {
+                            "title": "Meta unveils Muse Spark (Fortune)",
+                            "url": "https://www.fortune.com/2026/04/08/meta-unveils-muse-spark-mark-zuckerberg-ai-push",
+                            "date": "2026-04-08"
+                        }
+                    ]
+                },
+                {
+                    "id": "muse-realtime-avatar",
+                    "name": "Muse Realtime Avatar",
+                    "release_date": "2026-09-23",
+                    "category": "media_generation",
+                    "modalities": [
+                        "audio",
+                        "image",
+                        "video-generation"
+                    ],
+                    "access": {
+                        "research_release": true,
+                        "muse_app": true
+                    },
+                    "notes": "Real-time avatar model that turns Muse Realtime Voice into an expressive talking character from reference photos, illustrations, animals or objects. Streams 448x768 portrait video at 25 fps with about 870 ms latency, with Video Seal watermarking; some showcased avatars are in the Muse app.",
+                    "sources": [
+                        {
+                            "title": "Bringing Your Muse to Life",
+                            "url": "https://research.meta.ai/blog/bringing-your-muse-to-life",
+                            "date": "2026-09-23"
+                        },
+                        {
+                            "title": "Meta Connect 2026",
+                            "url": "https://about.fb.com/de/news/2026/09/meta-connect-2026/",
+                            "date": "2026-09-24"
+                        }
+                    ]
+                },
+                {
                     "id": "muse-voice-transcribe",
                     "name": "Muse Voice Transcribe",
                     "release_date": "2026-09-01",
@@ -2550,6 +3540,157 @@
             "country": "us",
             "models": [
                 {
+                    "id": "vibevoice-asr-streaming",
+                    "name": "VibeVoice-ASR-Streaming (1.5B / 7B)",
+                    "release_date": "2026-09-02",
+                    "category": "small_edge",
+                    "parameters": 7000000000,
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-text",
+                        "streaming"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "open_source": true
+                    },
+                    "notes": "Open-weight (MIT) streaming speaker-attributed ASR from Microsoft Research in 1.5B and 7B sizes, 10 languages, with custom hotword support. PRE-WINDOW (tech report 2026-09-02) but missing from inventory.",
+                    "sources": [
+                        {
+                            "title": "microsoft/VibeVoice-ASR-Streaming-7B model card",
+                            "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+                            "date": "2026-09-02"
+                        },
+                        {
+                            "title": "microsoft/VibeVoice-ASR-Streaming-1.5B model card",
+                            "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B",
+                            "date": "2026-09-02"
+                        }
+                    ]
+                },
+                {
+                    "id": "frognano-4b-2609",
+                    "name": "FrogNano-4B-2609",
+                    "release_date": "2026-09-22",
+                    "category": "agentic_coding",
+                    "parameters": 4660000000,
+                    "context_window_tokens": 131072,
+                    "based_on": "Qwen3.5-4B",
+                    "modalities": [
+                        "text",
+                        "code",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "research": true
+                    },
+                    "notes": "Microsoft Research compact repository-level coding agent, RL post-trained from Qwen3.5-4B on ~1,500 synthetic SWE tasks; emits tool calls for the Leaf harness and produces candidate patches for human review. HF card says Apache-2.0 while the repo tag says MIT.",
+                    "sources": [
+                        {
+                            "title": "microsoft/FrogNano-4B-2609 model card",
+                            "url": "https://huggingface.co/microsoft/FrogNano-4B-2609",
+                            "date": "2026-09-22"
+                        }
+                    ]
+                },
+                {
+                    "id": "mai-voice-2.1-flash",
+                    "name": "MAI-Voice-2.1-Flash",
+                    "release_date": "2026-10-01",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "text-to-speech"
+                    ],
+                    "access": {
+                        "api": true,
+                        "microsoft_foundry": true,
+                        "mai_playground": true,
+                        "openrouter": true,
+                        "azure_voice_live": true,
+                        "vercel": true
+                    },
+                    "pricing": {
+                        "currency": "USD",
+                        "per_million_characters": 15
+                    },
+                    "notes": "Low-latency variant of MAI-Voice-2.1 for high-volume voice agents: ~150 ms end-to-end latency, up to 45 s of audio per generation.",
+                    "sources": [
+                        {
+                            "title": "Our first streaming transcription model debuts at no. 1 on Artificial Analysis",
+                            "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+                            "date": "2026-10-01"
+                        }
+                    ]
+                },
+                {
+                    "id": "mai-voice-2.1",
+                    "name": "MAI-Voice-2.1",
+                    "release_date": "2026-10-01",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "text-to-speech"
+                    ],
+                    "access": {
+                        "api": true,
+                        "microsoft_foundry": true,
+                        "mai_playground": true,
+                        "openrouter": true,
+                        "azure_voice_live": true,
+                        "vercel": true
+                    },
+                    "pricing": {
+                        "currency": "USD",
+                        "per_million_characters": 22
+                    },
+                    "notes": "Multilingual text-to-speech in 23 languages / 26 locales, keeps one voice consistent across languages with native accents, and clones voices from a few seconds of audio with consent guardrails.",
+                    "sources": [
+                        {
+                            "title": "Our first streaming transcription model debuts at no. 1 on Artificial Analysis",
+                            "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+                            "date": "2026-10-01"
+                        }
+                    ]
+                },
+                {
+                    "id": "mai-transcribe-2-streaming",
+                    "name": "MAI-Transcribe-2-Streaming",
+                    "release_date": "2026-10-01",
+                    "category": "media_generation",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-text",
+                        "streaming"
+                    ],
+                    "access": {
+                        "api": true,
+                        "microsoft_foundry": true,
+                        "mai_playground": true,
+                        "vercel": true
+                    },
+                    "pricing": {
+                        "currency": "USD",
+                        "per_audio_hour": 0.54,
+                        "notes": "Introductory rate through end of 2026."
+                    },
+                    "notes": "Microsoft's first real-time streaming speech-to-text model: 60 languages, continuous language detection, first partial hypotheses in ~100 ms; ranked No. 1 for final and partial transcript accuracy on Artificial Analysis.",
+                    "sources": [
+                        {
+                            "title": "Our first streaming transcription model debuts at no. 1 on Artificial Analysis",
+                            "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+                            "date": "2026-10-01"
+                        }
+                    ]
+                },
+                {
                     "id": "mai-image-2.6-flash",
                     "name": "MAI-Image-2.6-Flash",
                     "release_date": "2026-09-04",
@@ -2809,9 +3950,11 @@
                         "tool-use"
                     ],
                     "access": {
-                        "github_copilot": true,
+                        "github_copilot": false,
                         "visual_studio_code": true,
-                        "deprecation_announced": true
+                        "deprecation_announced": true,
+                        "deprecated": true,
+                        "eol_date": "2026-09-10"
                     }
                 },
                 {
@@ -2999,6 +4142,237 @@
             "logo": "alibaba.png",
             "country": "cn",
             "models": [
+                {
+                    "id": "qwen3.8-livetranslate-flash-realtime",
+                    "name": "Qwen3.8 LiveTranslate Flash Realtime",
+                    "release_date": "2026-09-17",
+                    "category": "media_generation",
+                    "modalities": [
+                        "audio",
+                        "image",
+                        "text",
+                        "speech-output"
+                    ],
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "realtime": true
+                    },
+                    "notes": "Real-time audio/video simultaneous-translation model: 60 input languages, 29 spoken output languages, ~2.3 s end-to-end latency, speaker diarization.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-09-17"
+                        },
+                        {
+                            "title": "Alibaba Unveils Roadmap on Full-Stack AI Strategy (Apsara 2026)",
+                            "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-roadmap-on-full-stack-ai-strategy",
+                            "date": "2026-09-22"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen3.8-omni-flash",
+                    "name": "Qwen3.8 Omni Flash",
+                    "release_date": "2026-09-18",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "qwen_chat": true
+                    },
+                    "notes": "Native omni-modal model (text, image, audio, video input) with 1M context and two-/four-channel spatial audio understanding, aimed at agentic productivity and multimedia tasks; released with Qwen-MM-Plugins and the open-source Qwen-Live Harness.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-09-18"
+                        },
+                        {
+                            "title": "Alibaba's Qwen releases Qwen3.8-Omni-Flash with 1M-token context (TechNode)",
+                            "url": "https://technode.com/2026/09/18/alibabas-qwen-releases-qwen3-8-omni-flash-with-1m-token-context/",
+                            "date": "2026-09-18"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen-audio-3.1-realtime-plus",
+                    "name": "Qwen Audio 3.1 Realtime Plus",
+                    "release_date": "2026-09-20",
+                    "category": "media_generation",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-output",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 262144,
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "realtime": true
+                    },
+                    "notes": "Real-time full-duplex speech conversation model with function calling, web search, voice cloning and eight new system voices; announced at Apsara 2026 alongside the Qwen-Audio-3.1 ASR/TTS family.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-09-20"
+                        },
+                        {
+                            "title": "Alibaba Unveils Roadmap on Full-Stack AI Strategy (Apsara 2026)",
+                            "url": "https://www.alibabacloud.com/press-room/alibaba-unveils-roadmap-on-full-stack-ai-strategy",
+                            "date": "2026-09-22"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen3.8-omni-flash-realtime",
+                    "name": "Qwen3.8 Omni Flash Realtime",
+                    "release_date": "2026-09-21",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "audio",
+                        "video",
+                        "speech-output",
+                        "tool-use"
+                    ],
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "realtime": true
+                    },
+                    "notes": "Real-time audio/video interaction variant of Qwen3.8-Omni-Flash with text and audio output, multichannel audio, video aggregation and remote MCP tools over WebSocket, WebRTC and AOQ.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-09-21"
+                        }
+                    ]
+                },
+                {
+                    "id": "decision-model-preview",
+                    "name": "Qwen Decision Model (Preview)",
+                    "release_date": "2026-09-24",
+                    "category": "small_edge",
+                    "modalities": [
+                        "text"
+                    ],
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "preview": true
+                    },
+                    "notes": "Structured decision model for high-frequency business classification, yes/no decisions and scoring, returning probability distributions and confidence scores (ticket routing, moderation, agent routing).",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-09-24"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen-image-2.1",
+                    "name": "Qwen Image 2.1",
+                    "release_date": "2026-09-20",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "parameters": 7000000000,
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "modelscope": true,
+                        "license": "Qwen Research License (non-commercial)"
+                    },
+                    "notes": "Open-weight 7B unified image generation and editing model (32-layer single-stream DiT, Qwen3-VL 8B text encoder) with native RGBA transparency, up to 10 reference images and up to 2752×2752 output. Unlike earlier Apache-2.0 Qwen-Image releases, it uses a research-only license.",
+                    "sources": [
+                        {
+                            "title": "Qwen-Image-2.1 blog",
+                            "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+                            "date": "2026-09-20"
+                        },
+                        {
+                            "title": "Qwen-Image-2.1 model card",
+                            "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen-image-2.1-pro",
+                    "name": "Qwen Image 2.1 Pro",
+                    "release_date": "2026-10-02",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "access": {
+                        "api": true,
+                        "qwencloud": true
+                    },
+                    "notes": "API version of the unified Qwen-Image-2.1 text-to-image and editing model: transparent (RGBA) output, up to 10 reference images, local edits via circles, sketches or masks.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-10-02"
+                        }
+                    ]
+                },
+                {
+                    "id": "qwen-image-2.1-turbo",
+                    "name": "Qwen Image 2.1 Turbo",
+                    "release_date": "2026-10-09",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "image-generation",
+                        "image-editing"
+                    ],
+                    "parameters": 7000000000,
+                    "access": {
+                        "api": true,
+                        "qwencloud": true,
+                        "open_weights": true,
+                        "huggingface": true,
+                        "license": "Qwen Research License (non-commercial)"
+                    },
+                    "notes": "8-step distilled version of Qwen-Image-2.1 for fast, low-cost generation and editing with native RGBA transparency and multi-reference editing.",
+                    "sources": [
+                        {
+                            "title": "QwenCloud model changelog",
+                            "url": "https://docs.qwencloud.com/changelog/models",
+                            "date": "2026-10-09"
+                        },
+                        {
+                            "title": "Qwen-Image-2.1-Turbo model card",
+                            "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
                 {
                     "id": "wan3.0-video-prime",
                     "name": "Wan 3.0 Video Prime",
@@ -3526,6 +4900,56 @@
             "country": "cn",
             "models": [
                 {
+                    "id": "deepseek-v4.1-flash",
+                    "name": "DeepSeek V4.1 Flash",
+                    "release_date": "2026-09-10",
+                    "category": "agentic_coding",
+                    "parameters": 552000000000,
+                    "activated_parameters": 16000000000,
+                    "modalities": [
+                        "text",
+                        "image",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "huggingface": true,
+                        "license": "MIT",
+                        "api_model_id": "deepseek-flash"
+                    },
+                    "pricing": {
+                        "currency": "USD",
+                        "input_per_million_tokens": 0.3,
+                        "output_per_million_tokens": 1.2,
+                        "cached_input_per_million_tokens": 0.006,
+                        "off_peak_input_per_million_tokens": 0.15,
+                        "off_peak_output_per_million_tokens": 0.6,
+                        "off_peak_cached_input_per_million_tokens": 0.003,
+                        "notes": "Peak rates apply Monday–Friday, 01:00–04:00 and 06:00–10:00 UTC (excluding Chinese public holidays); off-peak rates are 50% of peak. Effective September 10, 2026."
+                    },
+                    "notes": "Smallest model of DeepSeek's new causal encoder-decoder MoE architecture (8B active for prefill, 16B for decode) with native visual understanding, 1M context, up to 384K output, FP4 KV cache and adjustable reasoning effort; replaces V4-Flash and V4-Flash-Vision-Exp under the new `deepseek-flash` API name.",
+                    "sources": [
+                        {
+                            "title": "DeepSeek-V4.1-Flash release",
+                            "url": "https://api-docs.deepseek.com/news/news260910",
+                            "date": "2026-09-10"
+                        },
+                        {
+                            "title": "DeepSeek-V4.1-Flash model card",
+                            "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+                            "accessed_at": "2026-10-10"
+                        },
+                        {
+                            "title": "DeepSeek API pricing",
+                            "url": "https://api-docs.deepseek.com/quick_start/pricing",
+                            "accessed_at": "2026-10-10"
+                        }
+                    ]
+                },
+                {
                     "id": "deepseek-v4-flash-vision-exp",
                     "name": "DeepSeek V4 Flash Vision Experimental",
                     "release_date": "2026-08-21",
@@ -3540,7 +4964,9 @@
                     "access": {
                         "api": true,
                         "experimental": true,
-                        "responses_api": true
+                        "responses_api": true,
+                        "legacy": true,
+                        "eol_date": "2026-09-10"
                     },
                     "pricing": {
                         "currency": "USD",
@@ -3584,7 +5010,9 @@
                         "huggingface": true,
                         "modelscope": true,
                         "deepseek_app": true,
-                        "responses_api": true
+                        "responses_api": true,
+                        "legacy": true,
+                        "eol_date": "2026-09-10"
                     },
                     "pricing": {
                         "currency": "USD",
@@ -3687,7 +5115,9 @@
                         "open_weights": true,
                         "api": true,
                         "huggingface": true,
-                        "modelscope": true
+                        "modelscope": true,
+                        "legacy": true,
+                        "eol_date": "2026-09-10"
                     }
                 },
                 {
@@ -3784,7 +5214,13 @@
                             "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
                             "accessed_at": "2026-09-06"
                         }
-                    ]
+                    ],
+                    "pricing": {
+                        "currency": "USD",
+                        "input_per_million_tokens": 0.15,
+                        "output_per_million_tokens": 0.5,
+                        "cached_input_per_million_tokens": 0.03
+                    }
                 },
                 {
                     "id": "glm-5.3",
@@ -3817,7 +5253,13 @@
                             "url": "https://docs.z.ai/release-notes/new-released",
                             "date": "2026-08-18"
                         }
-                    ]
+                    ],
+                    "pricing": {
+                        "currency": "USD",
+                        "input_per_million_tokens": 1.4,
+                        "output_per_million_tokens": 4.4,
+                        "cached_input_per_million_tokens": 0.26
+                    }
                 },
                 {
                     "id": "glm-5.2",
@@ -3933,6 +5375,33 @@
             "country": "cn",
             "models": [
                 {
+                    "id": "kimi-k2.8-preview",
+                    "name": "Kimi K2.8 Preview",
+                    "release_date": "2026-09-11",
+                    "category": "agentic_coding",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "kimi_code": true,
+                        "preview": true,
+                        "api_model_id": "kimi-for-coding"
+                    },
+                    "notes": "Preview coding model rolled out to all Kimi Code tiers under the existing kimi-for-coding ID, with low/high/max thinking (max default) and 1M context; Moonshot says it approaches K3 overall and thinks more efficiently than K2.7 Code. No benchmarks, pricing or weights published.",
+                    "sources": [
+                        {
+                            "title": "Kimi Code: What's New",
+                            "url": "https://www.kimi.com/code/docs/kimi-code/whats-new.html",
+                            "date": "2026-09-11"
+                        }
+                    ]
+                },
+                {
                     "id": "kimi-k3",
                     "name": "Kimi K3",
                     "release_date": "2026-07-16",
@@ -4006,7 +5475,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "open_source": true,
-                        "huggingface": true
+                        "huggingface": true,
+                        "legacy": true,
+                        "eol_date": "2026-05-25"
                     }
                 }
             ]
@@ -4018,6 +5489,36 @@
             "logo": "amazon.png",
             "country": "us",
             "models": [
+                {
+                    "id": "amazon-nova-2.5-sonic",
+                    "name": "Amazon Nova 2.5 Sonic",
+                    "release_date": "2026-10-05",
+                    "category": "frontier_omni",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-speech",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 256000,
+                    "access": {
+                        "aws_bedrock": true,
+                        "generally_available": true
+                    },
+                    "notes": "Speech-to-speech model for real-time voice agents with improved reasoning, instruction following and tool-calling accuracy, asynchronous tool calls, mixed voice/text sessions and expressive voices in seven languages; same price as Nova 2 Sonic. Bedrock in us-east-1, us-west-2, eu-north-1, ap-northeast-1.",
+                    "sources": [
+                        {
+                            "title": "Announcing Amazon Nova 2.5 Sonic with improved reasoning for voice agents",
+                            "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-sonic/",
+                            "date": "2026-10-05"
+                        },
+                        {
+                            "title": "Amazon Nova models page",
+                            "url": "https://aws.amazon.com/nova/models/",
+                            "date": "2026-10-10"
+                        }
+                    ]
+                },
                 {
                     "id": "amazon-nova-2-omni-preview",
                     "name": "Amazon Nova 2 Omni (Preview)",
@@ -4261,7 +5762,9 @@
                         "aws_bedrock": true,
                         "legacy": true,
                         "eol_date": "2026-09-30",
-                        "maintenance_mode": true
+                        "maintenance_mode": true,
+                        "retired": true,
+                        "eol_reached": true
                     }
                 },
                 {
@@ -4276,7 +5779,9 @@
                         "aws_bedrock": true,
                         "legacy": true,
                         "eol_date": "2026-09-30",
-                        "maintenance_mode": true
+                        "maintenance_mode": true,
+                        "retired": true,
+                        "eol_reached": true
                     }
                 },
                 {
@@ -4314,7 +5819,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "on_device": true,
-                        "apple_intelligence": true
+                        "apple_intelligence": true,
+                        "generally_available": true,
+                        "ga_date": "2026-09-14"
                     }
                 },
                 {
@@ -4332,7 +5839,9 @@
                     "access": {
                         "on_device": true,
                         "apple_intelligence": true,
-                        "advanced_apple_silicon": true
+                        "advanced_apple_silicon": true,
+                        "generally_available": true,
+                        "ga_date": "2026-09-14"
                     }
                 },
                 {
@@ -4348,7 +5857,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "private_cloud_compute": true,
-                        "apple_intelligence": true
+                        "apple_intelligence": true,
+                        "generally_available": true,
+                        "ga_date": "2026-09-14"
                     }
                 },
                 {
@@ -4364,7 +5875,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "private_cloud_compute": true,
-                        "apple_intelligence": true
+                        "apple_intelligence": true,
+                        "generally_available": true,
+                        "ga_date": "2026-09-14"
                     }
                 },
                 {
@@ -4380,7 +5893,9 @@
                     "context_window_tokens": null,
                     "access": {
                         "private_cloud_compute": true,
-                        "apple_intelligence": true
+                        "apple_intelligence": true,
+                        "generally_available": true,
+                        "ga_date": "2026-09-14"
                     }
                 },
                 {
@@ -4468,6 +5983,81 @@
             "country": "eu",
             "models": [
                 {
+                    "id": "voxtral-mini-4b-realtime-arabic",
+                    "name": "Voxtral Mini 4B Realtime Arabic",
+                    "release_date": "2026-10-08",
+                    "category": "media_generation",
+                    "parameters": 4400000000,
+                    "based_on": "voxtral-mini-4b-realtime-2602",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-text"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true
+                    },
+                    "features": [
+                        "streaming ASR for Arabic dialects + MSA with code-switching",
+                        "8.82% avg CER at 480 ms delay across 7 Arabic benchmarks",
+                        "co-developed with Morocco's MTNRA"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Hugging Face: mistralai/Voxtral-Mini-4B-Realtime-Arabic",
+                            "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-Arabic",
+                            "date": "2026-10-08"
+                        }
+                    ]
+                },
+                {
+                    "id": "mistral-large-4",
+                    "name": "Mistral Large 4",
+                    "release_date": "2026-10-06",
+                    "category": "open_weight_foundation",
+                    "parameters": "1_050_000_000_000_total_52_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "document",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "public_preview": true,
+                        "open_weights": false,
+                        "open_weights_planned": "end of October 2026",
+                        "self_hosted_enterprise": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1.36,
+                        "output_per_million_tokens": 4.18
+                    },
+                    "features": [
+                        "granular MoE, hybrid instruct + reasoning",
+                        "natively multimodal (1.6B vision encoder)",
+                        "trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Europe",
+                        "50% launch discount for 2 weeks",
+                        "DeepSWE v1.1 61.7%, Cybench 93%"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Introducing Mistral Large 4",
+                            "url": "https://mistral.ai/news/mistral-large-4/",
+                            "date": "2026-10-06"
+                        },
+                        {
+                            "title": "Mistral changelog: Mistral Large 4 public preview",
+                            "url": "https://docs.mistral.ai/resources/changelogs",
+                            "date": "2026-10-06"
+                        }
+                    ]
+                },
+                {
                     "id": "robostral-navigate",
                     "name": "Robostral Navigate",
                     "release_date": "2026-07-08",
@@ -4552,10 +6142,12 @@
                     ],
                     "context_window_tokens": null,
                     "access": {
-                        "api": true,
+                        "api": false,
                         "open_weights": true,
                         "apache_2": true,
-                        "huggingface": true
+                        "huggingface": true,
+                        "api_deprecated_date": "2026-09-29",
+                        "api_eol_date": "2026-09-30"
                     }
                 },
                 {
@@ -4574,7 +6166,10 @@
                         "document_ai": true,
                         "self_hosted_enterprise": true,
                         "amazon_sagemaker": true,
-                        "microsoft_foundry": true
+                        "microsoft_foundry": true,
+                        "legacy": true,
+                        "deprecated_date": "2026-09-29",
+                        "eol_date": "2026-09-30"
                     },
                     "features": [
                         "superseded by OCR 4.1 (mistral-ocr-4-1) on 2026-07-16; mistral-ocr-latest and mistral-ocr-4 aliases now point to 4.1"
@@ -4928,6 +6523,206 @@
             "country": "ca",
             "models": [
                 {
+                    "id": "cohere-transcribe-arabic-07-2026",
+                    "name": "Cohere Transcribe Arabic",
+                    "release_date": "2026-07-07",
+                    "category": "media_generation",
+                    "parameters": 2000000000,
+                    "based_on": "cohere-transcribe-03-2026",
+                    "modalities": [
+                        "audio",
+                        "text",
+                        "speech-to-text"
+                    ],
+                    "access": {
+                        "api": true,
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true,
+                        "model_vault": true
+                    },
+                    "features": [
+                        "PRE-WINDOW (missed earlier)",
+                        "Arabic dialects + English + code-switching ASR",
+                        "WER 25.87 on HF Arabic ASR leaderboard"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Cohere Transcribe Arabic",
+                            "url": "https://cohere.com/blog/transcribe-arabic",
+                            "date": "2026-07-07"
+                        }
+                    ]
+                },
+                {
+                    "id": "north-micro-vision-instruct",
+                    "name": "North Micro Vision Instruct",
+                    "release_date": "2026-08-12",
+                    "category": "small_edge",
+                    "parameters": 2400000000,
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "open_weights": true,
+                        "apache_2": true,
+                        "huggingface": true
+                    },
+                    "features": [
+                        "PRE-WINDOW (missed in 2026-09-06 update)",
+                        "VQA, OCR, chart/document understanding, grounding",
+                        "validated multimodal range 8K"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Meet North Micro Vision Instruct",
+                            "url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+                            "date": "2026-08-12"
+                        }
+                    ]
+                },
+                {
+                    "id": "tiny-aya-l2-thinker",
+                    "name": "Tiny Aya L2-Thinker",
+                    "release_date": "2026-10-06",
+                    "category": "small_edge",
+                    "parameters": 3350000000,
+                    "based_on": "tiny-aya-base-32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 32000,
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "cc_by_nc_4": true,
+                        "research_release": true
+                    },
+                    "features": [
+                        "multilingual reasoning in the prompt language (>93% of the time across 60 languages)",
+                        "reasoning toggle",
+                        "sibling En-Thinker reasons in English; Tiny Aya Base 32K also released"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Multilingual Bridges: How Data Mixing Unlocks In-Language Reasoning",
+                            "url": "https://cohere.com/blog/building-multilingual-bridges",
+                            "date": "2026-10-06"
+                        },
+                        {
+                            "title": "arXiv 2609.10445",
+                            "url": "https://arxiv.org/abs/2609.10445",
+                            "date": "2026-09-09"
+                        }
+                    ]
+                },
+                {
+                    "id": "north-small-translate-1-0",
+                    "name": "North Small Translate",
+                    "release_date": "2026-09-10",
+                    "category": "open_weight_foundation",
+                    "parameters": "218_000_000_000_total_25_000_000_000_active",
+                    "modalities": [
+                        "text"
+                    ],
+                    "context_window_tokens": 16000,
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true,
+                        "cc_by_nc_4": true,
+                        "non_commercial": true,
+                        "commercial_via": "RWS Language Weaver"
+                    },
+                    "features": [
+                        "machine translation, 50+ languages",
+                        "WMT26 83.60 (84.36 agentic)",
+                        "runs on 1x B200 at W4A4"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Introducing North Small Translate",
+                            "url": "https://cohere.com/blog/north-small-translate",
+                            "date": "2026-09-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "embed-v5.0-fast",
+                    "name": "Embed 5 Fast",
+                    "release_date": "2026-09-30",
+                    "category": "embeddings_retrieval",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "model_vault": true,
+                        "private_deployment": true,
+                        "microsoft_foundry": true,
+                        "amazon_sagemaker": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.08,
+                        "image_input_per_million_tokens": 0.4
+                    },
+                    "features": [
+                        "lower-latency tier of Embed 5",
+                        "same embedding space as Pro (index with Pro, query with Fast)",
+                        "Matryoshka dims 256–2048"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Introducing Embed 5",
+                            "url": "https://cohere.com/blog/embed-5",
+                            "date": "2026-09-30"
+                        },
+                        {
+                            "title": "Cohere changelog: Embed 5",
+                            "url": "https://docs.cohere.com/changelog",
+                            "date": "2026-09-30"
+                        }
+                    ]
+                },
+                {
+                    "id": "embed-v5.0-pro",
+                    "name": "Embed 5 Pro",
+                    "release_date": "2026-09-30",
+                    "category": "embeddings_retrieval",
+                    "modalities": [
+                        "text",
+                        "image"
+                    ],
+                    "context_window_tokens": 128000,
+                    "access": {
+                        "api": true,
+                        "model_vault": true,
+                        "private_deployment": true,
+                        "microsoft_foundry": true,
+                        "amazon_sagemaker": true
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 0.12,
+                        "image_input_per_million_tokens": 0.4
+                    },
+                    "features": [
+                        "multimodal (text, image, fused text+image) embeddings",
+                        "Matryoshka dims 256–2048; float/int8/binary",
+                        "100+ languages",
+                        "shares embedding space with Embed 5 Fast"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Introducing Embed 5",
+                            "url": "https://cohere.com/blog/embed-5",
+                            "date": "2026-09-30"
+                        }
+                    ]
+                },
+                {
                     "id": "cohere-parse",
                     "name": "Cohere Parse",
                     "release_date": "2026-08-27",
@@ -5128,6 +6923,55 @@
             "logo": "nvidia.png",
             "country": "us",
             "models": [
+                {
+                    "id": "nemotron-labs-3-competitive-coding-550b-a55b",
+                    "name": "Nemotron Labs 3 Competitive Coding 550B-A55B",
+                    "release_date": "2026-09-03",
+                    "category": "agentic_coding",
+                    "parameters": "550_000_000_000_total_55_000_000_000_active",
+                    "context_window_tokens": 262144,
+                    "based_on": "Nemotron 3 Ultra 550B-A55B",
+                    "modalities": [
+                        "text",
+                        "code"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true
+                    },
+                    "notes": "Competitive-programming specialist fine-tuned (SFT on 478K GLM-5.2-distilled reasoning traces) from Nemotron 3 Ultra, released in NVFP4 under OpenMDW 1.1; reports IOI 2025 502/600 and LiveCodeBench Pro 74.5%. PRE-WINDOW (2026-09-03) but missing from inventory.",
+                    "sources": [
+                        {
+                            "title": "nvidia/NVIDIA-Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4 model card",
+                            "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4",
+                            "date": "2026-09-03"
+                        }
+                    ]
+                },
+                {
+                    "id": "nemotron-3-diarization",
+                    "name": "Nemotron 3 Diarization",
+                    "release_date": "2026-09-23",
+                    "category": "small_edge",
+                    "parameters": 100000000,
+                    "modalities": [
+                        "audio",
+                        "speaker-diarization",
+                        "streaming"
+                    ],
+                    "access": {
+                        "open_weights": true,
+                        "huggingface": true
+                    },
+                    "notes": "Open-weight (OpenMDW 1.1) ~100M-parameter speaker diarization model ('who spoke when') for up to eight speakers, with streaming and offline inference, aimed at meeting/call/podcast and ASR pipelines.",
+                    "sources": [
+                        {
+                            "title": "nvidia/Nemotron-3-Diarization model card",
+                            "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+                            "date": "2026-09-23"
+                        }
+                    ]
+                },
                 {
                     "id": "cosmos-3",
                     "name": "Cosmos 3 (Edge 4B / Nano 16B / Super 64B world foundation models)",
@@ -5921,6 +7765,73 @@
             "country": "cn",
             "models": [
                 {
+                    "id": "stepaudio-3",
+                    "name": "StepAudio 3 (family)",
+                    "release_date": "2026-09-15",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "speech-out",
+                        "text-to-audio",
+                        "text-to-music"
+                    ],
+                    "access": {
+                        "api": true,
+                        "preview": true
+                    },
+                    "notes": "Five speech/audio models: Realtime (full-duplex voice with think-while-speaking), ASR, TTS, Gen (voices/SFX/ambience/BGM) and Music. All live on the StepFun Open Platform; most are free limited-time previews.",
+                    "sources": [
+                        {
+                            "title": "IT之家/凤凰网: 阶跃发布StepAudio 3系列语音大模型",
+                            "url": "https://tech.ifeng.com/c/8wRQDJ8y964",
+                            "date": "2026-09-15"
+                        },
+                        {
+                            "title": "StepFun pricing details",
+                            "url": "https://platform.stepfun.ai/docs/en/pricing/details",
+                            "date": "2026-10-10"
+                        }
+                    ]
+                },
+                {
+                    "id": "step-5-preview",
+                    "name": "Step 5 Preview",
+                    "release_date": "2026-09-20",
+                    "category": "agentic_coding",
+                    "parameters": "600_000_000_000_total_27_000_000_000_active",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "code",
+                        "tool-use"
+                    ],
+                    "context_window_tokens": 1000000,
+                    "access": {
+                        "api": true,
+                        "preview": true,
+                        "open_weights_planned": "2026-10-15"
+                    },
+                    "pricing": {
+                        "input_per_million_tokens": 1.0,
+                        "output_per_million_tokens": 2.7
+                    },
+                    "notes": "Sparse MoE flagship for agentic coding, software engineering, professional knowledge work and finance; 1M context (64K max output), text+image+video input, low/medium/high reasoning effort. API-only at launch; StepFun says weights will be released on 2026-10-15.",
+                    "sources": [
+                        {
+                            "title": "StepFun API docs: step-5-preview",
+                            "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+                            "date": "2026-09-20"
+                        },
+                        {
+                            "title": "每日经济新闻: 阶跃发布 Step 5 Preview",
+                            "url": "https://www.mrjjxw.com/articles/2026-09-20/4586403.html",
+                            "date": "2026-09-20"
+                        }
+                    ]
+                },
+                {
                     "id": "step-3.7-flash",
                     "name": "Step 3.7 Flash",
                     "release_date": "2026-06-03",
@@ -6019,6 +7930,35 @@
             "country": "us",
             "models": [
                 {
+                    "id": "reka-rho-1",
+                    "name": "Rho-1",
+                    "release_date": "2026-10-05",
+                    "category": "frontier_omni",
+                    "parameters": 19000000000,
+                    "modalities": [
+                        "text",
+                        "image",
+                        "video",
+                        "robot-actions"
+                    ],
+                    "access": {
+                        "research_preview": true,
+                        "contact_sales": true
+                    },
+                    "features": [
+                        "omni-reasoning model trained from scratch (320 H100s, 3 months)",
+                        "text, images, video and robot actions as tokens in one context",
+                        "distilled Rho-1 Flash variant (99 -> 8 denoising steps)"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Rho-1: Collapsing the Multimodal Stack",
+                            "url": "https://reka.ai/news/rho-1-collapsing-the-multimodal-stack",
+                            "date": "2026-10-05"
+                        }
+                    ]
+                },
+                {
                     "id": "reka-edge-2026",
                     "name": "Reka Edge",
                     "release_date": "2026-03-11",
@@ -6034,7 +7974,11 @@
                     "access": {
                         "api": true,
                         "openrouter": true,
-                        "edge_deployment": true
+                        "edge_deployment": true,
+                        "open_weights": true,
+                        "huggingface": true,
+                        "custom_license": "reka-edge-2603-license (commercial use under $1M revenue)",
+                        "qualcomm_npu_edgeq": true
                     },
                     "pricing_per_million_input": 0.1,
                     "pricing_per_million_output": 0.1
@@ -6069,6 +8013,69 @@
             "country": "in",
             "models": [
                 {
+                    "id": "bulbul-v4",
+                    "name": "Bulbul V4",
+                    "release_date": "2026-07-30",
+                    "category": "media_generation",
+                    "modalities": [
+                        "text",
+                        "audio",
+                        "text-to-speech"
+                    ],
+                    "access": {
+                        "api": true,
+                        "research_preview": true,
+                        "voice_agents": true,
+                        "voice_agents_date": "2026-10-06"
+                    },
+                    "features": [
+                        "PRE-WINDOW launch (Sarvam Epoch); in-window: available in Voice Agents 2026-10-06",
+                        "controllable emotion, emphasis, pacing, laughter",
+                        "11 Indian languages; bulbul:v4-flash API variant"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Everything we announced at Sarvam Epoch",
+                            "url": "https://www.sarvam.ai/epoch/summary",
+                            "date": "2026-08-07"
+                        },
+                        {
+                            "title": "Sarvam changelog: Bulbul V4 for Voice Agents",
+                            "url": "https://docs.sarvam.ai/changelog/2026/10/6",
+                            "date": "2026-10-06"
+                        }
+                    ]
+                },
+                {
+                    "id": "sarvam-vision-2-1",
+                    "name": "Sarvam Vision 2.1",
+                    "release_date": "2026-09-24",
+                    "category": "frontier_omni",
+                    "based_on": "sarvam-vision",
+                    "modalities": [
+                        "text",
+                        "image",
+                        "document"
+                    ],
+                    "access": {
+                        "api": true,
+                        "document_ai": true
+                    },
+                    "features": [
+                        "document VLM for English + 22 Indian languages",
+                        "multi-page table parsing, key-value extraction, Indic handwriting",
+                        "olmOCR-Bench 87.3, OmniDocBench v1.6 94.97",
+                        "SFT + RLVR; lower serving price"
+                    ],
+                    "sources": [
+                        {
+                            "title": "Sarvam Vision 2.1: Pushing the Pareto frontier of document intelligence",
+                            "url": "https://www.sarvam.ai/blogs/sarvam-vision-2-1",
+                            "date": "2026-09-24"
+                        }
+                    ]
+                },
+                {
                     "id": "saaras-v4",
                     "name": "Saaras V4",
                     "release_date": "2026-07",
@@ -6083,7 +8090,9 @@
                         "api": true,
                         "voice_agents": true,
                         "generally_available": true,
-                        "voice_agents_ga_date": "2026-09-02"
+                        "voice_agents_ga_date": "2026-09-02",
+                        "realtime_api": true,
+                        "realtime_api_date": "2026-09-03"
                     },
                     "notes": "Speech recognition for 22 Indian languages plus Indian and global English accents, with transcription, translation, verbatim, transliteration, and code-mixed output modes. First documented in July; became the Voice Agents default on September 2.",
                     "sources": [
@@ -6096,7 +8105,17 @@
                             "title": "Voice Agents: Saaras V4 GA",
                             "url": "https://docs.sarvam.ai/conversations/releases",
                             "date": "2026-09-02"
+                        },
+                        {
+                            "title": "Introducing Saaras V4",
+                            "url": "https://www.sarvam.ai/blogs/introducing-saaras-v4",
+                            "date": "2026-09-25"
                         }
+                    ],
+                    "features": [
+                        "audio encoder + 3B hybrid state-space LLM decoder trained from scratch",
+                        "5 modes: transcribe, translate, verbatim, translit, codemix",
+                        "streaming TTFT < 150 ms"
                     ]
                 },
                 {

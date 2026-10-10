@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-06",
+    "updated_at": "2026-10-10",
     "categories": [
         {
             "category": "app_agent_platform",
@@ -40,7 +40,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Type-safe agent framework with structured outputs, tools, MCP, and realtime model support. v2.40.0 adds agent event listeners, realtime interruption and queued-prompt controls, and background price updates; its release is dated September 4 and was published September 5 UTC.",
+            "notes": "Type-safe agent framework with structured outputs, tools, MCP, durable execution, and realtime model support. v2.52.0 (September 30) adds workspaces so harness tools (Coder, Shell, FileSystem) run locally or in E2B, Modal, or Fly.io Sprite sandboxes, and folds pydantic-ai-harness into every release; v2.55.0 (October 9) adds a `Conversation` object carried between runs, cross-provider prompt caching, and Postgres message/media stores, and requires Python 3.11+.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -56,7 +56,7 @@
             "deployment_modes": [
                 "Library (Python/TypeScript)"
             ],
-            "notes": "Framework for agents, handoffs, sessions, tracing, guardrails, and sandboxed execution. v0.21.1 (August 16) adds model-call timeouts, run-scoped working directories, and optional network-disabled Docker sandboxes; v0.22.0 (August 19) strengthens replay-state redaction, failure handling, and checkpoint usage accounting.",
+            "notes": "Framework for agents, handoffs, sessions, tracing, guardrails, and sandboxed execution. v0.23.0 (October 1) adds configurable MCP listing page limits, opt-in Docker sandbox removal protection, configurable memory-consolidation turns, and an encrypted session-history scan budget, plus redaction of tool failure details and stricter tool-approval scoping.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -78,7 +78,7 @@
                 "Library (Python/TypeScript)",
                 "Self-hosted runtime"
             ],
-            "notes": "Agent SDK built on Claude Code, with sessions, file and shell tools, permissions, hooks, subagents, skills, plugins, and MCP. Python v0.2.152 (September 2) bundles Claude CLI 2.1.259.",
+            "notes": "Agent SDK built on Claude Code, with sessions, file and shell tools, permissions, hooks, subagents, skills, plugins, and MCP. Python v0.2.153 (September 15) adds system-prompt snapshots and v0.2.158 (September 23) a `verbatim_prompts` option; v0.2.165 (October 8) bundles Claude CLI 2.1.294.",
             "url": "https://code.claude.com/docs/en/agent-sdk/overview",
             "sources": [
                 {
@@ -96,7 +96,7 @@
                 "Library (.NET/Python/Go)",
                 "Open source"
             ],
-            "notes": "Successor to AutoGen and Semantic Kernel for provider-neutral agents, workflows, checkpoints, approvals, and Foundry integration. Python 1.17.0 (September 3) adds explicit hosted-history ownership and OpenAI SDK 3.x support, migrates Mistral clients to the official SDK, and removes the experimental agent-hooks core extra.",
+            "notes": "Successor to AutoGen and Semantic Kernel for provider-neutral agents, workflows, checkpoints, approvals, and Foundry integration. Python 1.18-1.19 (September 10-18) add shared vector-store abstractions with Azure AI Search, Redis, Cosmos DB, Qdrant, Postgres, and MongoDB connectors; 1.20.0 (October 2) redesigns Foundry hosting around persistent sandbox-isolated sessions and adds native computer use, and 1.21.0 (October 8) adds a maximum reasoning-effort option and an Oracle vector store.",
             "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
             "sources": [
                 {
@@ -113,7 +113,7 @@
             "deployment_modes": [
                 "Library (Python/TypeScript/Go/Java)"
             ],
-            "notes": "Open-source framework for agents, tools, workflows, evaluation, and Google Cloud deployment, with Python, TypeScript, Go, and Java libraries. Python 2.8.0 (published August 26) adds native A2A task mode, a Model Armor guardrail plugin, live-video support, and optional per-agent and per-workflow telemetry.",
+            "notes": "Open-source framework for agents, tools, workflows, evaluation, and Google Cloud deployment, with Python, TypeScript, Go, and Java libraries. Python 2.9.0 (September 10) adds automatic model failover, a LiveKit voice runner, YAML-defined graph workflows, and MCP SDK 2.x; 2.10.0 (September 24) adds skill lifecycles and efficiency eval metrics, and 2.11.0 (October 1) adds run cancellation, tool confirmation in workflows, a ModelConsultTool, and a SQLite memory service.",
             "url": "https://google.github.io/adk-docs/",
             "sources": [
                 {
@@ -130,7 +130,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "OpenAI's primary agent API, with persistent conversations, built-in tools, remote MCP, and programmatic tool calling. September 3 updates add asynchronous tool execution controls, WebSocket mid-turn steering, and reasoning-effort changes that preserve cached prefixes.",
+            "notes": "OpenAI's primary agent API, with persistent conversations, built-in tools, remote MCP, and programmatic tool calling. Prompt Cache Diagnostics became generally available September 8; GPT-6.1 Sol (September 29) brings Multi-agent in beta through the Responses API, and an Ultrafast service tier (service_tier: \"ultrafast\") followed for GPT-6 Astra and, on October 8, GPT-6.1 Sol.",
             "url": "https://platform.openai.com/docs/api-reference/responses",
             "sources": [
                 {
@@ -171,7 +171,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Claude's API for text, image, and structured tool use. Computer and browser toolsets, Files API, and Skills APIs became generally available August 19, adding batched computer actions, zoom, and browser interaction through accessibility elements, tabs, forms, and files.",
+            "notes": "Claude's API for text, image, and structured tool use, with computer and browser toolsets. September added on-demand compaction (beta, September 14), cache diagnostics GA (September 23), and tools defined in mid-conversation system messages without breaking the prompt cache (beta, September 22) alongside Claude Opus 5.5, Sonnet 5.5, and Haiku 5.5 launches; October 7 SDK releases add beta helper classes that run the computer-use and browser-use tool loop.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -187,7 +187,7 @@
             "deployment_modes": [
                 "GCP"
             ],
-            "notes": "Google Cloud's managed agent platform, including config-driven Managed Agents, Agent Engine, enterprise search and grounding, tools, A2A interoperability, sandboxed execution, and persistent state.",
+            "notes": "Google Cloud's managed agent platform, including config-driven Managed Agents, Agent Engine, enterprise search and grounding, tools, A2A interoperability, sandboxed execution, and persistent state. Computer Use and Shell sandboxes became generally available September 9 with VPC Service Controls, CMEK, and pause/resume, and Agent Platform SDK for Python 2.0.1 (September 18) moves the agent surface into a separate google-cloud-agentplatform package.",
             "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents"
         },
         {
@@ -207,7 +207,7 @@
             "deployment_modes": [
                 "AWS"
             ],
-            "notes": "Managed runtime and services for agents, including harness, browser, code interpreter, memory, identity, gateway, observability, evaluations, policies, and AWS Agent Registry. Runtime Instances (GA Aug 6, 2026) run agents on AWS-managed EC2 in your account with sessions up to 14 days and GPU instance types; August 2026 also added temporal (stateful) policies, configurable gateway rate limits, and memory/policy/harness in AWS GovCloud (US-West)."
+            "notes": "Managed runtime and services for agents, including harness, browser, code interpreter, memory, identity, gateway, observability, evaluations, policies, and AWS Agent Registry. September 2026 added harness lifecycle hooks (Lambda allow/deny plus SNS/EventBridge notifications), persistent interactive shells over WebSocket, an Identity Consent Portal, and TypeScript framework support in Evaluations; October brought Gateway support for targets with private-CA TLS certificates."
         },
         {
             "name": "OpenRouter Actions",
@@ -225,7 +225,7 @@
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
-            "notes": "Tool calling, routing, memory, callbacks. Pairs with LangGraph for durable, stateful agents."
+            "notes": "Agent framework for tool calling, model integrations, middleware, and memory, built on LangGraph for durable, stateful agents. langchain 1.4.3 (September 28) adds Bedrock Mantle models to `init_chat_model` and repairs invalid tool calls in `create_agent`; 1.4.4 (October 8) retries summarization on context overflow."
         },
         {
             "name": "LangGraph",
@@ -234,7 +234,7 @@
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
-            "notes": "Graph-based runtime for stateful agents with durable execution, interrupts, resumable workflows, and human review. Python SDK 0.4.4 (August 27) adds routing of LangSmith traces from thread streams.",
+            "notes": "Graph-based runtime for stateful agents with durable execution, interrupts, resumable workflows, and human review. 1.2.12 (September 21) adds a `response_schema` to `interrupt()`, the CLI 0.4.32 (September 23) adds self-hosted deployment options, and 1.2.13 (October 5) fixes checkpoint forking and replay.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -268,7 +268,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Declarative LLM programming; optimizes prompts/routing for chains & agents."
+            "notes": "Declarative LLM programming framework that optimizes prompts and weights for chains and agents. DSPy 3.4.0 (September 25) adds Jev integration through the TypeSafe client, with experimental `Noul`, `Choice`, and `Score` decision types that return probabilities and confidence, and starts the LM-type migration due by 3.5."
         },
         {
             "name": "Haystack Agents",
@@ -277,7 +277,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Pipelines + agents with strong RAG and tool integration."
+            "notes": "Pipelines and agents with strong RAG and tool integration. Haystack 3.2.0 (September 24) adds an experimental SummarizationCompactor for agent context compaction and a TokenBudgetHook that caps tokens per agent run; 3.3.0 (October 1) speeds up SentenceWindowRetriever and fixes CJK BM25 tokenization."
         },
         {
             "name": "Temporal.io",
@@ -286,7 +286,7 @@
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
-            "notes": "Durable workflow orchestration used for long-running agent processes. Provides retries, state persistence, and production reliability; often paired with OpenAI Agents SDK or LangGraph."
+            "notes": "Durable workflow orchestration used for long-running agent processes, providing retries, state persistence, and production reliability; often paired with OpenAI Agents SDK or LangGraph. Server v1.32.0 (September 11) makes Standalone Activities generally available and previews Standalone Nexus Operations started directly from a client."
         },
         {
             "name": "Model Context Protocol (MCP)",
@@ -316,7 +316,7 @@
                 "Open protocol",
                 "SDKs"
             ],
-            "notes": "Event-based protocol connecting agent backends to interactive frontends, covering streaming messages, tool calls, shared state, generative UI, and human-in-the-loop interaction.",
+            "notes": "Event-based protocol connecting agent backends to interactive frontends, covering streaming messages, tool calls, shared state, generative UI, and human-in-the-loop interaction. AG-UI 1.0 (September 17) freezes the specification and JSON Schema, with generated 1.0 SDKs for TypeScript, Python, and .NET and protobuf wire support.",
             "url": "https://docs.ag-ui.com/introduction"
         },
         {
@@ -335,7 +335,7 @@
             "deployment_modes": [
                 "Library (Python/JS)"
             ],
-            "notes": "Role-based multi-agent teams, tasks, tools, flows, skills, and process supervision. 1.15.x releases (Jul 26-Aug 14, 2026) added OpenAI Responses API and GPT-5.6 support, a WaitTool for long-running jobs, progressive skill disclosure, human-in-the-loop flow signals, and unified `crewai create` scaffolding."
+            "notes": "Role-based multi-agent teams, tasks, tools, flows, skills, and process supervision. 1.15.22-1.15.27 releases (September 16-October 9) add an `llm_overlay` to route agent roles to models, native Gemini 3.8 Flash, `crewai eval` with multi-model comparison and per-run cost tracking, Oracle integrations, an experimental job lifecycle runner, and DeepInfra as a provider."
         },
         {
             "name": "FlowiseAI",
@@ -344,7 +344,7 @@
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
-            "notes": "Drag-and-drop canvas for LangChain/LlamaIndex style agents; REST APIs & auth."
+            "notes": "Open-source drag-and-drop builder for LLM agents and chatflows. The maintainers wound the project down: active development stopped July 29, 2026, and the GitHub repository was archived read-only on August 13, 2026, with npm packages and Docker images deprecated; the Apache 2.0 code remains available for forks."
         },
         {
             "name": "n8n (AI + Agents)",
@@ -353,7 +353,7 @@
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
-            "notes": "Automation workflows with LLM nodes, tools, and webhooks to operationalize agents."
+            "notes": "Workflow automation platform with LLM nodes, tools, and webhooks to operationalize agents. n8n Agents (preview on Cloud, beta self-hosted, from v2.32.3; announced August 5, 2026) are define-once agents with their own tab, usable from chat, workflows, Slack/Telegram/Linear channels, or schedules, with MCP tools, skills, sub-agents, memory, versioning, and approvals."
         },
         {
             "name": "Zapier AI Actions",
@@ -371,7 +371,7 @@
             "deployment_modes": [
                 "Self-host/SaaS"
             ],
-            "notes": "Agent tracing, prompt management, datasets, and evaluation platform. v4 became generally available August 17 for cloud and self-hosted deployments, adding observation-level evaluation, monitors, code evaluators, and expanded search; stable evaluator-management APIs followed August 27, with legacy cloud APIs scheduled to retire November 16.",
+            "notes": "Agent tracing, prompt management, datasets, and evaluation platform; v4 became generally available August 17. September added evaluator backfills over up to six months of past observations (September 7), sandboxed bulk analysis by the Langfuse Assistant, rebuilt experiment results, and a Jev-as-a-judge evaluator option; Langfuse Cloud becomes v4-only on November 16.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -410,7 +410,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "Developer-centric framework with unified interfaces, async execution, sandboxing, and eval tooling."
+            "notes": "Developer-centric agent framework with unified interfaces, async execution, sandboxing, and eval tooling. v2.0.8 (September 8) adds a realtime voice agent, an A2AAgent, and agent-driven context compression; v2.0.9 (September 28) adds experimental standard operating procedures, a TeamPipeline, OpenAI Realtime, Gemini Live, and Grok Voice models, and a terminal UI."
         },
         {
             "name": "Agent Lightning",
@@ -419,7 +419,7 @@
             "deployment_modes": [
                 "Library (Python)"
             ],
-            "notes": "RL training framework decoupled from execution. Supports integration with LangChain, OpenAI Agents SDK, AutoGen."
+            "notes": "Microsoft's RL training framework for agents, decoupled from agent execution, with integrations for LangChain, OpenAI Agents SDK, and AutoGen. v1.0.2 (September 29) adds MoE coding-agent training for Qwen3.5-35B-A3B with CISPO and expert-routing replay, and passes image inputs from rollout traces into training."
         },
         {
             "name": "Cerebrum (AIOS SDK)",
@@ -455,7 +455,7 @@
             "deployment_modes": [
                 "Library"
             ],
-            "notes": "Prompt injection/jailbreak defenses, detectors, and sanitization for tool-using agents."
+            "notes": "Prompt-injection detection library combining heuristics, an LLM detector, a vector store of past attacks, and canary tokens. The GitHub repository is archived (read-only) and has had no code changes since August 2024."
         },
         {
             "name": "Agent Plugins",
@@ -476,7 +476,7 @@
                 "Library (TypeScript)",
                 "Self-host/Cloud"
             ],
-            "notes": "TypeScript agent framework with agents, tools, workflows (including persistable declarative workflows), memory, RAG, evals, observability, MCP, and AG-UI. Weekly 1.5x releases in summer 2026 added file-based agent schedules, in-process Code Mode execution, sandbox deployments, chat-channel controllers (Slack/Discord/Telegram), and tool-result guardrails.",
+            "notes": "TypeScript agent framework with agents, tools, workflows, memory, RAG, evals, observability, MCP, and AG-UI. Core 1.68 (September 23) ships `@mastra/mcp` 2.0 on the MCP 2026-07-28 revision and Azure AI Search and Weaviate vector stores; 1.70 (September 25) adds per-request model routing, and 1.75 (October 7) adds span queries with token/cost aggregation and a stable `@mastra/connect` 1.0 with Microsoft Teams channels.",
             "url": "https://mastra.ai/"
         },
         {
@@ -487,7 +487,7 @@
                 "Managed cloud service",
                 "Self-hosted sandbox integration"
             ],
-            "notes": "Managed Claude agent service with environments, skills, memory stores, and deployment controls. August updates add domain allow/block lists and memory access from self-hosted sandboxes; ant CLI 1.30 (September 3) adds declarative resource management with ant apply.",
+            "notes": "Managed Claude agent service with environments, skills, memory stores, and deployment controls. September 10 added an auto permission policy that lets the server run, deny, or pause each tool call for approval, plus ant CLI 1.32 to attach a terminal to a running session; October 9 added dynamic workflows (beta), where an agent writes a program that runs many agents in phases.",
             "url": "https://platform.claude.com/docs/en/release-notes/overview",
             "sources": [
                 {
@@ -529,7 +529,7 @@
                 "SaaS/API",
                 "Telephony"
             ],
-            "notes": "Platform for building, deploying, and monitoring voice agents on telephony. September 2 adds Saaras V4 as the default speech recognizer, live call transfers, and inbound completion webhooks; outbound completion webhooks arrived August 20.",
+            "notes": "Platform for building, deploying, and monitoring voice agents on telephony. September added a hosted Voice Agents MCP server (September 16) and regression tests with simulated users graded by an AI judge (September 17); Bulbul V4 voices became selectable per agent on October 6.",
             "url": "https://docs.sarvam.ai/conversations/releases",
             "sources": [
                 {
@@ -570,7 +570,7 @@
                 "CLI",
                 "Local web interface"
             ],
-            "notes": "Developer preview of DeepSeek's open-source agent runtime, built on Cordis with a plugin-based architecture. The dsh CLI starts a local web interface; the project is iterating rapidly with compatibility-breaking changes.",
+            "notes": "Developer preview of DeepSeek's open-source agent runtime, built on Cordis with a plugin-based architecture; the dsh CLI starts a local web interface. v0.2.0-rc.1 (September 28) is the first 0.2.0 release candidate, moving automations into an optional plugin pack, and v0.2.1-alpha.2 (October 9) adds an experimental Git Worktrees plugin, shared AGENTS.md instructions, and working-directory APIs in the TypeScript and Python SDKs.",
             "url": "https://github.com/deepseek-ai/deepseek-harness",
             "sources": [
                 {
@@ -584,6 +584,17 @@
                     "date": "2026-09-04"
                 }
             ]
+        },
+        {
+            "name": "OpenAI Agents API",
+            "provider": "OpenAI",
+            "category": "app_agent_platform",
+            "deployment_modes": [
+                "Managed cloud service",
+                "Self-hosted sandbox integration"
+            ],
+            "notes": "OpenAI's managed agent API built on the Codex harness, with durable sessions, streaming, custom tools and MCP servers, and OpenAI-hosted or customer-provided sandboxes; public beta since September 10, 2026. Computer use in an OpenAI-hosted browser was added September 29.",
+            "url": "https://openai.com/index/introducing-the-agents-api/"
         }
     ],
     "scope": "ai_application_development_agents",

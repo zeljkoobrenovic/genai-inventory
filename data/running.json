@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-06",
+    "updated_at": "2026-10-10",
     "categories": [
         {
             "category": "managed_api_llm",
@@ -55,7 +55,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed GPT-6 Astra and GPT-5.6 models, plus image, speech, realtime, and embeddings APIs. August–September updates add per-request regional processing for eligible projects, mTLS and X.509 workload identity, and Responses API controls for asynchronous tools and mid-turn steering.",
+            "notes": "Managed GPT-6 Astra, Sol, and Luna and GPT-6.1 Sol, plus image, voice, realtime, and embeddings APIs. The Agents API entered public beta on September 10 (hosted-browser computer use added September 29); Ultrafast mode now covers GPT-6 Astra and GPT-6.1 Sol, and a beta Decisions API launched October 6.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -81,7 +81,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed Claude models including Fable 5.1, Opus 5, and Sonnet 5, with restricted Mythos 5.1 access through Project Glasswing. Computer and browser toolsets, Files API, and Skills APIs are generally available; Sonnet 5's $2/$10 per-million-token introductory rates became standard pricing.",
+            "notes": "Managed Claude 5.5 models: Opus 5.5 (September 22, $4/$20 per million tokens, fast mode in research preview), Sonnet 5.5 (September 28), and Haiku 5.5 (October 7, 1M-token context), alongside Fable 5.1. Managed Agents gained auto permission policies and beta dynamic multi-agent workflows; Sonnet 4.5 retires from the API on November 30.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -107,7 +107,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed Gemini 3.8 Flash, Gemini Omni 1.1 Flash video generation/editing, Gemini 3.5 Transcribe and Transcribe Live, plus other Gemini models. Lyria 3.5 music generation entered API public preview on September 3; AI Studio provides interactive access.",
+            "notes": "Managed Gemini 3.8 Flash, Gemini 3.8 Live audio-to-audio models (GA September 15), Gemini 3.8 Flash TTS and Flash-Lite TTS with voice design and replication (GA September 22), and Nano Banana 2.1 image generation (GA October 6). Gemini 3.7 Flash and 3.5 Flash were deprecated on October 8 and are routed to newer Flash models.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -133,7 +133,7 @@
             "deployment_modes": [
                 "SaaS/API (Azure)"
             ],
-            "notes": "OpenAI models on Azure with enterprise identity, networking, and governance controls. GPT-6 Astra began rolling out in Microsoft Foundry on September 3; access depends on deployment availability and quota.",
+            "notes": "OpenAI models on Azure with enterprise identity, networking, and governance controls. GPT-6 Astra, Sol, and Luna are available in Microsoft Foundry as of September 22 for production agents and high-volume workloads; access depends on deployment availability and quota.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -170,7 +170,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed Mistral language, coding, OCR, speech, and moderation models with agent and retrieval tools. OCR 4.1 became generally available on August 31; Agentic Search arrived August 20 in Search Toolkit and Libraries across Studio and Vibe.",
+            "notes": "Managed Mistral language, coding, OCR, speech, and moderation models with agent and retrieval tools, plus hosted partner models such as Z.ai GLM 5.3 (GA September 28). Mistral Large 4, an open-weight multimodal MoE model with a 1M-token context window, entered public preview on October 6; OCR 4.0 retired in favour of OCR 4.1.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -216,7 +216,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed Grok 4.6 reasoning and coding, voice, image generation, and tool use through compatible APIs. Grok Imagine Image 2.0 gained automatic quality selection, five-reference-image editing, and additional wide aspect ratios on August 28; the older Imagine Image Quality endpoint is scheduled to retire November 2.",
+            "notes": "Managed Grok reasoning, coding, voice, and image-generation models through compatible APIs. Grok 4.7 launched in September with a 500K-token context window and tiered pricing, and Grok Voice Transcribe 2.0 became the default speech-to-text model after 1.0 reached end of life on October 2.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -237,7 +237,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed DeepSeek V4 Pro and V4 Flash with Responses-compatible access and 1M-token context. Experimental V4 Flash Vision launched August 21 for text and image input; the peak/off-peak pricing schedule has been in effect since August 16.",
+            "notes": "Managed DeepSeek V4 Pro and V4.1 Flash with Responses-compatible access and 1M-token context. V4.1 Flash, the first model of a new architecture family with native visual understanding, launched September 10 with lower API prices and replaced V4 Flash and V4 Flash Vision.",
             "url": "https://api-docs.deepseek.com/",
             "sources": [
                 {
@@ -281,7 +281,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Managed Qwen and partner-model APIs, including Qwen3.8 Max 0902, Qwen3.8 Flash, Qwen3.8-27B, and roleplay and image-translation models. Wan 3.0 Video became generally available on August 24 alongside the faster Prime variant; GLM-5.3 and Kimi K3 are also hosted.",
+            "notes": "Managed Qwen and partner-model APIs, including Qwen3.8 Max and Flash, realtime omni, speech, translation, image, and video models. September–October additions include Qwen3.8 Omni Flash Realtime, a decision-model preview for classification and scoring, Qwen-Image 2.1 Pro, and hosted DeepSeek V4.1 Flash.",
             "url": "https://docs.qwencloud.com/changelog/models",
             "sources": [
                 {
@@ -308,7 +308,7 @@
             "deployment_modes": [
                 "AWS managed endpoints"
             ],
-            "notes": "Managed multi-provider model platform with regional endpoints and enterprise controls. Claude Fable 5.1 became available September 1; the September 2 retention update introduced aws_review for models requiring review, while existing provider_data_share configurations remain compatible.",
+            "notes": "Managed multi-provider model platform with regional endpoints and enterprise controls. OpenAI GPT-6 Astra became generally available on September 8, and Claude Opus 5.5 arrived September 22 with US, EU, AU, JP, and global cross-Region inference profiles.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -364,7 +364,7 @@
             "deployment_modes": [
                 "Azure managed endpoints"
             ],
-            "notes": "Managed model catalog spanning OpenAI, Anthropic, Microsoft MAI, and other providers. September additions include GPT-6 Astra, Claude Fable 5.1, MAI-Transcribe-2, and MAI-Image-2.6/Flash in public preview; model access and quotas vary by deployment.",
+            "notes": "Managed model catalog spanning OpenAI, Anthropic, Microsoft MAI, and other providers. September 22 additions include GPT-6 Astra, Sol, and Luna and Claude Opus 5.5 for long-running coding and knowledge work; model access and quotas vary by deployment.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -423,7 +423,7 @@
             "deployment_modes": [
                 "Managed endpoints / serverless"
             ],
-            "notes": "Managed serving for custom, open-weight, and partner models through Foundation Model APIs and Unity Gateway. September additions include Claude Fable 5.1, Gemini 3.8 Flash, and GPT-6 Astra; releases are staged across accounts.",
+            "notes": "Managed serving for custom, open-weight, and partner models through Foundation Model APIs and Unity Gateway. Unity Gateway APIs and developer tools became GA on September 16, with a ug CLI connecting coding agents; new models include GPT-6 Sol/Luna, GPT-6.1 Sol, Claude Opus 5.5, Grok 4.7, and DeepSeek V4.1 Flash.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -474,7 +474,7 @@
                 "SaaS/API",
                 "serverless"
             ],
-            "notes": "High-throughput OSS model inference & fine-tuning; building a dedicated NVIDIA HGX B300 inference cluster on IBM Cloud under a $240M multi-year deal (available Q1 2027).",
+            "notes": "High-throughput open-model inference and fine-tuning platform with serverless and dedicated endpoints. Together Link (October 5) connects coding agents such as Claude Code and Codex to open models like GLM 5.3 and Kimi K3 with automatic routing, and its dedicated NVIDIA B300 cluster on IBM Cloud is now offered for enterprise inference.",
             "sources": [
                 "S17"
             ]
@@ -487,7 +487,7 @@
                 "SaaS/API",
                 "serverless"
             ],
-            "notes": "Fast inference for OSS models, tool use, agents; also sold as Fireworks-served open models inside the Microsoft Foundry catalog.",
+            "notes": "Fast inference, fine-tuning, and RL for open models, also offered inside the Microsoft Foundry catalog. Ember-1, a Kimi K3-based model using about 40% fewer reasoning tokens, entered serverless research preview on September 23, and GLOBAL deployments now pool GPU capacity across regions behind a single endpoint.",
             "sources": [
                 "S18"
             ]
@@ -564,7 +564,7 @@
             "deployment_modes": [
                 "Serverless edge inference"
             ],
-            "notes": "Serverless GPU inference on Cloudflare's global network with 50+ open-source models, now unified with AI Gateway so the same AI binding, billing, and observability cover Workers AI and third-party provider models, plus Vectorize and agent-building primitives.",
+            "notes": "Serverless GPU inference on Cloudflare's global network, unified with AI Gateway for Workers AI and third-party models. Cloudflare launched Clef and Clef-flash, its first open-source (Apache 2.0) decision models returning typed probabilities, on October 1, followed by multimodal Clef-omni on October 9.",
             "sources": [
                 "S67"
             ]
@@ -589,7 +589,7 @@
             "deployment_modes": [
                 "SaaS/API"
             ],
-            "notes": "Meta-API routing across 100s of models/providers, with Ori Eval model evaluation, generation tagging, team spend controls, and live web-search benchmarks.",
+            "notes": "Meta-API routing across hundreds of models and providers with evaluation, spend controls, and observability. September–October additions include US in-region routing (alongside EU), a half-price Batch API across 70+ models, an API-key Security Center, and ElevenLabs speech models.",
             "sources": [
                 "S23",
                 "S63"
@@ -771,7 +771,7 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "High-performance LLM runtime & kernels; Triton backend.",
+            "notes": "High-performance LLM runtime and kernels for NVIDIA GPUs, also used as a Triton backend. The v1.3.0 release candidates (rc26–rc29, September) add DeepSeek-V4 Hopper and Rubin kernel support, Anthropic-compatible Messages APIs in trtllm-serve, and KV-cache manager V2 by default.",
             "sources": [
                 "S39",
                 "S41n2",
@@ -836,7 +836,7 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "High-throughput open-source model serving with paged KV cache and a Rust frontend. v0.28.0 (August 26) expands Kimi K3 and DeepSeek V4 optimizations, speculative decoding, tiered KV-cache offloading, and Muse Glimmer support.",
+            "notes": "High-throughput open-source model serving with paged KV cache and a Rust frontend. v0.29–v0.31 (September 9 – October 5) made Model Runner V2 the default, added DeepSeek V4.1 Flash with NVFP4 KV cache, weight-cache preloading for fast restarts, and prefill context parallelism.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -866,7 +866,7 @@
             "deployment_modes": [
                 "On-prem/cloud"
             ],
-            "notes": "Open-source serving engine for language, vision-language, and diffusion models. v0.5.19 (September 5) adds Qwen3.8 model support, beam search, DeepEP v2, and deployment guides for GLM-5.3 and additional hardware configurations.",
+            "notes": "Open-source serving engine for language, vision-language, and diffusion models. v0.5.21 (October 2) lets prefill/decode instances switch roles without restart, moves the prefix cache to a Rust core, and adds DeepSeek V4.1 Flash plus Decisions and Score APIs.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -908,7 +908,7 @@
             "deployment_modes": [
                 "Laptop/desktop/server"
             ],
-            "notes": "Local model runner and cloud model service with compatible APIs, an Apple Silicon MLX engine, and integrations for coding tools. Claude Desktop gateway support arrived August 25; new Pro, Max, and Team cloud plans use per-token billing with included monthly usage from August 31, while existing subscribers can retain legacy plans.",
+            "notes": "Local model runner and cloud model service with compatible APIs and integrations for coding tools. v0.35 (September 28) added decision models such as Clef, Nimble, and Tev1 that return choices and probabilities, and v0.40 (September 25) runs supported architectures on the MLX engine by default on Apple Silicon.",
             "sources": [
                 {
                     "title": "Official release notes",
@@ -929,7 +929,7 @@
             "deployment_modes": [
                 "Laptop/desktop"
             ],
-            "notes": "Desktop runtime for local models, with Bionic combining local and US-hosted open models for agent tasks. Bionic added reusable Skills on August 17, alongside its model, file, and shell workflows.",
+            "notes": "Desktop runtime for local models, with Bionic combining local and US-hosted open models for agent tasks. September updates added session references and introspection across compactions and the Splash engine for fast local Qwen3.8 on Apple Silicon.",
             "sources": [
                 {
                     "title": "Official release notes",
