@@ -1,0 +1,23 @@
+.claude/skills/update-inventory/SKILL.md
+  s_36457868a2be51::t_7fbf59a67b0120 52-61,74-94,99-111
+scripts/check_logos.js
+  s_36457868a2be51::t_f50f6d2ea731b5 1-32
+CLAUDE.md
+  s_36457868a2be51::t_cb935d379f6d5d 24-28,31,44-46,51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "06f606e1f85f149482e8a46c8f77e12fcdd4e7a3",
+  "prompts": {},
+  "sessions": {
+    "s_36457868a2be51": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e647fd11-1ed8-42ac-a59b-338078e1d738",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Zeljko Obrenovic <zeljkoobrenovic@yahoo.com>"
+    }
+  }
+}
