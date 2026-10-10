@@ -1,17 +1,17 @@
-GenAI Inventory — September 6, 2026 update 🗺️
+GenAI Inventory — October 10, 2026 update 🗺️
 
-Now tracking 305 models from 25 labs. This refresh adds 24 model entries and eight tools, with updated pricing and availability.
+Now tracking 359 models from 25 labs. This refresh adds 54 model entries, a new agents platform, and 34 timeline milestones.
 
 🧠 Models
-• GPT-6 Astra, Claude Fable 5.1, Gemini 3.8 Flash, and Muse Spark 1.3.
-• Open weights: GLM-5.3-Flash and Tencent Hy4 Preview.
-• Speech and documents: MAI-Transcribe-2, Muse Voice Transcribe, and Cohere Parse.
+• Claude Opus/Sonnet/Haiku 5.5, GPT-6 Sol, Luna and 6.1 Sol, Grok 4.7, and Gemini 4 Argon (cyber defenders first).
+• Open weights: DeepSeek V4.1 Flash, EmbeddingGemma 2, and Qwen-Image 2.1, with Mistral Large 4 and Step 5 weights promised.
+• Retirements: Sonnet 4.5, Gemini 3.7 Flash, and older DeepSeek V4 Flash models.
 
 🛠️ Tools
-• Claude Managed Agents, Sarvam Voice Agents, and Gemini Enterprise Workflow Builder.
-• Updates to Codex, Claude Code, Cursor, Copilot, and Kiro.
+• OpenAI Agents API in beta, plus AG-UI 1.0.
+• Updates to Codex, Claude Code, Cursor, Copilot, Devin, and Kiro.
 
-My take: choosing a model also means choosing its access conditions, pricing, and surrounding tools. The inventory brings those details together.
+My take: release cycles are getting shorter, and deprecations matter as much as launches.
 
 Explore 👉 https://zeljkoobrenovic.github.io/genai-inventory/
 Data & source: https://github.com/zeljkoobrenovic/genai-inventory
