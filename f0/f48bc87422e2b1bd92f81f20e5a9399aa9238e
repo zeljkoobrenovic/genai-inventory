@@ -1,0 +1,19 @@
+LINKEDIN.txt
+  s_36457868a2be51::t_651e71c37fa2fa 1,3,6-8,11-12,14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f0f48bc87422e2b1bd92f81f20e5a9399aa9238e",
+  "prompts": {},
+  "sessions": {
+    "s_36457868a2be51": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e647fd11-1ed8-42ac-a59b-338078e1d738",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Zeljko Obrenovic <zeljkoobrenovic@yahoo.com>"
+    }
+  }
+}
